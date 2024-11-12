@@ -38,6 +38,38 @@ body {
   min-height: 100vh;
 }
 
+/*-------------------------------------main-swiper--------------------------------*/
+
+.main-swiper .swiper-button-next,
+.main-swiper .swiper-button-prev {
+  color: white;
+  width: 30px;
+  height: 30px;
+}
+
+.main-swiper .swiper-button-next {
+  margin-right: 70px;
+}
+.main-swiper .swiper-button-prev {
+  margin-left: 70px;
+}
+
+.main-swiper .swiper-pagination-bullet {
+  background: white;
+}
+
+.main-swiper .swiper-pagination {
+  margin-bottom: 50px;
+}
+
+.main-swiper .swiper-button-next::after {
+  content: url('/assets/images/svg/right-white.svg');
+}
+
+.main-swiper .swiper-button-prev::after {
+  content: url('/assets/images/svg/left-white.svg');
+}
+
 /*-------------------------------------scrollbar--------------------------------*/
 
 *::-webkit-scrollbar {
