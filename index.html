@@ -6,19 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="styles/normalize.css" rel="stylesheet">
   <link href="styles/styles.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <title>Главная</title>
 </head>
 <body>
 
   <main class="main">
-    <swiper-container>
-      <swiper-slide>Slide 1</swiper-slide>
-      <swiper-slide>Slide 2</swiper-slide>
-      <swiper-slide>Slide 3</swiper-slide>
-      <swiper-slide>Slide ...</swiper-slide>
-    </swiper-container>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="assets/images/main-1.jpg" alt="Осень">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/main-1.jpg" alt="Осень">
+        </div>
+        <div class="swiper-slide">
+          <img src="assets/images/main-1.jpg" alt="Осень">
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    
+      <div class="swiper-scrollbar"></div>
+    </div>
   </main>
+
+  <script src="scripts/swiper/main-swiper.js"></script>
 
 </body>
 </html>
