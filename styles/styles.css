@@ -1,0 +1,65 @@
+:root {
+  --brown: #643F36;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  background-color: var(--main-blue);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--text-color);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*-------------------------------------scrollbar--------------------------------*/
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0);
+}
+*::-webkit-scrollbar-track:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+*::-webkit-scrollbar-track:active {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--brown);
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--brown);
+}
+*::-webkit-scrollbar-thumb:active {
+  background-color: var(--brown);
+}
+
+.scroll-off {
+  overflow-y: hidden;
+}
