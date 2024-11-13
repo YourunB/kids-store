@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="styles/normalize.css" rel="stylesheet">
   <link href="styles/styles.css" rel="stylesheet">
+  <link href="styles/media.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <title>Главная</title>
@@ -16,16 +17,24 @@
     <div class="swiper main-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="assets/images/main-1.jpg" alt="Осень">
+          <picture>
+            <source srcset="assets/images/main-1_x2.jpg" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+            <source srcset="assets/images/main-1.jpg" media="(min-width: 1280px)" type="image/jpeg">
+            <img src="assets/images/main-1_low.jpg" alt="Осень" loading="lazy" width="1280" height="720">
+          </picture>
         </div>
         <div class="swiper-slide">
-          <video class="video__clip" src="assets/videos/video.mp4" autoplay loop muted>
+          <video src="assets/videos/video.mp4" autoplay loop muted>
             <source src="assets/videos/video-low.mp4" type="video/mp4" media="(max-width: 991px)">
             <source src="assets/videos/video.mp4" type="video/mp4" media="(min-width: 992px)">
           </video>
         </div>
         <div class="swiper-slide">
-          <img src="assets/images/main-1.jpg" alt="Осень">
+          <picture>
+            <source srcset="assets/images/main-1_x2.jpg" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+            <source srcset="assets/images/main-1.jpg" media="(min-width: 1280px)" type="image/jpeg">
+            <img src="assets/images/main-1_low.jpg" alt="Осень" loading="lazy" width="1280" height="720">
+          </picture>
           <div class="swiper-slide__text-box swiper-slide__text-box_top-left">
             <h3>Заголовок</h3>
             <p>Текст</p>
@@ -68,6 +77,7 @@
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
+      <img class="chat" src="assets/images/svg/chat.svg" alt="Чат">
     </div>
   </main>
 
