@@ -109,6 +109,12 @@
   .swiper {
     font-size: 6px;
   }
+
+  .advantages {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 
 @media (max-width: 576px) {

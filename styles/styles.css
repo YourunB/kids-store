@@ -226,7 +226,36 @@ p {
 
 /*----------------------------------special-section-------------------------------*/
 
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
 
+.advantages__card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 325px;
+}
+
+.advantages__card h4,
+.advantages__card p {
+  width: 100%;
+  text-align: center;
+  gap: 5px;
+  margin: 0;
+}
+
+.advantages__card h4 {
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+.advantages__card p {
+  font-weight: 400;
+  font-size: 1em;
+}
 
 /*------------------------------------bootstrap-buttons---------------------------*/
 
