@@ -3,6 +3,7 @@
 :root {
   --brown: #643F36;
   --light-gray: #E9EBEC;
+  --gray: rgba(0, 0, 0, 0.05);
   --text-light: white;
 }
 
@@ -27,7 +28,6 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  color: var(--text-color);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -126,6 +126,54 @@ p {
 
 .container {
   position: absolute;
+}
+
+.offcanvas-header {
+  padding: 15px;
+}
+
+.offcanvas-body {
+  padding: 0 0 70px 70px;
+}
+
+.menu-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  transition: 0.5s;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.625em;
+  font-weight: 400;
+}
+
+.menu-list__item a,
+.submenu-list__item a {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-list__item:hover,
+.submenu-list__item:hover {
+  background: var(--gray);
+}
+
+.submenu-list {
+  padding: 46px 0 0 0 ;
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  min-width: 200px;
+  background-color: white;
+}
+
+.menu-list__item:hover .submenu-list {
+  display: block;
+  height: 100%;
 }
 
 /*------------------------------------------swiper--------------------------------*/
