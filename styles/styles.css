@@ -206,6 +206,7 @@ h3 {
 /*------------------------------------categories--------------------------------*/
 
 .categories {
+  display: block;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
@@ -226,6 +227,11 @@ h3 {
   .categories__card:hover img {
     transform: scale(1.05);
   }
+}
+
+.categories__card:active {
+  transition: 0.2s;
+  transform: scale(0.95);
 }
 
 .categories__card:nth-of-type(3),
