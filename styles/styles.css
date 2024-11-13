@@ -1,5 +1,7 @@
 :root {
   --brown: #643F36;
+  --light-gray: #E9EBEC;
+
   --text-light: white;
 }
 
@@ -186,6 +188,39 @@ body {
   box-shadow: none;
   transition: 0.2;
   transform: scale(0.9);
+}
+
+/*------------------------------------categories--------------------------------*/
+
+.categories {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.categories__card {
+  grid-column: span 2;
+  width: 100%;
+  height: 370px;
+  background-color: var(--light-gray);
+  border-radius: 20px;
+}
+
+.categories__card:nth-of-type(3),
+.categories__card:nth-of-type(4),
+.categories__card:nth-of-type(5) {
+  height: 560px;
+}
+
+.categories__card:nth-of-type(4),
+.categories__card:nth-of-type(5) {
+  grid-column: span 1;
+}
+
+/*-------------------------------------block------------------------------------*/
+
+.block {
+  margin: 70px;
 }
 
 /*-------------------------------------scrollbar--------------------------------*/
