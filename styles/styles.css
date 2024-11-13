@@ -1,5 +1,6 @@
 :root {
   --brown: #643F36;
+  --text-light: white;
 }
 
 html {
@@ -66,8 +67,65 @@ body {
   content: url('/assets/images/svg/right-white.svg');
 }
 
+.main-swiper .swiper-slide {
+  position: relative;
+}
+
 .main-swiper .swiper-button-prev::after {
   content: url('/assets/images/svg/left-white.svg');
+}
+
+.swiper-slide__text-box {
+  position: absolute;
+  color: var(--text-light);
+  text-align: center;
+}
+
+.swiper-slide__text-box p,
+.swiper-slide__text-box h3 {
+  margin: 0;
+}
+
+.swiper-slide__text-box_top-left {
+  left: 6%;
+  top: 6%;
+}
+.swiper-slide__text-box_top-center {
+  top: 6%;
+  left: 0;
+  right: 0;
+}
+.swiper-slide__text-box_top-right {
+  top: 6%;
+  right: 6%;
+}
+.swiper-slide__text-box_center-left {
+  left: 6%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.swiper-slide__text-box_center-center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.swiper-slide__text-box_center-right {
+  right: 6%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.swiper-slide__text-box_bottom-left {
+  bottom: 6%;
+  left: 6%;
+}
+.swiper-slide__text-box_bottom-center {
+  bottom: 7%;
+  left: 0;
+  right: 0;
+}
+.swiper-slide__text-box_bottom-right {
+  bottom: 6%;
+  right: 6%;
 }
 
 /*-------------------------------------scrollbar--------------------------------*/
