@@ -34,6 +34,12 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .section {
+    font-size: 10px;
+  }
+}
+
 @media (max-width: 991px) {
   .categories__card:nth-of-type(4),
   .categories__card:nth-of-type(5) {
@@ -52,12 +58,26 @@
 }
 
 @media (max-width: 768px) {
+  .categories {
+    font-size: 8px;
+  }
+
+  .categories__card {
+    padding: 20px;
+  }
+
   .categories__card,
   .categories__card:nth-of-type(3),
   .categories__card:nth-of-type(4),
   .categories__card:nth-of-type(5) {
     grid-column: span 4;
   }
+  
+  .categories__card:nth-of-type(4) h3,
+  .categories__card:nth-of-type(5) h3 {
+    text-align: left;
+  }
+
 
   .swiper {
     font-size: 6px;
