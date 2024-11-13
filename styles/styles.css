@@ -40,6 +40,23 @@ body {
 }
 
 /*-------------------------------------main-swiper--------------------------------*/
+.swiper-button-next,
+.swiper-button-prev {
+  transition: 0.5s;
+}
+
+@media(hover:hover) {
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    transform: scale(1.2);
+  }
+}
+
+.swiper-button-next:active,
+.swiper-button-prev:active {
+  transition: 0.2s;
+  transform: scale(0.8);
+}
 
 .main-swiper .swiper-button-next,
 .main-swiper .swiper-button-prev {
