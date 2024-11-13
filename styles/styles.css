@@ -231,6 +231,11 @@ body {
   max-width: 100%;
 }
 
+.categories__card:nth-of-type(7) img {
+  object-fit: cover;
+  min-height: 100%;
+}
+
 /*-------------------------------------block------------------------------------*/
 
 .block {
