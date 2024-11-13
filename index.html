@@ -15,10 +15,29 @@
 </head>
 <body>
 
+  <div class="container mt-3">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+      <div class="offcanvas-header">
+        <h5 id="offcanvasLeftLabel">Меню</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="list-unstyled">
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О нас</a></li>
+          <li><a href="#">Услуги</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   <header class="header header-main">
     <div class="header-wrapper">
       <nav class="header__navigation">
-        <img src="assets/images/svg/burger-white.svg">
+        <button class="btn btn-primary btn-burger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
+          <img src="assets/images/svg/burger-white.svg" alt="Меню">
+        </button>
         <a href="index.html">Lookbook</a>
         <a href="index.html">Новинки</a>
         <a href="index.html">Блог</a>

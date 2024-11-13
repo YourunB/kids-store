@@ -86,6 +86,7 @@ p {
 .header__indicators,
 .header__navigation {
   display: flex;
+  align-items: center;
   gap: 30px;
   font-size: 1.125em;
   font-weight: 500;
@@ -104,6 +105,27 @@ p {
 .header-wrapper a:active {
   transition: 0.2s;
   transform: scale(0.9);
+}
+
+.header .btn-burger {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  min-height: fit-content;
+  min-width: fit-content;
+  width: 30px;
+  height: 30px;
+}
+
+.header .btn-burger:hover {
+  background: none;
+}
+
+/*-------------------------------------------menu---------------------------------*/
+
+.container {
+  position: absolute;
 }
 
 /*------------------------------------------swiper--------------------------------*/
@@ -212,15 +234,15 @@ p {
 
 .swiper-slide__text-box_top-left {
   left: 6%;
-  top: 6%;
+  top: 10%;
 }
 .swiper-slide__text-box_top-center {
-  top: 6%;
+  top: 10%;
   left: 0;
   right: 0;
 }
 .swiper-slide__text-box_top-right {
-  top: 6%;
+  top: 10%;
   right: 6%;
 }
 .swiper-slide__text-box_center-left {
