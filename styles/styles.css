@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
   --brown: #643F36;
   --light-gray: #E9EBEC;
@@ -27,6 +29,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   color: var(--text-color);
+  font-family: "Montserrat", sans-serif;
 }
 
 .main {
