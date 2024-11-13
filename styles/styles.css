@@ -222,6 +222,12 @@ h3 {
   padding: 40px;
 }
 
+@media (hover:hover) {
+  .categories__card:hover img {
+    transform: scale(1.05);
+  }
+}
+
 .categories__card:nth-of-type(3),
 .categories__card:nth-of-type(4),
 .categories__card:nth-of-type(5) {
@@ -240,6 +246,7 @@ h3 {
   z-index: 1;
   max-height: 100%;
   max-width: 100%;
+  transition: 0.5s;
 }
 
 .categories__card:nth-of-type(7) img {
@@ -264,7 +271,6 @@ h3 {
 .categories__card:nth-of-type(6) h3 {
   max-width: 260px;
 }
-
 
 /*-------------------------------------block------------------------------------*/
 
