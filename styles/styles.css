@@ -32,6 +32,16 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+h2 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 40px;
+}
+
 .main {
   max-width: 1920px;
   width: 100%;
@@ -209,6 +219,7 @@ body {
   border-radius: 20px;
   position: relative;
   overflow: hidden;
+  padding: 40px;
 }
 
 .categories__card:nth-of-type(3),
@@ -235,6 +246,25 @@ body {
   object-fit: cover;
   min-height: 100%;
 }
+
+.categories__card h3 {
+  margin: 0;
+}
+
+.categories__card:nth-of-type(1) h3 {
+  max-width: 200px;
+}
+
+.categories__card:nth-of-type(4) h3,
+.categories__card:nth-of-type(5) h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.categories__card:nth-of-type(6) h3 {
+  max-width: 260px;
+}
+
 
 /*-------------------------------------block------------------------------------*/
 
