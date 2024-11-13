@@ -3,6 +3,7 @@
 :root {
   --brown: #643F36;
   --light-gray: #E9EBEC;
+  --dark-gray: rgba(71, 65, 65, 1);
   --gray: rgba(0, 0, 0, 0.05);
   --text-light: white;
 }
@@ -461,6 +462,12 @@ p {
 
 .categories__card:nth-of-type(6) h3 {
   max-width: 260px;
+}
+
+/*-------------------------------------footer-----------------------------------*/
+
+.footer {
+  background: var(--dark-gray);
 }
 
 /*-------------------------------------block------------------------------------*/
