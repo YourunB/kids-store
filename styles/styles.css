@@ -3,7 +3,6 @@
 :root {
   --brown: #643F36;
   --light-gray: #E9EBEC;
-
   --text-light: white;
 }
 
@@ -84,6 +83,23 @@ p {
 
 .swiper-slide video {
   width: 100%;
+}
+
+/*------------------------------------about-section-------------------------------*/
+
+.about-section .btn {
+  display: block;
+  margin: auto;
+}
+
+/*------------------------------------bootstrap-buttons---------------------------*/
+
+.btn {
+  border-radius: 77px;
+  min-height: 70px;
+  min-width: 300px;
+  font-size: 1.625em;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*-------------------------------------main-swiper--------------------------------*/
