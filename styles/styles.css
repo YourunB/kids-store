@@ -50,6 +50,7 @@ p {
   max-width: 1920px;
   width: 100%;
   margin: auto;
+  overflow-x: hidden;
 }
 
 /*------------------------------------------header--------------------------------*/
@@ -198,6 +199,27 @@ p {
 
 .swiper-slide video {
   width: 100%;
+}
+
+/*------------------------------------------five-swipper--------------------------*/
+
+.swiper-container {
+  width: 100%;
+  padding: 10px;
+}
+
+.swiper-container .swiper-slide {
+  width: calc(20% - 10px);
+  margin-right: 10px;
+}
+.swiper-container  .swiper-slide img {
+  height: auto;
+  background-color: var(--light-gray);
+  height: 400px;
+  width: 308px;
+  border-radius: 20px;
+  object-fit: contain;
+  object-position: bottom;
 }
 
 /*------------------------------------------section-------------------------------*/
