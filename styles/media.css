@@ -26,17 +26,25 @@
   .categories__card {
     height: 300px;
   }
-
   
   .categories__card:nth-of-type(3),
   .categories__card:nth-of-type(4),
   .categories__card:nth-of-type(5) {
     height: 400px;
   }
+
+  .footer-wrapper {
+    padding: 20px;
+  }
+  
+  .footer__center {
+    margin-bottom: 100px;
+  }
 }
 
 @media (max-width: 1200px) {
-  .section {
+  .section,
+  .footer {
     font-size: 10px;
   }
 
@@ -105,7 +113,6 @@
     text-align: left;
   }
 
-
   .swiper {
     font-size: 6px;
   }
@@ -114,6 +121,10 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+  }
+
+  .footer__center {
+    margin-bottom: 50px;
   }
 }
 
@@ -149,5 +160,34 @@
 
   .header__indicators {
     width: fit-content;
+  }
+
+  .header__indicators, .header__navigation {
+    gap: 10px;
+  }
+
+  .btn,
+  .footer .btn {
+    min-width: 200px;
+  }
+
+  .footer-info {
+    max-width: 100%;
+  }
+
+  .footer__top {
+    margin-bottom: 20px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer__center,
+  .footer-info {
+    display: block;
+    text-align: center;
+  }
+
+  .footer__center {
+    margin-bottom: 20px;
   }
 }

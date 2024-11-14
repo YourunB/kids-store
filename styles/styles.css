@@ -530,11 +530,13 @@ p {
 .footer__bottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .bank-cards {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 10px;
   max-width: 145px;
   width: 100%;
@@ -543,6 +545,7 @@ p {
 
 .footer__bottom p {
   font-size: 1em;
+  margin: 0;
 }
 
 /*-------------------------------------block------------------------------------*/
