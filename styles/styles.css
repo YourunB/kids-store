@@ -326,6 +326,7 @@ p {
   width: 308px;
   height: 400px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .card-slider__images__image {
