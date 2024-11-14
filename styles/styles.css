@@ -6,6 +6,8 @@
   --dark-gray: rgba(71, 65, 65, 1);
   --gray: rgba(0, 0, 0, 0.05);
   --text-light: white;
+  --new: #6D956F;
+  --soft-red: #C85F5F;
 }
 
 html {
@@ -192,12 +194,12 @@ p {
   transform: scale(0.8);
 }
 
-.swiper-slide img {
+.main-swiper .swiper-slide img {
   width: 100%;
   height: 100%;
 }
 
-.swiper-slide video {
+.main-swiper .swiper-slide video {
   width: 100%;
 }
 
@@ -209,11 +211,13 @@ p {
 }
 
 .swiper-container .swiper-slide {
+  position: relative;
   margin-right: 10px;
   width: 308px;
   background-color: white;
 }
-.swiper-container .swiper-slide img {
+
+.swiper-container .swiper-slide__image {
   height: auto;
   background-color: var(--light-gray);
   height: 400px;
@@ -222,10 +226,12 @@ p {
   object-fit: contain;
   object-position: bottom;
 }
+
 .swiper-container .swiper-slide .swiper-slide__description {
   font-size: 1.25em;
   margin: 10px 0;
 }
+
 .swiper-container .swiper-slide .swiper-slide__price {
   font-size: 1.625em;
   font-weight: 600;
@@ -266,6 +272,49 @@ p {
 }
 .swiper-slide__colors span:nth-of-type(8) {
   background-color: #A0825C;
+}
+
+.card-heart {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 15px;
+  top: 15px;
+  border-radius: 100%;
+  transition: 0.5s;
+}
+
+@media (hover:hover) {
+  .card-heart:hover {
+    cursor: pointer;
+    filter: brightness(1.5);
+    transform: scale(1.2);
+  }
+}
+
+.card-heart:active {
+  transition: 0.2s;
+  transform: scale(0.8);
+}
+
+.card-promo {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  width: calc(100% - 65px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.card-promo span {
+  display: block;
+  background-color: var(--new);
+  border-radius: 91px;
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: 0.875em;
+  color: var(--text-light);
 }
 
 /*------------------------------------------section-------------------------------*/
