@@ -275,6 +275,7 @@ p {
 
 .card-heart {
   position: absolute;
+  z-index: 10;
   width: 30px;
   height: 30px;
   right: 15px;
@@ -298,6 +299,7 @@ p {
 
 .card-promo {
   position: absolute;
+  z-index: 10;
   left: 15px;
   top: 15px;
   width: calc(100% - 65px);
