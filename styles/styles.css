@@ -52,12 +52,6 @@ p {
   margin: auto;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 /*------------------------------------------header--------------------------------*/
 
 .header {
@@ -129,10 +123,6 @@ p {
 }
 
 /*-------------------------------------------menu---------------------------------*/
-
-.container {
-  position: absolute;
-}
 
 .offcanvas-header {
   padding: 15px;
