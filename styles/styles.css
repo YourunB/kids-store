@@ -211,6 +211,7 @@ p {
 .swiper-container .swiper-slide {
   margin-right: 10px;
   width: 308px;
+  background-color: white;
 }
 .swiper-container .swiper-slide img {
   height: auto;
@@ -228,6 +229,43 @@ p {
 .swiper-container .swiper-slide .swiper-slide__price {
   font-size: 1.625em;
   font-weight: 600;
+}
+
+.swiper-slide__colors {
+  display: flex;
+  gap: 5px;
+}
+
+.swiper-slide__colors span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.swiper-slide__colors span:nth-of-type(1) {
+  background-color: #CAA26D;
+}
+.swiper-slide__colors span:nth-of-type(2) {
+  background-color: #D3CAC5;
+}
+.swiper-slide__colors span:nth-of-type(3) {
+  background-color: black;
+}
+.swiper-slide__colors span:nth-of-type(4) {
+  background-color: #84848C;
+}
+.swiper-slide__colors span:nth-of-type(5) {
+  background-color: #E6C7C4;
+}
+.swiper-slide__colors span:nth-of-type(6) {
+  background-color: #E26E34;
+}
+.swiper-slide__colors span:nth-of-type(7) {
+  background-color: #BACEDE;
+}
+.swiper-slide__colors span:nth-of-type(8) {
+  background-color: #A0825C;
 }
 
 /*------------------------------------------section-------------------------------*/
