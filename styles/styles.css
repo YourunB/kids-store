@@ -47,6 +47,11 @@ h3 {
   font-size: 2.5em;
 }
 
+h4 {
+  font-weight: 600;
+  font-size: 1.625em;
+}
+
 p {
   font-size: 1.75em;
 }
@@ -470,6 +475,10 @@ p {
   right: 20px;
 }
 
+.modal {
+  backdrop-filter: blur(10px);
+}
+
 .modal-content {
   position: relative;
   padding: 40px 80px;
@@ -484,7 +493,7 @@ p {
 .modal-content .modal-title {
   text-align: center;
   font-size: 1.625em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .modal-content .second-btn {
@@ -504,7 +513,7 @@ p {
   color: black;
 }
 
-.modal-content .second-btn_last{
+.modal-content .second-btn_last {
   background: none;
   margin-bottom: 40px;
 }
@@ -527,6 +536,44 @@ p {
 .modal-content .form-check-label {
   font-size: 0.75em;
   color: var(--text-light-gray);
+}
+
+.modal-choice {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.modal-choice__item {
+  color: rgba(154, 154, 154, 1);
+  font-size: 1em;
+}
+
+.modal-choice__item_active {
+  color: black;
+}
+
+.modal-save-log {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+
+.modal-info {
+  margin-top: 20px;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.modal-info a {
+  text-decoration: underline;
+}
+
+.modal h4 {
+  text-align: center;
 }
 
 /*-------------------------------------main-swiper--------------------------------*/

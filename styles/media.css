@@ -151,6 +151,14 @@
   .logo {
     width: 80px;
   }
+
+  .modal-content {
+    padding: 20px;
+  }
+
+  .modal-content .modal-content__input {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 440px) {
