@@ -7,6 +7,7 @@
   --gray: rgba(0, 0, 0, 0.05);
   --text-light: white;
   --text-light-gray: rgba(154, 154, 154, 1);
+  --smok-gray: rgba(192, 192, 192, 1);
   --light-gray: rgba(246, 246, 246, 1);
   --border-gray: rgba(217, 217, 217, 1);
   --new: #6D956F;
@@ -136,6 +137,19 @@ p {
   background: none;
 }
 
+.header-def {
+  background: white;
+  color: black;
+}
+
+.header-def .menu-icon {
+  filter: invert(1);
+}
+
+.header-def .header-wrapper {
+  border-bottom: solid 1px var(--smok-gray);
+}
+
 /*-------------------------------------------menu---------------------------------*/
 
 .offcanvas-header {
@@ -184,6 +198,26 @@ p {
 .menu-list__item:hover .submenu-list {
   display: block;
   height: 100%;
+}
+
+.menu-count {
+  position: relative;
+}
+
+.menu-count__item {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  width: 15.4px;
+  height: 15.4px;
+  font-size: 9px;
+  font-weight: 500;
+  border-radius: 100%;
+  background-color: var(--smok-gray);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*------------------------------------------swiper--------------------------------*/
