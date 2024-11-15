@@ -580,6 +580,13 @@ p {
   text-align: center;
 }
 
+.modal-or {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1em;
+  font-weight: 500;
+}
+
 /*-------------------------------------main-swiper--------------------------------*/
 
 .main-swiper .swiper-button-next,
