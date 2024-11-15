@@ -229,6 +229,8 @@ p {
 .swiper-container .swiper-slide .swiper-slide__description {
   font-size: 1.25em;
   margin: 10px 0;
+  height: 60px;
+  overflow-y: auto;
 }
 
 .swiper-container .swiper-slide .swiper-slide__price {
@@ -401,6 +403,7 @@ p {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  margin-top: 70px;
 }
 
 .advantages__card {
@@ -434,7 +437,7 @@ p {
   border-radius: 77px;
   min-height: 70px;
   min-width: 300px;
-  font-size: 1.625em;
+  font-size: 1em;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -703,7 +706,6 @@ p {
   border-radius: 69px;
   min-height: 70px;
   min-width: 277px;
-  font-size: 1.25em;
   font-family: "Montserrat", sans-serif;
 }
 
