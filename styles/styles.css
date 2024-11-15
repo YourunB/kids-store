@@ -140,6 +140,7 @@ p {
 
 .header-def {
   position: sticky;
+  z-index: 20;
   top: 0;
   background: white;
   color: black;
