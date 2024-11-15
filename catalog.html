@@ -14,6 +14,43 @@
   <title>Каталог</title>
 </head>
 <body>
+  <!--Bootstrap menu list-->
+  <div class="container mt-3">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="menu-list">
+          <li class="menu-list__item">
+            <a href="#">Верхняя одежда <img class="menu-icon" src="assets/images/svg/right-black.svg" alt="Вправо"></a>
+            <ul class="submenu-list">
+              <li class="submenu-list__item"><a href="#">Комбинезоны</a></li>
+              <li class="submenu-list__item"><a href="#">Комплекты</a></li>
+              <li class="submenu-list__item"><a href="#">Куртки и жилетки</a></li>
+              <li class="submenu-list__item"><a href="#">Брюки</a></li>
+            </ul>
+          </li>
+          <li class="menu-list__item"><a href="#">Одежда из флиса</a></li>
+          <li class="menu-list__item">
+            <a href="#">Для самых маленьких <img class="menu-icon" src="assets/images/svg/right-black.svg" alt="Вправо"></a>
+            <ul class="submenu-list">
+              <li class="submenu-list__item"><a href="#">Комбинезоны</a></li>
+              <li class="submenu-list__item"><a href="#">Комплекты</a></li>
+              <li class="submenu-list__item"><a href="#">Куртки и жилетки</a></li>
+              <li class="submenu-list__item"><a href="#">Брюки</a></li>
+            </ul>
+          </li>
+          <li class="menu-list__item"><a href="#">Комбинезоны</a></li>
+          <li class="menu-list__item"><a href="#">Костюмы</a></li>
+          <li class="menu-list__item"><a href="#">Футболки и лонгсливы</a></li>
+          <li class="menu-list__item"><a href="#">Брюки</a></li>
+          <li class="menu-list__item"><a href="#">Аксессуары</a></li>
+          <li class="menu-list__item"><a href="#">SALE</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <header class="header header-def">
     <div class="header-wrapper">
@@ -21,42 +58,6 @@
         <button class="btn btn-primary btn-burger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
           <img class="menu-icon" src="assets/images/svg/burger-white.svg" alt="Меню">
         </button>
-        <div class="container mt-3">
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft">
-            <div class="offcanvas-header">
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="menu-list">
-                <li class="menu-list__item">
-                  <a href="#">Верхняя одежда <img class="menu-icon" src="assets/images/svg/right-black.svg" alt="Вправо"></a>
-                  <ul class="submenu-list">
-                    <li class="submenu-list__item"><a href="#">Комбинезоны</a></li>
-                    <li class="submenu-list__item"><a href="#">Комплекты</a></li>
-                    <li class="submenu-list__item"><a href="#">Куртки и жилетки</a></li>
-                    <li class="submenu-list__item"><a href="#">Брюки</a></li>
-                  </ul>
-                </li>
-                <li class="menu-list__item"><a href="#">Одежда из флиса</a></li>
-                <li class="menu-list__item">
-                  <a href="#">Для самых маленьких <img class="menu-icon" src="assets/images/svg/right-black.svg" alt="Вправо"></a>
-                  <ul class="submenu-list">
-                    <li class="submenu-list__item"><a href="#">Комбинезоны</a></li>
-                    <li class="submenu-list__item"><a href="#">Комплекты</a></li>
-                    <li class="submenu-list__item"><a href="#">Куртки и жилетки</a></li>
-                    <li class="submenu-list__item"><a href="#">Брюки</a></li>
-                  </ul>
-                </li>
-                <li class="menu-list__item"><a href="#">Комбинезоны</a></li>
-                <li class="menu-list__item"><a href="#">Костюмы</a></li>
-                <li class="menu-list__item"><a href="#">Футболки и лонгсливы</a></li>
-                <li class="menu-list__item"><a href="#">Брюки</a></li>
-                <li class="menu-list__item"><a href="#">Аксессуары</a></li>
-                <li class="menu-list__item"><a href="#">SALE</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
         <a href="index.html">Lookbook</a>
         <a href="index.html">Новинки</a>
         <a href="index.html">Блог</a>
@@ -404,6 +405,19 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
   <script src="scripts/btn-to-top.js"></script>
+
+  <script>
+    const header = document.querySelector('.header');
+
+    let timeoutHeader;
+
+    window.addEventListener('scroll', function() {
+      clearTimeout(timeoutHeader);
+      timeoutHeader = setTimeout(() => {
+        window.scrollY > 50 ? header.classList.add('header_scrolled') : header.classList.remove('header_scrolled');
+      }, 250);
+    });
+  </script>
 
 </body>
 </html>
