@@ -140,14 +140,11 @@ p {
 .header-def {
   background: white;
   color: black;
+  border-bottom: solid 1px var(--smok-gray);
 }
 
 .header-def .menu-icon {
   filter: invert(1);
-}
-
-.header-def .header-wrapper {
-  border-bottom: solid 1px var(--smok-gray);
 }
 
 /*-------------------------------------------menu---------------------------------*/
@@ -202,6 +199,7 @@ p {
 
 .menu-count {
   position: relative;
+  user-select: none;
 }
 
 .menu-count__item {
