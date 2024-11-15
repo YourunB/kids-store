@@ -508,13 +508,17 @@ p {
   margin-bottom: 15px;
 }
 
-.modal-content .second-btn_first {
+.modal-content .second-btn:hover {
+  background-color: var(--soft-red);
+  color: var(--text-light);
+}
+
+.modal-content .second-btn_active {
   background-color: var(--light-gray);
   color: black;
 }
 
-.modal-content .second-btn_last {
-  background: none;
+.modal-content .btn-choice-two {
   margin-bottom: 40px;
 }
 

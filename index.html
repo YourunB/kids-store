@@ -561,8 +561,8 @@
       <div class="modal-content">
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
         <h5 class="modal-title" id="registrationModalLabel">Регистрация</h5>
-        <button type="button" class="btn btn-outline-light second-btn second-btn_first">Розничные покупатели</button>
-        <button type="button" class="btn btn-outline-light second-btn second-btn_last">Оптовые покупатели</button>
+        <button type="button" class="btn btn-outline-light second-btn second-btn_active btn-choice-one">Розничные покупатели</button>
+        <button type="button" class="btn btn-outline-light second-btn btn-choice-two" data-bs-dismiss="modal" aria-label="Закрыть" data-bs-toggle="modal" data-bs-target="#registrationOptModal">Оптовые покупатели</button>
         <div class="mb-3">
           <input type="text" class="form-control modal-content__input" id="firstname" placeholder="Имя" required>
         </div>
@@ -592,10 +592,58 @@
             Согласен на обработку персональных данных. С <a href="#">договором публичной оферты</a> и <a href="#">политикой конфиденциальности</a> ознакомлен и принимаю.
           </label>
         </div>
-        <button type="button" class="btn btn-dark">Зарегистрироваться</button>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal" aria-label="Закрыть">Зарегистрироваться</button>
       </div>
     </div>
   </div>
+
+    <!-- модальное регистрации ОПТ-->
+    <div class="modal fade" id="registrationOptModal" tabindex="-1" aria-labelledby="registrationOptModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+          <h5 class="modal-title" id="registrationModalLabel">Регистрация</h5>
+          <button type="button" class="btn btn-outline-light second-btn btn-choice-one" data-bs-dismiss="modal" aria-label="Закрыть" data-bs-toggle="modal" data-bs-target="#registrationModal">Розничные покупатели</button>
+          <button type="button" class="btn btn-outline-light second-btn second-btn_active btn-choice-two">Оптовые покупатели</button>
+          <div class="mb-3">
+            <input type="text" class="form-control modal-content__input" id="firstname-opt" placeholder="Имя" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control modal-content__input" id="lastname-opt" placeholder="Фамилия" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control modal-content__input" id="city-opt" placeholder="Город" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control modal-content__input" id="mail-opt" placeholder="E-mail" required>
+          </div>
+          <div class="mb-3">
+            <input type="text" class="form-control modal-content__input" id="phone-opt" placeholder="Телефон" required>
+          </div>
+          <div class="mb-3 input-pass">
+            <input type="password" class="form-control modal-content__input" id="password-opt" placeholder="Пароль" required>
+            <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+          </div>
+          <div class="mb-3 input-pass">
+            <input type="password" class="form-control modal-content__input" id="confirm-password-opt" placeholder="Подтверждение пароля" required>
+            <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="newsletterConsent">
+            <label class="form-check-label" for="newsletterConsent">
+              Согласен на получение E-mail рассылки
+            </label>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="dataConsent">
+            <label class="form-check-label" for="dataConsent">
+              Согласен на обработку персональных данных. С <a href="#">договором публичной оферты</a> и <a href="#">политикой конфиденциальности</a> ознакомлен и принимаю.
+            </label>
+          </div>
+          <button type="button" class="btn btn-dark">Зарегистрироваться</button>
+        </div>
+      </div>
+    </div>
 
   <!-- модальное вход в личный кабинет-->
   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
@@ -634,7 +682,7 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
           <h4>Зарегестрируйтесь</h4>
           <h5 class="modal-title" id="promoModalLabel">и получите скидку на первый заказ 20%</h5>
-          <button type="button" class="btn btn-dark">Зарегистрироваться</button>
+          <button type="button" class="btn btn-dark" data-bs-dismiss="modal" aria-label="Закрыть" data-bs-toggle="modal" data-bs-target="#registrationModal">Зарегистрироваться</button>
           <p class="modal-info">* Только для розничных покупателей</p>
         </div>
       </div>
