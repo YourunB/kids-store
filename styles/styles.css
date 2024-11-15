@@ -457,7 +457,7 @@ p {
   background-color: var(--brown);
 }
 
-/*--------------------------bootstrap-modal-registratio---------------------------*/
+/*--------------------------bootstrap-modal-registration---------------------------*/
 
 .input-pass {
   position: relative;
@@ -487,15 +487,29 @@ p {
   margin-bottom: 20px;
 }
 
-.modal-content .btn {
+.modal-content .second-btn {
+  margin: auto;
   min-height: 40px;
   max-width: 234px;
   width: 100%;
   font-size: 0.875em;
   font-weight: 500;
+  border: solid 2px var(--border-gray);
+  color: var(--text-light-gray);
+  margin-bottom: 15px;
 }
 
-.modal-content input {
+.modal-content .second-btn_first {
+  background-color: var(--light-gray);
+  color: black;
+}
+
+.modal-content .second-btn_last{
+  background: none;
+  margin-bottom: 40px;
+}
+
+.modal-content .modal-content__input {
   max-width: 360px;
   width: 100%;
   padding: 14px 20px;
@@ -503,10 +517,16 @@ p {
   border-radius: 42px;
   border: solid 2px var(--border-gray);
   font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
 }
 
 .input-pass input {
   padding-right: 40px;
+}
+
+.modal-content .form-check-label {
+  font-size: 0.75em;
+  color: var(--text-light-gray);
 }
 
 /*-------------------------------------main-swiper--------------------------------*/
