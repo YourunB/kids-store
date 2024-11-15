@@ -510,7 +510,7 @@
           <img src="assets/images/svg/tg.svg" alt="Telegram">
         </a>
         <h3>Будьте в курсе наших акций и новостей</h3>
-        <button type="button" class="btn btn-outline-light">Подписаться</button>
+        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#subscribeModal">Подписаться</button>
       </div>
       <div class="footer__center">
         <div class="footer-categories">
@@ -776,6 +776,26 @@
         <button type="button" class="btn btn-dark" data-bs-dismiss="modal" aria-label="Закрыть">Заполнить договор</button>
         <p class="modal-or">Или</p>
         <button type="button" class="btn btn-dark" data-bs-dismiss="modal" aria-label="Закрыть">Перейти в каталог</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- модальное подписка-->
+  <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        <h5 class="modal-title">Подпишитесь на E-mail рассылку и получите скидку на первый заказ!</h5>
+        <div class="mb-3">
+          <input type="email" class="form-control modal-content__input" id="mail-subscribe" placeholder="E-mail" required>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="dataConsentSubscribe">
+          <label class="form-check-label" for="dataConsentSubscribe">
+            Согласен на обработку персональных данных. С <a href="#">договором публичной оферты</a> и <a href="#">политикой конфиденциальности</a> ознакомлен и принимаю.
+          </label>
+        </div>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal" aria-label="Закрыть">Подписаться</button>
       </div>
     </div>
   </div>
