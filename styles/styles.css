@@ -6,6 +6,9 @@
   --dark-gray: rgba(71, 65, 65, 1);
   --gray: rgba(0, 0, 0, 0.05);
   --text-light: white;
+  --text-light-gray: rgba(154, 154, 154, 1);
+  --light-gray: rgba(246, 246, 246, 1);
+  --border-gray: rgba(217, 217, 217, 1);
   --new: #6D956F;
   --soft-red: #C85F5F;
 }
@@ -95,17 +98,20 @@ p {
   justify-content: flex-end;
 }
 
+.header-wrapper img,
 .header-wrapper a {
+  transition: 0.5s;
   transition: 0.5s;
 }
 
 @media(hover:hover) {
-  .header-wrapper a:hover {
+  .header-wrapper img:hover {
     transform: scale(1.1);
+    cursor: pointer;
   }
 }
 
-.header-wrapper a:active {
+.header-wrapper img:active {
   transition: 0.2s;
   transform: scale(0.9);
 }
@@ -449,6 +455,58 @@ p {
 
 .btn-dark:hover {
   background-color: var(--brown);
+}
+
+/*--------------------------bootstrap-modal-registratio---------------------------*/
+
+.input-pass {
+  position: relative;
+}
+
+.input-pass__eye {
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  right: 20px;
+}
+
+.modal-content {
+  position: relative;
+  padding: 40px 80px;
+}
+
+.modal-content .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modal-content .modal-title {
+  text-align: center;
+  font-size: 1.625em;
+  margin-bottom: 20px;
+}
+
+.modal-content .btn {
+  min-height: 40px;
+  max-width: 234px;
+  width: 100%;
+  font-size: 0.875em;
+  font-weight: 500;
+}
+
+.modal-content input {
+  max-width: 360px;
+  width: 100%;
+  padding: 14px 20px;
+  background-color: var(--light-gray);
+  border-radius: 42px;
+  border: solid 2px var(--border-gray);
+  font-family: "Montserrat", sans-serif;
+}
+
+.input-pass input {
+  padding-right: 40px;
 }
 
 /*-------------------------------------main-swiper--------------------------------*/

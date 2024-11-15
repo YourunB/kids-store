@@ -64,11 +64,11 @@
       </nav>
       <a href="index.html"><img class="logo" src="assets/images/svg/logo-white.svg" alt="ZIPKIDZ"></a>
       <div class="header__indicators">
-        <a href="index.html"><img src="assets/images/svg/loop-white.svg"></a>
-        <a href="index.html"><img src="assets/images/svg/heart-white.svg"></a>
-        <a href="index.html"><img src="assets/images/svg/basket-white.svg"></a>
-        <a href="index.html"><span>RU</span><img src="assets/images/svg/carret-white.svg"></a>
-        <a href="index.html"><img src="assets/images/svg/user-white.svg"></a>
+        <a href="index.html"><img src="assets/images/svg/loop-white.svg" alt="Лупа"></a>
+        <a href="index.html"><img src="assets/images/svg/heart-white.svg" alt="Сердце"></a>
+        <img src="assets/images/svg/basket-white.svg" alt="Корзина" data-bs-toggle="modal" data-bs-target="#registrationModal">
+        <a href="index.html"><span>RU</span><img src="assets/images/svg/carret-white.svg" alt="Стрелочка"></a>
+        <a href="index.html"><img src="assets/images/svg/user-white.svg" alt="Пользователь"></a>
       </div>
     </div>
   </header>
@@ -554,6 +554,40 @@
       </div>
     </div>
   </footer>
+
+  <!-- Модальное окно регистрации-->
+  <div class="modal fade" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        
+        <h5 class="modal-title" id="registrationModalLabel">Регистрация</h5>
+
+        <button type="button" class="btn btn-outline-light">Розничные покупатели</button>
+        <button type="button" class="btn btn-outline-light">Оптовые покупатели</button>
+        
+        <div class="mb-3">
+          <input type="text" class="form-control" id="firstname" placeholder="Имя" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" id="lastname" placeholder="Фамилия" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" id="phone" placeholder="Телефон" required>
+        </div>
+        <div class="mb-3 input-pass">
+          <input type="password" class="form-control" id="password" placeholder="Пароль" required>
+          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+        </div>
+        <div class="mb-3 input-pass">
+          <input type="password" class="form-control" id="confirm-password" placeholder="Подтверждение пароля" required>
+          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+        </div>
+      </div>
+
+    </div>
+  </div>
 
   <script src="scripts/swiper/main-swiper.js"></script>
   <script src="scripts/swiper/five-swiper.js"></script>
