@@ -592,7 +592,7 @@
             Согласен на обработку персональных данных. С <a href="#">договором публичной оферты</a> и <a href="#">политикой конфиденциальности</a> ознакомлен и принимаю.
           </label>
         </div>
-        <button type="button" class="btn btn-dark" data-bs-dismiss="modal" aria-label="Закрыть">Зарегистрироваться</button>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal" aria-label="Закрыть" data-bs-toggle="modal" data-bs-target="#successModal">Зарегистрироваться</button>
       </div>
     </div>
   </div>
@@ -687,6 +687,18 @@
         </div>
       </div>
     </div>
+
+        <!-- модальное успешная регистрация -->
+        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+              <h5 class="modal-title" id="promoModalLabel">Вы успешно зарегистрированы!</h5>
+              <p class="modal-info">Ваша скидка 20% на первую покупку</p>
+              <button type="button" class="btn btn-dark" data-bs-dismiss="modal" aria-label="Закрыть">Начать покупки</button>
+            </div>
+          </div>
+        </div>
 
   <script src="scripts/swiper/main-swiper.js"></script>
   <script src="scripts/swiper/five-swiper.js"></script>
