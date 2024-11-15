@@ -138,6 +138,8 @@ p {
 }
 
 .header-def {
+  position: sticky;
+  top: 0;
   background: white;
   color: black;
   border-bottom: solid 1px var(--smok-gray);
