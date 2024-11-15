@@ -436,9 +436,19 @@ p {
 .btn {
   border-radius: 77px;
   min-height: 70px;
-  min-width: 300px;
+  max-width: 360px;
+  width: 100%;
   font-size: 1em;
   font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.btn-dark {
+  background-color: var(--dark-gray);
+}
+
+.btn-dark:hover {
+  background-color: var(--brown);
 }
 
 /*-------------------------------------main-swiper--------------------------------*/
@@ -705,7 +715,8 @@ p {
 .footer .btn {
   border-radius: 69px;
   min-height: 70px;
-  min-width: 277px;
+  max-width: 277px;
+  width: 100%;
   font-family: "Montserrat", sans-serif;
 }
 
