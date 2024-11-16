@@ -2,7 +2,7 @@ const btnTop = document.querySelector('.btn-top');
 
 let timeout;
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', () => {
   clearTimeout(timeout);
   timeout = setTimeout(() => {
     window.scrollY > 200 ? btnTop.classList.add('btn-top_show') : btnTop.classList.remove('btn-top_show');
