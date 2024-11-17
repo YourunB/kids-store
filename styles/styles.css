@@ -419,6 +419,8 @@ p {
 
 .card-additional {
   position: absolute;
+  width: 100%;
+  z-index: 9;
   left: 0;
   top: 100%;
   background-color: white;
@@ -683,6 +685,67 @@ p {
   font-weight: 500;
   font-size: 0.875em;
   color: var(--text-light);
+}
+
+.catalog__card:nth-of-type(1) {
+  z-index: 20;
+}
+.catalog__card:nth-of-type(2) {
+  z-index: 19;
+}
+.catalog__card:nth-of-type(3) {
+  z-index: 18;
+}
+.catalog__card:nth-of-type(4) {
+  z-index: 17;
+}
+.catalog__card:nth-of-type(5) {
+  z-index: 16;
+}
+.catalog__card:nth-of-type(6) {
+  z-index: 15;
+}
+.catalog__card:nth-of-type(7) {
+  z-index: 14;
+}
+.catalog__card:nth-of-type(8) {
+  z-index: 13;
+}
+.catalog__card:nth-of-type(9) {
+  z-index: 12;
+}
+.catalog__card:nth-of-type(10) {
+  z-index: 11;
+}
+.catalog__card:nth-of-type(11) {
+  z-index: 10;
+}
+.catalog__card:nth-of-type(12) {
+  z-index: 9;
+}
+.catalog__card:nth-of-type(13) {
+  z-index: 8;
+}
+.catalog__card:nth-of-type(14) {
+  z-index: 7;
+}
+.catalog__card:nth-of-type(15) {
+  z-index: 6;
+}
+.catalog__card:nth-of-type(16) {
+  z-index: 5;
+}
+.catalog__card:nth-of-type(17) {
+  z-index: 4;
+}
+.catalog__card:nth-of-type(18) {
+  z-index: 3;
+}
+.catalog__card:nth-of-type(19) {
+  z-index: 2;
+}
+.catalog__card:nth-of-type(20) {
+  z-index: 1;
 }
 
 /*------------------------------------------section-------------------------------*/
