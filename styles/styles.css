@@ -450,6 +450,10 @@ p {
   .catalog__card:hover {
     box-shadow: 0px 0px 13.8px 0px rgba(0, 0, 0, 0.23);
   }
+
+  .catalog__card:hover .card-colors {
+    opacity: 0;
+  }
 }
 
 .catalog .card-slider__images {
@@ -497,6 +501,8 @@ p {
   z-index: 10;
   background: white;
   padding: 15px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .catalog__card:hover .card-additional {
