@@ -560,6 +560,20 @@ p {
   }
 }
 
+.card-additional__color-name,
+.card-additional__size-name {
+  font-size: 0.875em;
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-additional__color-name span,
+.card-additional__size-name span {
+  color: var(--soft-red);
+}
+
 /*------------------------------------------section-------------------------------*/
 
 .section h2 {
