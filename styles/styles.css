@@ -139,7 +139,7 @@ p {
 
 .header-def {
   position: sticky;
-  z-index: 20;
+  z-index: 100;
   top: 0;
   background: white;
   color: black;
