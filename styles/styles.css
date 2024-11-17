@@ -346,7 +346,15 @@ p {
 
 /*------------------------------------------catalog-------------------------------*/
 
+.catalog {
+  display: grid;
+  grid-template-columns: 1fr 3fr
+}
 
+.catalog-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
 /*------------------------------------------card----------------------------------*/
 
