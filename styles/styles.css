@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-  --brown: #643F36;
-  --light-gray: #E9EBEC;
+  --brown: rgb(100, 63, 54);
+  --light-gray: rgb(233, 235, 236);
   --dark-gray: rgba(71, 65, 65, 1);
   --gray: rgba(0, 0, 0, 0.05);
-  --text-light: white;
+  --text-light: rgb(255, 255, 255);
   --text-light-gray: rgba(154, 154, 154, 1);
   --smok-gray: rgba(192, 192, 192, 1);
   --light-gray: rgba(246, 246, 246, 1);
   --border-gray: rgba(217, 217, 217, 1);
-  --new: #6D956F;
-  --soft-red: #C85F5F;
+  --new: rgb(110, 150, 112);
+  --soft-red: rgb(200, 95, 95);
 }
 
 html {
@@ -543,6 +543,21 @@ p {
 .card-additional__controls__count img:active {
   transition: 0.2s;
   transform: scale(0.8);
+}
+
+.card-additional__controls__btn {
+  background-color: var(--brown);
+  color: white;
+  width: 50%;
+  border-radius: none;
+  border: none;
+  transition: 0.5s;
+}
+
+@media(hover:hover) {
+  .card-additional__controls__btn:hover {
+    background-color: rgb(159, 101, 87);
+  }
 }
 
 /*------------------------------------------section-------------------------------*/
