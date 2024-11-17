@@ -60,6 +60,14 @@
   .header__indicators {
     width: 100%;
   }
+  
+  .catalog-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .subcatalog {
+    grid-column: span 2;
+  }
 }
 
 @media (max-width: 991px) {
