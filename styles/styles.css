@@ -482,31 +482,6 @@ p {
   border-radius: 100%;
 }
 
-.card-colors span:nth-of-type(1) {
-  background-color: #CAA26D;
-}
-.card-colors span:nth-of-type(2) {
-  background-color: #D3CAC5;
-}
-.card-colors span:nth-of-type(3) {
-  background-color: black;
-}
-.card-colors span:nth-of-type(4) {
-  background-color: #84848C;
-}
-.card-colors span:nth-of-type(5) {
-  background-color: #E6C7C4;
-}
-.card-colors span:nth-of-type(6) {
-  background-color: #E26E34;
-}
-.card-colors span:nth-of-type(7) {
-  background-color: #BACEDE;
-}
-.card-colors span:nth-of-type(8) {
-  background-color: #A0825C;
-}
-
 .card-additional__controls {
   width: 100%;
   display: flex;
@@ -572,6 +547,97 @@ p {
 .card-additional__color-name span,
 .card-additional__size-name span {
   color: var(--soft-red);
+}
+
+.color-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.color-box input {
+  display: none;
+}
+
+.color-box label {
+  display: block;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border-width: 2px;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.color-box label span {
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4);
+}
+
+@media (hover:hover) {
+  .color-box label:hover {
+    transform: scale(1.2);
+  }
+}
+
+.color-box label:active {
+  transition: 0.2;
+  transform: scale(0.8);
+}
+
+.color-box label span {
+  border: solid 2px white;
+  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+.color-box label:nth-of-type(1),
+.card-colors span:nth-of-type(1) {
+  background-color: #CAA26D;
+  border-color: #CAA26D;
+}
+.color-box label:nth-of-type(2),
+.card-colors span:nth-of-type(2) {
+  background-color: #D3CAC5;
+  border-color: #D3CAC5;
+}
+.color-box label:nth-of-type(3),
+.card-colors span:nth-of-type(3) {
+  background-color: rgb(182, 51, 51);
+  border-color: rgb(182, 51, 51);
+}
+.color-box label:nth-of-type(4),
+.card-colors span:nth-of-type(4) {
+  background-color: #84848C;
+  border-color: #84848C;
+}
+.color-box label:nth-of-type(5),
+.card-colors span:nth-of-type(5) {
+  background-color: #E6C7C4;
+  border-color: #E6C7C4;
+}
+.color-box label:nth-of-type(6),
+.card-colors span:nth-of-type(6) {
+  background-color: #E26E34;
+  border-color: #E26E34;
+}
+.color-box label:nth-of-type(7),
+.card-colors span:nth-of-type(7) {
+  background-color: #BACEDE;
+  border-color: #BACEDE;
+}
+.color-box label:nth-of-type(8),
+.card-colors span:nth-of-type(8) {
+  background-color: #A0825C;
+  border-color: #A0825C;
+}
+
+.color-box input:checked + label {
+  border-color: black;
 }
 
 /*------------------------------------------section-------------------------------*/
