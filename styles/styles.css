@@ -406,6 +406,29 @@ p {
 .card-price {
   font-size: 1.625em;
   font-weight: 600;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.card-price__discont {
+  color: var(--soft-red);
+}
+
+.card-price__old-price {
+  font-weight: 400;
+  text-decoration: line-through;
+  color: var(--text-light-gray);
+}
+
+.card-price__procent {
+  font-weight: 400;
+  font-size: 1.125rem;
+  display: block;
+  background-color: var(--soft-red);
+  color: var(--text-light);
+  border-radius: 93px;
+  padding: 3px 8px;
 }
 
 .card-colors {
