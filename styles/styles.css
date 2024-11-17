@@ -646,6 +646,41 @@ p {
   gap: 10px;
 }
 
+.size-box input {
+  display: none;
+}
+
+.size-box label {
+  cursor: pointer;
+  width: 45px;
+  height: 35px;
+  border: solid 1px white;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  transition: 0.5s;
+}
+
+.size-box input:checked + label {
+  background-color: var(--brown);
+  color: var(--text-light);
+}
+
+@media (hover:hover) {
+  .size-box  label:hover {
+    transform: scale(1.1);
+  }
+}
+
+.size-box  label:active {
+  transition: 0.2;
+  transform: scale(0.9);
+}
+
+
 /*------------------------------------------section-------------------------------*/
 
 .section h2 {
