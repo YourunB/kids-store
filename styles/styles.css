@@ -356,6 +356,19 @@ p {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.subcatalog {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.subcatalog .catalog__card {
+  max-width: 100%;
+}
+
+.subcatalog .catalog .card-slider__images {
+  height: 645px;
+}
 /*------------------------------------------card----------------------------------*/
 
 .catalog__card {
