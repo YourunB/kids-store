@@ -441,59 +441,108 @@ p {
 
 .catalog__card {
   max-width: 420px;
+  position: relative;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 15px;
+  transition: 0.5s;
+}
+
+@media(hover:hover) {
+  .catalog__card:hover {
+    box-shadow: 0px 0px 13.8px 0px rgba(0, 0, 0, 0.23);
+  }
 }
 
 .catalog .card-slider__images {
   height: 540px;
 }
 
-.catalog__card__description {
+.card-description {
   font-size: 1.25em;
   margin: 10px 0;
   height: 60px;
   overflow-y: auto;
 }
 
-.catalog__card__price {
+.card-price {
   font-size: 1.625em;
   font-weight: 600;
 }
 
-.catalog__card__colors {
+.card-colors {
   display: flex;
   gap: 5px;
 }
 
-.catalog__card__colors span {
+.card-colors span {
   display: block;
   width: 10px;
   height: 10px;
   border-radius: 100%;
 }
 
-.catalog__card__colors span:nth-of-type(1) {
+.card-colors span:nth-of-type(1) {
   background-color: #CAA26D;
 }
-.catalog__card__colors span:nth-of-type(2) {
+.card-colors span:nth-of-type(2) {
   background-color: #D3CAC5;
 }
-.catalog__card__colors span:nth-of-type(3) {
+.card-colors span:nth-of-type(3) {
   background-color: black;
 }
-.catalog__card__colors span:nth-of-type(4) {
+.card-colors span:nth-of-type(4) {
   background-color: #84848C;
 }
-.catalog__card__colors span:nth-of-type(5) {
+.card-colors span:nth-of-type(5) {
   background-color: #E6C7C4;
 }
-.catalog__card__colors span:nth-of-type(6) {
+.card-colors span:nth-of-type(6) {
   background-color: #E26E34;
 }
-.catalog__card__colors span:nth-of-type(7) {
+.card-colors span:nth-of-type(7) {
   background-color: #BACEDE;
 }
-.catalog__card__colors span:nth-of-type(8) {
+.card-colors span:nth-of-type(8) {
   background-color: #A0825C;
+}
+
+.card-additional__controls {
+  width: 100%;
+  display: flex;
+  height: 60px;
+}
+
+.card-additional__controls__count {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25em;
+  gap: 15%;
+  user-select: none;
+  background-color: var(--light-gray);
+}
+
+.card-additional__controls__count span {
+  margin: 0;
+  font-size: 1.25em;
+}
+
+.card-additional__controls__count img {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+@media (hover:hover) {
+  .card-additional__controls__count img:hover {
+    transform: scale(1.4);
+  }
+}
+
+.card-additional__controls__count img:active {
+  transition: 0.2s;
+  transform: scale(0.8);
 }
 
 /*------------------------------------------section-------------------------------*/
