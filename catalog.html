@@ -191,8 +191,8 @@
                 </div>
               </div>
             </div>
-            <div class="filters__filter" id="bth-color-filters">Цвет <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨">
-              <div class="select-list select-list_colors select-list_open" id="color-filters">
+            <div class="filters__filter" id="btn-color-filters">Цвет <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨">
+              <div class="select-list select-list_colors" id="color-filters">
                 <p class="filter-name" id="btn-colors">Цвет <span class="filter-count">(1)x</span> <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨">
                 <p class="select-list__selected">Выбрано: <span>серый</span></p>
                 <div class="select-box">
@@ -265,10 +265,41 @@
                 </div>
               </div>
             </div>
-            <div class="filters__filter">Сезон <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨"></div>
+            <div class="filters__filter" id="btn-season-filters">Сезон <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨">
+              <div class="select-list select-list_default" id="season-filters">
+                <p class="filter-name" id="btn-season">Размер <span class="filter-count">(2)x</span> <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨">
+                <!--<p class="select-list__selected">Выбрано: <span>демисезон;</span></p>-->
+                <div class="select-box">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="season1">
+                    <label class="form-check-label" for="season1">
+                      демисезон
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="season2">
+                    <label class="form-check-label" for="season2">
+                      зима
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="season3">
+                    <label class="form-check-label" for="season3">
+                      лето
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="season4">
+                    <label class="form-check-label" for="season4">
+                      круглогодичный
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="sorts">
-            <p class="sorts__sort">Сортировка <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨"></p>
+            <div class="sorts__sort">Сортировка <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨"></div>
             <img class="sorts__image" src="assets/images/svg/sort-a.svg" alt="Отображение">
             <img class="sorts__image" src="assets/images/svg/sort-b.svg" alt="Отображение">
           </div>
