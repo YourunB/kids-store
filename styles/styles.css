@@ -782,6 +782,59 @@ p {
   z-index: 1;
 }
 
+/*--------------------------------------side-menu---------------------------------*/
+
+.side-menu {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 1.25em;
+}
+
+.carret,
+.carret-bold {
+  transform: rotate(180deg);
+}
+
+.side-menu__item_open .carret,
+.side-menu__item_open .carret-bold {
+  transform: rotate(0);
+}
+
+.carret-bold {
+  display: none;
+}
+
+.side-menu__item_open .carret {
+  display: none;
+}
+
+.side-menu__item_open .carret-bold {
+  display: inline-block;
+}
+
+.side-menu__item {
+  cursor: pointer;
+}
+
+.side-menu__item_open {}
+
+.side-submenu {
+  font-size: 0.8em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-submenu__item {
+  font-weight: 400;
+}
+
+.side-menu__item_checked,
+.side-submenu__item_checked {
+  font-weight: 600;
+}
+
 /*------------------------------------------section-------------------------------*/
 
 .section h2 {
