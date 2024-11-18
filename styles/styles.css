@@ -477,7 +477,7 @@ p {
   font-size: 0.875em;
   font-weight: 400;
   overflow-y: auto;
-  height: 260px;
+  max-height: 260px;
 }
 
 .select-list .carret {
