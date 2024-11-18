@@ -486,6 +486,10 @@ p {
   background-color: var(--brown);
 }
 
+.select-list_colors .form-check:nth-of-type(1) .form-check-input {
+  background-color: rgba(211, 202, 197, 1);
+}
+
 /*------------------------------------------card----------------------------------*/
 
 .catalog__card {
