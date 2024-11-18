@@ -432,6 +432,47 @@ p {
   transform: rotate(180deg);
 }
 
+.filter-count {
+  color: var(--smok-gray);
+  pointer-events: none;
+}
+
+.select-list {
+  display: none;
+  position: absolute;
+  transform: translateX(-10px);
+  z-index: 80;
+  padding: 8px 20px 20px 20px;
+  background: white;
+  border-radius: 20px;
+  max-width: 245px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0px 0px 13.8px 0px rgba(0, 0, 0, 0.23);
+}
+
+.select-list__selected {
+  font-size: 0.875em;
+  font-weight: 400;
+  color: var(--smok-gray);
+  padding-bottom: 20px;
+}
+
+.select-list__selected span {
+  color: black;
+}
+
+.select-list_open {
+  display: block;
+}
+
+.select-box {
+  font-size: 0.875em;
+  font-weight: 400;
+  overflow-y: auto;
+  height: 260px;
+}
+
 /*------------------------------------------card----------------------------------*/
 
 .catalog__card {
