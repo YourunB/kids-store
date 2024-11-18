@@ -373,11 +373,19 @@ p {
   height: 645px;
 }
 
-/*----------------------------------------filters---------------------------------*/
+/*-----------------------------------filters-and-sorts---------------------------------*/
 
 .sort-top {
   grid-column: span 3;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sort-top p {
+  margin: 0;
 }
 
 .filters {
@@ -389,9 +397,34 @@ p {
   gap: 10px;
 }
 
-.filters__filter {
+.filters__filter,
+.sorts__sort {
   font-size: 1.125em;
   font-weight: 400;
+  cursor: pointer;
+}
+
+.sorts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.sorts__image {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+@media (hover:hover) {
+  .sorts__image:hover {
+    transform: scale(1.2);
+  }
+}
+
+.sorts__image:active {
+  transition: 0.2s;
+  transform: scale(0.8);
 }
 
 .filters__filter .carret {
