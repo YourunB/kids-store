@@ -365,17 +365,37 @@ p {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.sort-box {
-  grid-column: span 3;
-  width: 100%;
-}
-
 .subcatalog .catalog__card {
   max-width: 100%;
 }
 
 .catalog .subcatalog .card-slider__images {
   height: 645px;
+}
+
+/*----------------------------------------filters---------------------------------*/
+
+.sort-top {
+  grid-column: span 3;
+  width: 100%;
+}
+
+.filters {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.filters__filter {
+  font-size: 1.125em;
+  font-weight: 400;
+}
+
+.filters__filter .carret {
+  transform: rotate(180deg);
 }
 
 /*------------------------------------------card----------------------------------*/
