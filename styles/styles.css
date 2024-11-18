@@ -346,10 +346,11 @@ p {
 
 /*------------------------------------------catalog-------------------------------*/
 
-.catalog {
+.catalog.block {
   display: grid;
   gap: 5px;
-  grid-template-columns: 1fr 3fr
+  grid-template-columns: 1fr 3fr;
+  padding-top: 20px;
 }
 
 .catalog-wrapper {
@@ -362,6 +363,11 @@ p {
   display: grid;
   gap: 5px;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.sort-box {
+  grid-column: span 3;
+  width: 100%;
 }
 
 .subcatalog .catalog__card {
