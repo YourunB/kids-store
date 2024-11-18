@@ -791,30 +791,29 @@ p {
   font-size: 1.25em;
 }
 
-.carret,
-.carret-bold {
+.carret {
+  transition: 0.3s;
   transform: rotate(180deg);
 }
 
-.side-menu__item_open .carret,
-.side-menu__item_open .carret-bold {
+.side-menu__item_open .carret {
   transform: rotate(0);
 }
 
-.carret-bold {
-  display: none;
-}
-
 .side-menu__item_open .carret {
-  display: none;
-}
-
-.side-menu__item_open .carret-bold {
   display: inline-block;
 }
 
 .side-menu__item {
+  margin-bottom: 20px;
+}
+
+.side-menu__item span {
   cursor: pointer;
+}
+
+.side-menu__item:last-of-type {
+  margin-bottom: 0;
 }
 
 .side-menu__item_open {}
