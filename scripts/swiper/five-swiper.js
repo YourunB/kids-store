@@ -1,5 +1,5 @@
 const swiperFive = new Swiper('.swiper-container', {
-  slidesPerView: 5, // Показываем 5 слайдов
+  slidesPerView: 1, // Показываем 5 слайдов
   spaceBetween: 10, // Расстояние между слайдами
   freeMode: true,   // Без циклической прокрутки
   loop: false,      // Без бесконечной прокрутки

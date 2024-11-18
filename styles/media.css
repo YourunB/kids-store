@@ -65,7 +65,8 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .subcatalog {
+  .subcatalog,
+  .sort-top {
     grid-column: span 2;
   }
 }
@@ -88,6 +89,25 @@
   .categories__card:nth-of-type(4),
   .categories__card:nth-of-type(5) {
     height: 300px;
+  }
+
+  .catalog.block {
+    display: block;
+  }
+
+  .side-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .side-menu__item {
+    margin: 0;
+  }
+
+  .bread-crumbs {
+    margin-bottom: 20px;
   }
 }
 
