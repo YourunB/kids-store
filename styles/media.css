@@ -151,6 +151,25 @@
     gap: 10px;
   }
 
+  .catalog-wrapper {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .catalog-wrapper .catalog__card {
+    margin: auto;
+    width: 100%;
+  }
+
+  .subcatalog {
+    grid-template-columns: 1fr;
+  }
+
+  .subcatalog,
+  .sort-top {
+    grid-column: span 1;
+  }
+
   .footer__center {
     margin-bottom: 50px;
   }
