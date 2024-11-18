@@ -871,19 +871,23 @@ p {
 
 .side-menu__item span {
   cursor: pointer;
+  pointer-events: none;
 }
 
 .side-menu__item:last-of-type {
   margin-bottom: 0;
 }
 
-.side-menu__item_open {}
-
 .side-submenu {
   font-size: 0.8em;
   list-style: none;
   margin: 0;
   padding: 0;
+  display: none;
+}
+
+.side-menu__item_open .side-submenu {
+  display: block;
 }
 
 .side-submenu__item {
