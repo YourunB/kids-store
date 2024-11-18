@@ -867,10 +867,10 @@ p {
 
 .side-menu__item {
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .side-menu__item span {
-  cursor: pointer;
   pointer-events: none;
 }
 
