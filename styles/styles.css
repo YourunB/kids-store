@@ -61,6 +61,7 @@ p {
   max-width: 1920px;
   width: 100%;
   margin: auto;
+  overflow-x: hidden;
 }
 
 /*------------------------------------------header--------------------------------*/
@@ -262,7 +263,6 @@ p {
 .swiper-container {
   width: 100%;
   padding: 10px;
-  overflow-x: hidden;
 }
 
 .swiper-container .swiper-slide {
@@ -1445,6 +1445,10 @@ p {
 
 .block {
   padding: 70px;
+}
+
+.block_last {
+  padding-bottom: 300px;
 }
 
 /*---------------------------------------btn-to-top-----------------------------*/
