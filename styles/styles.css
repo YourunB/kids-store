@@ -789,6 +789,7 @@ p {
   padding: 0;
   list-style-type: none;
   font-size: 1.25em;
+  min-width: 270px;
 }
 
 .carret {
@@ -832,6 +833,22 @@ p {
 .side-menu__item_checked,
 .side-submenu__item_checked {
   font-weight: 600;
+}
+
+/*-----------------------------------------bread-crumbs---------------------------*/
+
+.bread-crumbs {
+  display: flex;
+  gap: 3px;
+  flex-wrap: wrap;
+  font-size: 1.125em;
+  font-weight: 400;
+  color: var(--smok-gray);
+  margin-bottom: 40px;
+}
+
+.bread-crumbs__current {
+  color: black;
 }
 
 /*------------------------------------------section-------------------------------*/
