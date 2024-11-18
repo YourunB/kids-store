@@ -477,7 +477,12 @@ p {
   transform: rotate(0);
 }
 
-.select-list .form-check-input {
+.form-check-input,
+.form-check-label {
+  cursor: pointer;
+}
+
+.select-list_default .form-check-input:checked {
   background-color: var(--brown);
 }
 
