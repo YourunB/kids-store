@@ -994,6 +994,18 @@ p {
   font-weight: 600;
 }
 
+.sorts__sort input {
+  display: none;
+}
+
+.sorts__sort .form-check-label span {
+  display: none;
+}
+
+.sorts__sort input:checked + .form-check-label span {
+  display: inline-block;
+}
+
 /*-----------------------------------------bread-crumbs---------------------------*/
 
 .bread-crumbs {

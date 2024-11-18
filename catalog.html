@@ -299,7 +299,43 @@
             </div>
           </div>
           <div class="sorts">
-            <div class="sorts__sort">Сортировка <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨"></div>
+            <div class="sorts__sort" id="btn-sort-select">Сортировка <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨">
+              <div class="select-list select-list_default" id="sort-filters">
+                <p class="filter-name" id="btn-sort">Сортировка <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨">
+                <div class="select-box">
+                  <div class="form-check">
+                    <input class="form-check-input" name="sorting" type="radio" id="sort1">
+                    <label class="form-check-label" for="sort1">
+                      по умолчанию <span>&#10003;</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" name="sorting" type="radio" id="sort2">
+                    <label class="form-check-label" for="sort2">
+                      по возрастанию цены <span>&#10003;</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" name="sorting" type="radio" id="sort3">
+                    <label class="form-check-label" for="sort3">
+                      по убыванию цены <span>&#10003;</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" name="sorting" type="radio" id="sort4">
+                    <label class="form-check-label" for="sort4">
+                      по популярности <span>&#10003;</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" name="sorting" type="radio" id="sort5">
+                    <label class="form-check-label" for="sort5">
+                      по новизне <span>&#10003;</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
             <img class="sorts__image" src="assets/images/svg/sort-a.svg" alt="Отображение">
             <img class="sorts__image" src="assets/images/svg/sort-b.svg" alt="Отображение">
           </div>
