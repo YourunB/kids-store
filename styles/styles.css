@@ -1706,6 +1706,34 @@ p {
   margin-top: 20px;
 }
 
+.product-controls {
+  display: flex;
+  height: 54px;
+  max-width: 338px;
+  width: 100%;
+}
+
+.product-controls__left {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  background-color: var(--light-gray);
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+
+.product-controls__right {
+  background-color: var(--brown);
+  cursor: pointer;
+  color: var(--text-light);
+  border: none;
+  width: 50%;
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
 /*--------------------------------vertical-swiper-------------------------------*/
 
 .vertical-swiper {
