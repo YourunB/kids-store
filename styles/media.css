@@ -1,3 +1,13 @@
+@media (max-width:1720px) {
+  .catalog-wrapper-many {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .catalog-wrapper-many .sort-top {
+    grid-column: span 3;
+  }
+}
+
 @media (max-width: 1700px) {
   .categories {
     font-size: 12px;
@@ -39,6 +49,16 @@
   
   .footer__center {
     margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .catalog-wrapper-many {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .catalog-wrapper-many .sort-top {
+    grid-column: span 2;
   }
 }
 
@@ -167,6 +187,14 @@
 
   .subcatalog,
   .sort-top {
+    grid-column: span 1;
+  }
+
+  .catalog-wrapper-many {
+    grid-template-columns: 1fr;
+  }
+  
+  .catalog-wrapper-many .sort-top {
     grid-column: span 1;
   }
 
