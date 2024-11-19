@@ -1761,6 +1761,12 @@ p {
   }
 }
 
+.sliders-box__content__warn {
+  color: var(--soft-red);
+  font-weight: 400;
+  font-size: 1em;
+}
+
 /*--------------------------------vertical-swiper-------------------------------*/
 
 .vertical-swiper {
