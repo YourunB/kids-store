@@ -389,6 +389,45 @@ p {
   height: 400px;
 }
 
+.catalog-wrapper-many .pages {
+  grid-column: span 4;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 1.25em;
+  font-weight: 500;
+  margin-top: 60px;
+}
+
+.pages__item {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  user-select: none;
+}
+
+@media(hover:hover) {
+  .pages__item:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+}
+
+.pages__item:active {
+  transition: 0.2s;
+  transform: scale(0.8);
+}
+
+.pages__item_active {
+  background-color: var(--light-gray);
+}
+
 /*-----------------------------------filters-and-sorts---------------------------------*/
 
 .sort-top {

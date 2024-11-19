@@ -3,7 +3,8 @@
     grid-template-columns: repeat(3, 1fr);
   }
   
-  .catalog-wrapper-many .sort-top {
+  .catalog-wrapper-many .sort-top,
+  .catalog-wrapper-many .pages {
     grid-column: span 3;
   }
 }
@@ -57,7 +58,8 @@
     grid-template-columns: repeat(2, 1fr);
   }
   
-  .catalog-wrapper-many .sort-top {
+  .catalog-wrapper-many .sort-top,
+  .catalog-wrapper-many .pages {
     grid-column: span 2;
   }
 }
@@ -188,7 +190,8 @@
 
   .subcatalog,
   .sort-top,
-  .catalog-wrapper-many .sort-top {
+  .catalog-wrapper-many .sort-top,
+  .catalog-wrapper-many .pages {
     grid-column: span 1;
   }
 
