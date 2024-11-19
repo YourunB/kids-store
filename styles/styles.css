@@ -1649,7 +1649,8 @@ p {
 .vertical-swiper .swiper-slide {
   width: 164px;
   height: 219px;
-  background: yellow;
+  background-color: var(--light-gray);
+  border-radius: 20px;
   margin-bottom: 10px;
 }
 
