@@ -1778,7 +1778,8 @@ p {
   border-radius: 20px;
 }
 
-.vertical-swiper-wrapper .swiper-button-disabled {
+.vertical-swiper-wrapper .swiper-button-disabled,
+.mini-swiper-wrapper .swiper-button-disabled {
   display: none !important;
 }
 

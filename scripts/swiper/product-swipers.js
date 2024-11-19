@@ -13,7 +13,7 @@ const swiperVertical = new Swiper('.vertical-swiper', {
 
 const swiperMini = new Swiper('.mini-swiper', {
   direction: 'horizontal',  
-  slidesPerView: 4,
+  slidesPerView: 5,
   spaceBetween: 10,
   freeMode: true,
   loop: false,
