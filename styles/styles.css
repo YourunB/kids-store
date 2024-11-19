@@ -1639,11 +1639,11 @@ p {
 /*---------------------------------------sldiers-box----------------------------*/
 
 .vertical-swiper {
-  border: solid 1px red;
   width: 165px;
   height: 800px; 
   overflow: hidden;
   position: relative;
+  user-select: none;
 }
 
 .vertical-swiper .swiper-slide {
@@ -1654,34 +1654,46 @@ p {
   margin-bottom: 10px;
 }
 
-.vertical-swiper .swiper-button-disabled {
+.vertical-swiper-wrapper .swiper-button-disabled {
   display: none !important;
 }
 
-.vertical-swiper .swiper-button-next {
+.vertical-swiper-wrapper .swiper-button-next {
   position: absolute;
-  top: calc(100% - 15px);
+  top: calc(100% + 25px);
   left: calc(50% - 15px);
   rotate: 90deg;
 }
 
-.vertical-swiper .swiper-button-prev {
+.vertical-swiper-wrapper .swiper-button-prev {
   position: absolute;
-  top: 30px;
+  top: -15px;
   left: calc(50% - 15px);
   rotate: 90deg;
 }
 
-.vertical-swiper .swiper-button-next,
-.vertical-swiper .swiper-button-prev {
+.vertical-swiper-wrapper .swiper-button-next,
+.vertical-swiper-wrapper .swiper-button-prev {
   width: 30px;
   height: 30px;
 }
 
-.vertical-swiper .swiper-button-next:after,
-.vertical-swiper .swiper-button-prev::after {
+.vertical-swiper-wrapper .swiper-button-next:after,
+.vertical-swiper-wrapper .swiper-button-prev::after {
   font-size: 30px;
   color: var(--smok-gray);
+}
+
+.vertical-swiper .swiper-slide__image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.vertical-swiper-wrapper {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
 }
 
 /*---------------------------------------btn-to-top-----------------------------*/
