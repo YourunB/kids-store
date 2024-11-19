@@ -952,6 +952,13 @@ p {
   transform: scale(0.9);
 }
 
+.size-box input:disabled + label {
+  opacity: 0.5;
+  cursor: default;
+  transform: scale(1);
+  pointer-events: none;
+}
+
 .card-heart {
   position: absolute;
   z-index: 10;
