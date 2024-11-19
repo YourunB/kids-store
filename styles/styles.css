@@ -1636,6 +1636,53 @@ p {
   padding-bottom: 300px;
 }
 
+/*---------------------------------------sldiers-box----------------------------*/
+
+.vertical-swiper {
+  border: solid 1px red;
+  width: 165px;
+  height: 800px; 
+  overflow: hidden;
+  position: relative;
+}
+
+.vertical-swiper .swiper-slide {
+  width: 164px;
+  height: 219px;
+  background: yellow;
+  margin-bottom: 10px;
+}
+
+.vertical-swiper .swiper-button-disabled {
+  display: none !important;
+}
+
+.vertical-swiper .swiper-button-next {
+  position: absolute;
+  top: calc(100% - 15px);
+  left: calc(50% - 15px);
+  rotate: 90deg;
+}
+
+.vertical-swiper .swiper-button-prev {
+  position: absolute;
+  top: 30px;
+  left: calc(50% - 15px);
+  rotate: 90deg;
+}
+
+.vertical-swiper .swiper-button-next,
+.vertical-swiper .swiper-button-prev {
+  width: 30px;
+  height: 30px;
+}
+
+.vertical-swiper .swiper-button-next:after,
+.vertical-swiper .swiper-button-prev::after {
+  font-size: 30px;
+  color: var(--smok-gray);
+}
+
 /*---------------------------------------btn-to-top-----------------------------*/
 
 .btn-top {
