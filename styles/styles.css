@@ -1628,6 +1628,10 @@ p {
   padding: 70px;
 }
 
+.block-first {
+  padding-top: 20px;
+}
+
 .block_last {
   padding-bottom: 300px;
 }
