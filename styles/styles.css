@@ -1719,6 +1719,10 @@ p {
   margin-bottom: 24px;
 }
 
+.spec-content__description_hide {
+  display: none;
+}
+
 .spec-content__show-hide {
   display: block;
   width: fit-content;
