@@ -6,7 +6,20 @@ const swiperVertical = new Swiper('.vertical-swiper', {
   loop: false,
   //grabCursor: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    prevEl: '.vertical-button-prev',
+    nextEl: '.vertical-button-next',
+  }
+});
+
+const swiperMini = new Swiper('.mini-swiper', {
+  direction: 'horizontal',  
+  slidesPerView: 4,
+  spaceBetween: 10,
+  freeMode: true,
+  loop: false,
+  //grabCursor: true,
+  navigation: {
+    prevEl: '.mini-button-prev',
+    nextEl: '.mini-button-next',
   }
 });

@@ -1658,30 +1658,37 @@ p {
   display: none !important;
 }
 
-.vertical-swiper-wrapper .swiper-button-next {
+.vertical-button-prev {
   position: absolute;
-  top: calc(100% + 25px);
+  top: -30px;
   left: calc(50% - 15px);
-  rotate: 90deg;
+  rotate: 180deg;
 }
 
-.vertical-swiper-wrapper .swiper-button-prev {
+.vertical-button-next {
   position: absolute;
-  top: -15px;
+  z-index: 10;
+  top: 100%;
   left: calc(50% - 15px);
-  rotate: 90deg;
 }
 
-.vertical-swiper-wrapper .swiper-button-next,
-.vertical-swiper-wrapper .swiper-button-prev {
-  width: 30px;
-  height: 30px;
+.vertical-button-next,
+.vertical-button-prev {
+  cursor: pointer;
+  transition: 0.5s;
 }
 
-.vertical-swiper-wrapper .swiper-button-next:after,
-.vertical-swiper-wrapper .swiper-button-prev::after {
-  font-size: 30px;
-  color: var(--smok-gray);
+@media(hover:hover) {
+  .vertical-button-prev:hover,
+  .vertical-button-next:hover {
+    transform: scale(1.2);
+  }
+}
+
+.vertical-button-prev:active,
+.vertical-button-next:active {
+  transition: 0.2s;
+  transform: scale(0.8);
 }
 
 .vertical-swiper .swiper-slide__image {
@@ -1695,6 +1702,10 @@ p {
   width: fit-content;
   height: fit-content;
 }
+
+/*----------------------------------------mini-swiper---------------------------*/
+
+
 
 /*---------------------------------------btn-to-top-----------------------------*/
 
