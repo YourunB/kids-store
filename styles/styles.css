@@ -1652,6 +1652,34 @@ p {
   padding-bottom: 300px;
 }
 
+.block__header {
+  display: flex;
+  gap: 30px;
+  border-bottom: solid 1px var(--smok-gray);
+}
+
+.block__header__btn {
+  font-size: 1.25em;
+  font-weight: 400;
+  border-radius: 10px;
+  margin-bottom: 32px;
+  padding: 8px 22px;
+  transition: 0.5s;
+  user-select: none;
+}
+
+.block__header__btn_active {
+  background-color: var(--light-gray);
+}
+
+@media(hover:hover) {
+  .block__header__btn:hover {
+    cursor: pointer;
+    background-color: var(--brown);
+    color: var(--text-light);
+  }
+}
+
 /*---------------------------------------product-sliders-box--------------------*/
 
 .sliders-box {
