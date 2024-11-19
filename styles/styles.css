@@ -916,6 +916,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  position: relative;
 }
 
 .size-box input {
@@ -1661,6 +1662,12 @@ p {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+.sliders-box .chat {
+  position: absolute;
+  bottom: 3%;
+  right: 3%;
 }
 
 .sliders-box__content {
