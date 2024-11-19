@@ -218,6 +218,8 @@
             <input disabled id="pro-size-11" type="radio" name="pro-size">
             <label for="pro-size-11">140</label>
           </div>
+
+          <p class="sliders-box__content__table-sizes" data-bs-toggle="modal" data-bs-target="#tableSizesModal">Таблица размеров</p>
         </div>
         
       </div>
@@ -950,7 +952,6 @@
     </div>
   </div>
 
-
   <!-- модальное скидка -->
   <div class="modal fade" id="promoModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
@@ -1008,6 +1009,20 @@
       </div>
     </div>
   </div>
+
+    <!-- модальное таблица размеров-->
+    <div class="modal modal-table-sizes fade" id="tableSizesModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          <h5 class="modal-title">Подбор размера</h5>
+          <picture>
+            <source srcset="assets/images/table-sizes_x2.jpg" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+            <img class="modal-image" src="assets/images/table-sizes.jpg" alt="Таблица размеров" loading="lazy">
+          </picture>
+        </div>
+      </div>
+    </div>
 
   <img class="btn-top" src="assets/images/svg/to-top.svg" alt="Вверх">
 

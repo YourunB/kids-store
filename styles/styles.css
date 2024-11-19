@@ -1339,6 +1339,16 @@ p {
   font-size: 1.2em;
 }
 
+/*------------------------------------modal-table-sizes---------------------------*/
+
+.modal-table-sizes {
+  --bs-modal-width: 800px;
+}
+
+.modal-image {
+  width: 100%;
+}
+
 /*-------------------------------------main-swiper--------------------------------*/
 
 .main-swiper .swiper-button-next,
@@ -1686,6 +1696,14 @@ p {
 
 .sliders-box__content__size {
   margin-top: 40px;
+}
+
+.sliders-box__content__table-sizes {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 1em;
+  font-style: italic;
+  margin-top: 20px;
 }
 
 /*--------------------------------vertical-swiper-------------------------------*/
