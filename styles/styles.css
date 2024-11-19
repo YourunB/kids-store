@@ -419,8 +419,13 @@ p {
 }
 
 .sorts__image {
-  transition: 0.5s;
+  transition: 0.4s;
   cursor: pointer;
+  opacity: 0.5;
+}
+
+.sorts__image_active {
+  opacity: 1;
 }
 
 @media (hover:hover) {
