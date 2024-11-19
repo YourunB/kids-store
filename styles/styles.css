@@ -1652,13 +1652,13 @@ p {
   padding-bottom: 300px;
 }
 
-.block__header {
+.spec-header {
   display: flex;
   gap: 30px;
   border-bottom: solid 1px var(--smok-gray);
 }
 
-.block__header__btn {
+.spec-header__btn {
   font-size: 1.25em;
   font-weight: 400;
   border-radius: 10px;
@@ -1668,16 +1668,71 @@ p {
   user-select: none;
 }
 
-.block__header__btn_active {
+.spec-header__btn_active {
   background-color: var(--light-gray);
 }
 
 @media(hover:hover) {
-  .block__header__btn:hover {
+  .spec-header__btn:hover {
     cursor: pointer;
     background-color: var(--brown);
     color: var(--text-light);
   }
+}
+
+.spec-content__description {
+  margin-bottom: 22px;
+}
+
+.spec-content__description h4 {
+  font-size: 1.125em;
+  font-weight: 500;
+  margin: 40px 0 20px 0;
+}
+
+.spec-content__description p {
+  font-size: 1em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.spec-content__description p span {
+  font-weight: 500;
+}
+
+.spec-content__description ul {
+  font-size: 1em;
+}
+
+.spec-content__description .line-space {
+  margin-bottom: 24px;
+}
+
+.spec-content__show-hide {
+  display: block;
+  width: fit-content;
+  user-select: none;
+  cursor: pointer;
+}
+
+.spec-content__show-hide img {
+  transition: 0.5s;
+}
+
+.spec-content__show-hide_open img {
+  rotate: 180deg;
+}
+
+.spec-content__show-hide_btn-close {
+  display: none;
+}
+
+.spec-content__show-hide_open .spec-content__show-hide_btn-close {
+  display: inline-block;
+}
+
+.spec-content__show-hide_open .spec-content__show-hide_btn-open {
+  display: none;
 }
 
 /*---------------------------------------product-sliders-box--------------------*/

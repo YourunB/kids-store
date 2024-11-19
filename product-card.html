@@ -239,10 +239,36 @@
     </div>
 
     <div class="block">
-      <div class="block__header">
-        <h4 class="block__header__btn block__header__btn_active" id="btn-description">Описание</h4>
-        <h4 class="block__header__btn" id="btn-compound">Уход / Состав</h4>
+      <div class="spec-header">
+        <h3 class="spec-header__btn spec-header__btn_active" id="btn-description">Описание</h3>
+        <h3 class="spec-header__btn" id="btn-compound">Уход / Состав</h3>
       </div>
+      <div class="spec-content">
+        <div class="spec-content__description">
+          <h4>Описание</h4>
+          <p><span>Комбинезон из софтшелла New</span> — практичная одежда для детей от 1 до 10 лет. Изготовлен из многослойного софтшелла с флисовой подкладкой, он защищает от ветра, дождя  и холода в диапазоне температур от -5°C до +20°C. Удобные подтяжки, штрипки и варежки, крепящиеся к рукавам, делают его комфортным для повседневного использования.</p>
+          <p><span>Материал:</span> софтшелл (100% полиэфир), плотность 320 г/м².</p>
+          <p><span>Подкладка:</span> флисовая, без утеплителя.</p>
+          <p><span>Размеры:</span> 80-140 см.</p>
+          <p class="line-space"><span>Цвета:</span> светло-серый, серый, темно-серый, коричневый, розовый, черный, хаки, горчица.
+            В комплекте варежки, подтяжки и штрипки.Светоотражающие элементы для безопасности.
+          </p>
+
+          <p><span>Преимущества:</span></p>
+          <ul>
+            <li>Водонепроницаемость 3000 мм, защита от дождя и снега;</li>
+            <li>Воздухопроницаемость 1000 г/м², паропроницаемость 3000 г/м²;</li>
+            <li>Гипоаллергенный, подходит для чувствительной кожи;</li>
+            <li class="line-space">Прочность и легкий вес.</li>
+          </ul>
+
+          <p><span>Температурный режим:</span> от -5°C до +20°C.</p>
+        </div>
+        <span class="spec-content__show-hide spec-content__show-hide_open" id="btn-show-hide-spec">
+          <img src="assets/images/svg/carret-black.svg" alt="Стрелочка"> 
+          <span class="spec-content__show-hide_btn-close">Скрыть</span>
+          <span class="spec-content__show-hide_btn-open">Развернуть</span>
+        </span>
     </div>
 
     <div class="block block_last">
@@ -1053,6 +1079,7 @@
   <script src="scripts/btn-to-top.js"></script>
   <script src="scripts/menu-scroll.js"></script>
   <script src="scripts/fast-cart.js"></script>
+  <script src="scripts/product-page.js"></script>
 
 </body>
 </html>
