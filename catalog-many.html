@@ -1,0 +1,1940 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles/normalize.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="styles/styles.css" rel="stylesheet">
+  <link href="styles/media.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <link rel="icon" href="assets/images/svg/toy.svg">
+  <title>Каталог</title>
+</head>
+<body>
+  
+  <header class="header header-def">
+    <div class="header-wrapper">
+      <nav class="header__navigation">
+        <button class="btn btn-primary btn-burger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
+          <img class="menu-icon" src="assets/images/svg/burger-white.svg" alt="Меню">
+        </button>
+        <!--Bootstrap menu list-->
+        <div class="container mt-3">
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="menu-list">
+                <li class="menu-list__item">
+                  <a href="#">Верхняя одежда <img class="menu-icon" src="assets/images/svg/right-black.svg" alt="Вправо"></a>
+                  <ul class="submenu-list">
+                    <li class="submenu-list__item"><a href="#">Комбинезоны</a></li>
+                    <li class="submenu-list__item"><a href="#">Комплекты</a></li>
+                    <li class="submenu-list__item"><a href="#">Куртки и жилетки</a></li>
+                    <li class="submenu-list__item"><a href="#">Брюки</a></li>
+                  </ul>
+                </li>
+                <li class="menu-list__item"><a href="#">Одежда из флиса</a></li>
+                <li class="menu-list__item">
+                  <a href="#">Для самых маленьких <img class="menu-icon" src="assets/images/svg/right-black.svg" alt="Вправо"></a>
+                  <ul class="submenu-list">
+                    <li class="submenu-list__item"><a href="#">Комбинезоны</a></li>
+                    <li class="submenu-list__item"><a href="#">Комплекты</a></li>
+                    <li class="submenu-list__item"><a href="#">Куртки и жилетки</a></li>
+                    <li class="submenu-list__item"><a href="#">Брюки</a></li>
+                  </ul>
+                </li>
+                <li class="menu-list__item"><a href="#">Комбинезоны</a></li>
+                <li class="menu-list__item"><a href="#">Костюмы</a></li>
+                <li class="menu-list__item"><a href="#">Футболки и лонгсливы</a></li>
+                <li class="menu-list__item"><a href="#">Брюки</a></li>
+                <li class="menu-list__item"><a href="#">Аксессуары</a></li>
+                <li class="menu-list__item"><a href="#">SALE</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <a href="index.html">Lookbook</a>
+        <a href="index.html">Новинки</a>
+        <a href="index.html">Блог</a>
+        <a href="index.html">Опт</a>
+      </nav>
+      <a href="index.html"><img class="logo" src="assets/images/svg/logo.svg" alt="ZIPKIDZ"></a>
+      <div class="header__indicators">
+        <a href="index.html"><img class="menu-icon" src="assets/images/svg/loop-white.svg" alt="Лупа"></a>
+        <div class="menu-count">
+          <img class="menu-icon" src="assets/images/svg/heart-white.svg" alt="Сердце" data-bs-toggle="modal" data-bs-target="#promoModal">
+          <span class="menu-count__item">7</span>
+        </div>
+        <div class="menu-count" id="btn-fast-cart">
+          <img class="menu-icon" src="assets/images/svg/basket-white.svg" alt="Корзина"> <!--data-bs-toggle="modal" data-bs-target="#registrationModal"-->
+          <span class="menu-count__item">28</span>
+          <div class="fast-cart" id="fast-cart">
+            <img class="fast-cart__close" id="btn-close-fast-cart" src="assets/images/svg/close.svg" alt="X">
+            <img class="fast-cart__image" src="assets/images/cards-categories/category-8.png" alt="Одежда">
+            <div class="fast-cart__content">
+              <h4 class="fast-cart__content__title">В корзине</h4>
+              <p class="fast-cart__content__description">Комбинезон Супер Стар</p>
+              <p class="fast-cart__content__description">Цвет — серый графит</p>
+              <p class="fast-cart__content__description">Размер: 74</p>
+              <p class="fast-cart__content__description">Количество: 1 шт</p>
+              <p class="fast-cart__content__price">4300 ₽</p>
+            </div>
+          </div>
+        </div>
+        <a href="index.html"><span>RU</span><img class="menu-icon" src="assets/images/svg/carret-white.svg" alt="Стрелочка"></a>
+        <img class="menu-icon" src="assets/images/svg/user-white.svg" alt="Пользователь" data-bs-toggle="modal" data-bs-target="#loginModal">
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="catalog block">
+      
+      <aside>
+        <div class="bread-crumbs">
+          <a href="#">Главная</a><a href="#">/ Верхняя одежда</a><a class="bread-crumbs__current" href="#">/ Комбинезоны</a>
+        </div>
+        <ul class="side-menu">
+          <li class="side-menu__item side-menu__item_checked"><span>Верхняя одежда <img class="carret" src="assets/images/svg/carret-up-bold.svg" alt="∧"></span>
+            <ul class="side-submenu">
+              <li class="side-submenu__item side-submenu__item_checked"><a href="#">Комбинезоны</a></li>
+              <li class="side-submenu__item"><a href="#">Комплекты</a></li>
+              <li class="side-submenu__item"><a href="#">Куртки и жилетки</a></li>
+              <li class="side-submenu__item"><a href="#">Брюки</a></li>
+            </ul>
+          </li>
+          <li class="side-menu__item"><a href="#">Одежда из флиса</a></li>
+          <li class="side-menu__item"><span>Для самых маленьких <img class="carret" src="assets/images/svg/carret-up.svg" alt="∧"></span>
+            <ul class="side-submenu">
+              <li class="side-submenu__item"><a href="#">Аксессуары</a></li>
+              <li class="side-submenu__item"><a href="#">Комбинезоны</a></li>
+              <li class="side-submenu__item"><a href="#">Конверты</a></li>
+              <li class="side-submenu__item"><a href="#">Нательное белье</a></li>
+            </ul>
+          </li>
+          <li class="side-menu__item"><a href="#">Комбинезоны</a></li>
+          <li class="side-menu__item"><a href="#">Костюмы</a></li>
+          <li class="side-menu__item"><a href="#">Футболки и лонгсливы</a></li>
+          <li class="side-menu__item"><a href="#">Брюки</a></li>
+          <li class="side-menu__item"><a href="#">Аксессуары</a></li>
+          <li class="side-menu__item"><a href="#">SALE</a></li>
+        </ul>
+      </aside>
+
+      <div class="catalog-wrapper catalog-wrapper-many">
+        <div class="sort-top">
+          <div class="filters">
+            <div class="filters__filter" id="btn-size-filters">Размер <span class="filter-count">(2)x</span> <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨">
+              <div class="select-list select-list_default" id="size-filters">
+                <p class="filter-name" id="btn-sizes">Размер <span class="filter-count">(2)x</span> <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨">
+                <p class="select-list__selected">Выбрано: <span>56; 56 – 62;</span></p>
+                <div class="select-box">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="size1" checked>
+                    <label class="form-check-label" for="size1">
+                      56(2)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="size2" checked>
+                    <label class="form-check-label" for="size2">
+                      56 – 62(1)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="size3">
+                    <label class="form-check-label" for="size3">
+                      62(3)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="size4">
+                    <label class="form-check-label" for="size4">
+                      68(5)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="size5">
+                    <label class="form-check-label" for="size5">
+                      68 ножка закрыта (1)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="size6">
+                    <label class="form-check-label" for="size6">
+                      68 – 74(5)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="size7">
+                    <label class="form-check-label" for="size7">
+                      74(10)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="size8">
+                    <label class="form-check-label" for="size8">
+                      80(12)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="size9">
+                    <label class="form-check-label" for="size9">
+                      86(11)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="size10">
+                    <label class="form-check-label" for="size10">
+                      92(11)
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="size11">
+                    <label class="form-check-label" for="size11">
+                      106(3)
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters__filter" id="btn-color-filters">Цвет <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨">
+              <div class="select-list select-list_colors" id="color-filters">
+                <p class="filter-name" id="btn-colors">Цвет <span class="filter-count">(1)x</span> <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨">
+                <p class="select-list__selected">Выбрано: <span>серый</span></p>
+                <div class="select-box">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="colorv1" checked>
+                    <label class="form-check-label" for="colorv1">
+                      серый
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="colorv2">
+                    <label class="form-check-label" for="colorv2">
+                      меланж светло-серый
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="colorv3">
+                    <label class="form-check-label" for="colorv3">
+                      розовый
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="colorv4">
+                    <label class="form-check-label" for="colorv4">
+                      темно-коричневый
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="colorv5">
+                    <label class="form-check-label" for="colorv5">
+                      темно-серый
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="colorv6">
+                    <label class="form-check-label" for="colorv6">
+                      меланж темно-серый
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="colorv7">
+                    <label class="form-check-label" for="colorv7">
+                      хаки
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="colorv8">
+                    <label class="form-check-label" for="colorv8">
+                      меланж деним
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="colorv9">
+                    <label class="form-check-label" for="colorv9">
+                      темно-синий
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="colorv10">
+                    <label class="form-check-label" for="colorv10">
+                      черный
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="colorv11">
+                    <label class="form-check-label" for="colorv11">
+                      красный
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filters__filter" id="btn-season-filters">Сезон <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨">
+              <div class="select-list select-list_default" id="season-filters">
+                <p class="filter-name" id="btn-season">Сезон <span class="filter-count"></span> <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨">
+                <!--<p class="select-list__selected">Выбрано: <span>демисезон;</span></p>-->
+                <div class="select-box">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="season1">
+                    <label class="form-check-label" for="season1">
+                      демисезон
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="season2">
+                    <label class="form-check-label" for="season2">
+                      зима
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="season3">
+                    <label class="form-check-label" for="season3">
+                      лето
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="season4">
+                    <label class="form-check-label" for="season4">
+                      круглогодичный
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sorts">
+            <div class="sorts__sort" id="btn-sort-select">Сортировка <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨">
+              <div class="select-list select-list_default" id="sort-filters">
+                <p class="filter-name" id="btn-sort">Сортировка <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨">
+                <div class="select-box">
+                  <div class="form-check">
+                    <input class="form-check-input" name="sorting" type="radio" id="sort1">
+                    <label class="form-check-label" for="sort1">
+                      по умолчанию <span>&#10003;</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" name="sorting" type="radio" id="sort2">
+                    <label class="form-check-label" for="sort2">
+                      по возрастанию цены <span>&#10003;</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" name="sorting" type="radio" id="sort3">
+                    <label class="form-check-label" for="sort3">
+                      по убыванию цены <span>&#10003;</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" name="sorting" type="radio" id="sort4">
+                    <label class="form-check-label" for="sort4">
+                      по популярности <span>&#10003;</span>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" name="sorting" type="radio" id="sort5">
+                    <label class="form-check-label" for="sort5">
+                      по новизне <span>&#10003;</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="sorts__image" src="assets/images/svg/sort-a.svg" alt="Отображение">
+            <img class="sorts__image sorts__image_active" src="assets/images/svg/sort-b.svg" alt="Отображение">
+          </div>
+        </div>
+
+        <div class="catalog__card">
+          <div class="card-wrapper">
+            <div class="card-promo"><span>Новинка</span></div>
+            <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце">
+            <div class="card-slider">
+              <div class="card-slider__images">
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/cards-categories/category-1_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/cards-categories/category-1.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="card-slider__indicators">
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+              </div>
+            </div>
+  
+            <p class="card-description">Комбинезон детский софтшелл NEW</p>
+            <p class="card-price">5 000 ₽</p>
+            <div class="card-colors"><span></span><span></span><span></span><span></span></div>
+          </div>
+  
+          <div class="card-additional">
+            <div class="card-additional__controls">
+              <div class="card-additional__controls__count">
+                <img src="assets/images/svg/minus.svg" alt="-"><span>1</span><img src="assets/images/svg/plus.svg" alt="+">
+              </div>
+              <button class="card-additional__controls__btn">В корзину</button>
+            </div>
+            <p class="card-additional__color-name">Цвет — серый графит</p>
+            <div class="color-box">
+              <input id="r1-v1" type="radio" name="color-v1" checked>
+              <label for="r1-v1"><span></span></label>
+              <input id="r2-v1" type="radio" name="color-v1">
+              <label for="r2-v1"><span></span></label>
+              <input id="r3-v1" type="radio" name="color-v1">
+              <label for="r3-v1"><span></span></label>
+              <input id="r4-v1" type="radio" name="color-v1">
+              <label for="r4-v1"><span></span></label>
+            </div>
+            <p class="card-additional__size-name">Размер — 74 <span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
+            <div class="size-box">
+              <input id="s1-v1" type="radio" name="size-v1" checked>
+              <label for="s1-v1">74</label>
+              <input id="s2-v1" type="radio" name="size-v1">
+              <label for="s2-v1">80</label>
+              <input id="s3-v1" type="radio" name="size-v1">
+              <label for="s3-v1">86</label>
+              <input id="s4-v1" type="radio" name="size-v1">
+              <label for="s4-v1">92</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__card">
+          <div class="card-wrapper">
+            <div class="card-promo"><span>Новинка</span></div>
+            <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце">
+            <div class="card-slider">
+              <div class="card-slider__images">
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/cards-categories/category-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/cards-categories/category-2.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="card-slider__indicators">
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+              </div>
+            </div>
+  
+            <p class="card-description">Комбинезон Супер Стар с варежками</p>
+            <p class="card-price">4 650 ₽</p>
+            <div class="card-colors"><span></span><span></span><span></span><span></span></div>
+          </div>
+  
+          <div class="card-additional">
+            <div class="card-additional__controls">
+              <div class="card-additional__controls__count">
+                <img src="assets/images/svg/minus.svg" alt="-"><span>1</span><img src="assets/images/svg/plus.svg" alt="+">
+              </div>
+              <button class="card-additional__controls__btn">В корзину</button>
+            </div>
+            <p class="card-additional__color-name">Цвет — серый графит</p>
+            <div class="color-box">
+              <input id="r1-v2" type="radio" name="color-v2" checked>
+              <label for="r1-v2"><span></span></label>
+              <input id="r2-v2" type="radio" name="color-v2">
+              <label for="r2-v2"><span></span></label>
+              <input id="r3-v2" type="radio" name="color-v2">
+              <label for="r3-v2"><span></span></label>
+              <input id="r4-v2" type="radio" name="color-v2">
+              <label for="r4-v2"><span></span></label>
+            </div>
+            <p class="card-additional__size-name">Размер — 74 <span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
+            <div class="size-box">
+              <input id="s1-v2" type="radio" name="size-v2" checked>
+              <label for="s1-v2">74</label>
+              <input id="s2-v2" type="radio" name="size-v2">
+              <label for="s2-v2">80</label>
+              <input id="s3-v2" type="radio" name="size-v2">
+              <label for="s3-v2">86</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__card">
+          <div class="card-wrapper">
+            <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце">
+            <div class="card-slider">
+              <div class="card-slider__images">
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/cards-categories/category-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/cards-categories/category-3.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="card-slider__indicators">
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+              </div>
+            </div>
+  
+            <p class="card-description">Комбинезон детский софтшелл NEW</p>
+            <p class="card-price">3 500 ₽</p>
+            <div class="card-colors"><span></span><span></span><span></span><span></span></div>
+          </div>
+  
+          <div class="card-additional">
+            <div class="card-additional__controls">
+              <div class="card-additional__controls__count">
+                <img src="assets/images/svg/minus.svg" alt="-"><span>1</span><img src="assets/images/svg/plus.svg" alt="+">
+              </div>
+              <button class="card-additional__controls__btn">В корзину</button>
+            </div>
+            <p class="card-additional__color-name">Цвет — серый графит</p>
+            <div class="color-box">
+              <input id="r1-v3" type="radio" name="color-v3" checked>
+              <label for="r1-v3"><span></span></label>
+              <input id="r2-v3" type="radio" name="color-v3">
+              <label for="r2-v3"><span></span></label>
+              <input id="r3-v3" type="radio" name="color-v3">
+              <label for="r3-v3"><span></span></label>
+              <input id="r4-v3" type="radio" name="color-v3">
+              <label for="r4-v3"><span></span></label>
+            </div>
+            <p class="card-additional__size-name">Размер — 74 <span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
+            <div class="size-box">
+              <input id="s1-v3" type="radio" name="size-v3" checked>
+              <label for="s1-v3">74</label>
+              <input id="s2-v3" type="radio" name="size-v3">
+              <label for="s2-v3">80</label>
+              <input id="s3-v3" type="radio" name="size-v3">
+              <label for="s3-v3">86</label>
+              <input id="s4-v3" type="radio" name="size-v3">
+              <label for="s4-v3">92</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__card">
+          <div class="card-wrapper">
+            <div class="card-promo"><span>Новинка</span></div>
+            <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце">
+            <div class="card-slider">
+              <div class="card-slider__images">
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/cards-categories/category-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/cards-categories/category-4.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="card-slider__indicators">
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+              </div>
+            </div>
+  
+            <p class="card-description">Комбинезон Косуха демисезонный</p>
+            <p class="card-price">4 300 ₽</p>
+            <div class="card-colors"><span></span><span></span><span></span><span></span></div>
+          </div>
+  
+          <div class="card-additional">
+            <div class="card-additional__controls">
+              <div class="card-additional__controls__count">
+                <img src="assets/images/svg/minus.svg" alt="-"><span>1</span><img src="assets/images/svg/plus.svg" alt="+">
+              </div>
+              <button class="card-additional__controls__btn">В корзину</button>
+            </div>
+            <p class="card-additional__color-name">Цвет — серый графит</p>
+            <div class="color-box">
+              <input id="r1-v4" type="radio" name="color-v4" checked>
+              <label for="r1-v4"><span></span></label>
+              <input id="r2-v4" type="radio" name="color-v4">
+              <label for="r2-v4"><span></span></label>
+              <input id="r3-v4" type="radio" name="color-v4">
+              <label for="r3-v4"><span></span></label>
+              <input id="r4-v4" type="radio" name="color-v4">
+              <label for="r4-v4"><span></span></label>
+            </div>
+            <p class="card-additional__size-name">Размер — 74 <span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
+            <div class="size-box">
+              <input id="s1" type="radio" name="size-v4" checked>
+              <label for="s1-v4">74</label>
+              <input id="s2-v4" type="radio" name="size-v4">
+              <label for="s2-v4">80</label>
+              <input id="s3-v4" type="radio" name="size-v4">
+              <label for="s3-v4">86</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__card">
+          <div class="card-wrapper">
+            <div class="card-promo"><span>Новинка</span></div>
+            <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце">
+            <div class="card-slider">
+              <div class="card-slider__images">
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/cards-categories/category-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/cards-categories/category-5.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="card-slider__indicators">
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+              </div>
+            </div>
+  
+            <p class="card-description">Комбинезон Аляска</p>
+            <p class="card-price">4 650 ₽</p>
+            <div class="card-colors"><span></span><span></span><span></span><span></span></div>
+          </div>
+  
+          <div class="card-additional">
+            <div class="card-additional__controls">
+              <div class="card-additional__controls__count">
+                <img src="assets/images/svg/minus.svg" alt="-"><span>1</span><img src="assets/images/svg/plus.svg" alt="+">
+              </div>
+              <button class="card-additional__controls__btn">В корзину</button>
+            </div>
+            <p class="card-additional__color-name">Цвет — серый графит</p>
+            <div class="color-box">
+              <input id="r1-v5" type="radio" name="color-v5" checked>
+              <label for="r1-v5"><span></span></label>
+              <input id="r2-v5" type="radio" name="color-v5">
+              <label for="r2-v5"><span></span></label>
+              <input id="r3-v5" type="radio" name="color-v5">
+              <label for="r3-v5"><span></span></label>
+              <input id="r4-v5" type="radio" name="color-v5">
+              <label for="r4-v5"><span></span></label>
+            </div>
+            <p class="card-additional__size-name">Размер — 74 <span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
+            <div class="size-box">
+              <input id="s1-v5" type="radio" name="size-v5" checked>
+              <label for="s1-v5">74</label>
+              <input id="s2-v5" type="radio" name="size-v5">
+              <label for="s2-v5">80</label>
+              <input id="s3-v5" type="radio" name="size-v5">
+              <label for="s3-v5">86</label>
+              <input id="s4-v5" type="radio" name="size-v5">
+              <label for="s4-v5">92</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__card">
+          <div class="card-wrapper">
+            <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце">
+            <div class="card-slider">
+              <div class="card-slider__images">
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/cards-categories/category-6_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/cards-categories/category-6.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="card-slider__indicators">
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+              </div>
+            </div>
+  
+            <p class="card-description">Комбинезон косуха</p>
+            <p class="card-price">3 500 ₽</p>
+            <div class="card-colors"><span></span><span></span><span></span><span></span></div>
+          </div>
+  
+          <div class="card-additional">
+            <div class="card-additional__controls">
+              <div class="card-additional__controls__count">
+                <img src="assets/images/svg/minus.svg" alt="-"><span>1</span><img src="assets/images/svg/plus.svg" alt="+">
+              </div>
+              <button class="card-additional__controls__btn">В корзину</button>
+            </div>
+            <p class="card-additional__color-name">Цвет — серый графит</p>
+            <div class="color-box">
+              <input id="r1-v6" type="radio" name="color-v6" checked>
+              <label for="r1-v6"><span></span></label>
+              <input id="r2-v6" type="radio" name="color-v6">
+              <label for="r2-v6"><span></span></label>
+              <input id="r3-v6" type="radio" name="color-v6">
+              <label for="r3-v6"><span></span></label>
+              <input id="r4-v6" type="radio" name="color-v6">
+              <label for="r4-v6"><span></span></label>
+            </div>
+            <p class="card-additional__size-name">Размер — 74 <span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
+            <div class="size-box">
+              <input id="s1-v6" type="radio" name="size-v6" checked>
+              <label for="s1-v6">74</label>
+              <input id="s2-v6" type="radio" name="size-v6">
+              <label for="s2-v6">80</label>
+              <input id="s3-v6" type="radio" name="size-v6">
+              <label for="s3-v6">86</label>
+              <input id="s4-v6" type="radio" name="size-v6">
+              <label for="s4-v6">92</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__card">
+          <div class="card-wrapper">
+            <div class="card-promo"><span>Новинка</span></div>
+            <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце">
+            <div class="card-slider">
+              <div class="card-slider__images">
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/cards-categories/category-7_x2.jpg" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/cards-categories/category-7.jpg" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="card-slider__indicators">
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+              </div>
+            </div>
+  
+            <p class="card-description">Комбинезон Помпон</p>
+            <p class="card-price">3 500 ₽</p>
+            <div class="card-colors"><span></span><span></span><span></span><span></span></div>
+          </div>
+  
+          <div class="card-additional">
+            <div class="card-additional__controls">
+              <div class="card-additional__controls__count">
+                <img src="assets/images/svg/minus.svg" alt="-"><span>1</span><img src="assets/images/svg/plus.svg" alt="+">
+              </div>
+              <button class="card-additional__controls__btn">В корзину</button>
+            </div>
+            <p class="card-additional__color-name">Цвет — серый графит</p>
+            <div class="color-box">
+              <input id="r1-v7" type="radio" name="color-v7" checked>
+              <label for="r1-v7"><span></span></label>
+              <input id="r2-v7" type="radio" name="color-v7">
+              <label for="r2-v7"><span></span></label>
+              <input id="r3-v7" type="radio" name="color-v7">
+              <label for="r3-v7"><span></span></label>
+              <input id="r4-v7" type="radio" name="color-v7">
+              <label for="r4-v7"><span></span></label>
+            </div>
+            <p class="card-additional__size-name">Размер — 74 <span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
+            <div class="size-box">
+              <input id="s1-v7" type="radio" name="size-v7" checked>
+              <label for="s1-v7">74</label>
+              <input id="s2-v7" type="radio" name="size-v7">
+              <label for="s2-v7">80</label>
+              <input id="s3-v7" type="radio" name="size-v7">
+              <label for="s3-v7">86</label>
+              <input id="s4-v7" type="radio" name="size-v7">
+              <label for="s4-v7">92</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__card">
+          <div class="card-wrapper">
+            <div class="card-promo card-promo-discont"><span>Акция</span></div>
+            <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце">
+            <div class="card-slider">
+              <div class="card-slider__images">
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/cards-categories/category-8_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/cards-categories/category-8.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="card-slider__indicators">
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+              </div>
+            </div>
+  
+            <p class="card-description">Комбинезон Супер Стар</p>
+            <p class="card-price">
+              <span class="card-price__discont">4 300 ₽</span>
+              <span class="card-price__old-price">6 333 ₽</span>
+              <span class="card-price__procent">-40%</span>
+            </p>
+            <div class="card-colors"><span></span><span></span><span></span><span></span></div>
+          </div>
+  
+          <div class="card-additional">
+            <div class="card-additional__controls">
+              <div class="card-additional__controls__count">
+                <img src="assets/images/svg/minus.svg" alt="-"><span>1</span><img src="assets/images/svg/plus.svg" alt="+">
+              </div>
+              <button class="card-additional__controls__btn">В корзину</button>
+            </div>
+            <p class="card-additional__color-name">Цвет — серый графит</p>
+            <div class="color-box">
+              <input id="r1-v8" type="radio" name="color-v8" checked>
+              <label for="r1-v8"><span></span></label>
+              <input id="r2-v8" type="radio" name="color-v8">
+              <label for="r2-v8"><span></span></label>
+              <input id="r3-v8" type="radio" name="color-v8">
+              <label for="r3-v8"><span></span></label>
+              <input id="r4-v8" type="radio" name="color-v8">
+              <label for="r4-v8"><span></span></label>
+            </div>
+            <p class="card-additional__size-name">Размер — 74 <span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
+            <div class="size-box">
+              <input id="s1-v8" type="radio" name="size-v8" checked>
+              <label for="s1-v8">74</label>
+              <input id="s2-v8" type="radio" name="size-v8">
+              <label for="s2-v8">80</label>
+              <input id="s3-v8" type="radio" name="size-v8">
+              <label for="s3-v8">86</label>
+              <input id="s4-v8" type="radio" name="size-v8">
+              <label for="s4-v8">92</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__card">
+          <div class="card-wrapper">
+            <div class="card-promo"><span>Новинка</span></div>
+            <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце">
+            <div class="card-slider">
+              <div class="card-slider__images">
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/cards-categories/category-9_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/cards-categories/category-9.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="card-slider__indicators">
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+              </div>
+            </div>
+  
+            <p class="card-description">Стеганый комбинезон</p>
+            <p class="card-price">
+              <span class="card-price__discont">2 650 ₽</span>
+              <span class="card-price__old-price">4 417 ₽</span>
+              <span class="card-price__procent">-40%</span>
+            </p>
+            <div class="card-colors"><span></span><span></span><span></span></div>
+          </div>
+  
+          <div class="card-additional">
+            <div class="card-additional__controls">
+              <div class="card-additional__controls__count">
+                <img src="assets/images/svg/minus.svg" alt="-"><span>1</span><img src="assets/images/svg/plus.svg" alt="+">
+              </div>
+              <button class="card-additional__controls__btn">В корзину</button>
+            </div>
+            <p class="card-additional__color-name">Цвет — серый графит</p>
+            <div class="color-box">
+              <input id="r1-v9" type="radio" name="color-v9" checked>
+              <label for="r1-v9"><span></span></label>
+              <input id="r2-v9" type="radio" name="color-v9">
+              <label for="r2-v9"><span></span></label>
+              <input id="r3-v9" type="radio" name="color-v9">
+              <label for="r3-v9"><span></span></label>
+            </div>
+            <p class="card-additional__size-name">Размер — 74 <span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
+            <div class="size-box">
+              <input id="s1-v9" type="radio" name="size-v9" checked>
+              <label for="s1-v9">74</label>
+              <input id="s2-v9" type="radio" name="size-v9">
+              <label for="s2-v9">80</label>
+              <input id="s3-v9" type="radio" name="size-v9">
+              <label for="s3-v9">86</label>
+              <input id="s4-v9" type="radio" name="size-v9">
+              <label for="s4-v9">92</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__card">
+          <div class="card-wrapper">
+            <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце">
+            <div class="card-slider">
+              <div class="card-slider__images">
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/cards-categories/category-10_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/cards-categories/category-10.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="card-slider__indicators">
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+              </div>
+            </div>
+  
+            <p class="card-description">Утепленный комбинезон с манжетами</p>
+            <p class="card-price">2 700 ₽₽</p>
+            <div class="card-colors"><span></span><span></span><span></span></div>
+          </div>
+  
+          <div class="card-additional">
+            <div class="card-additional__controls">
+              <div class="card-additional__controls__count">
+                <img src="assets/images/svg/minus.svg" alt="-"><span>1</span><img src="assets/images/svg/plus.svg" alt="+">
+              </div>
+              <button class="card-additional__controls__btn">В корзину</button>
+            </div>
+            <p class="card-additional__color-name">Цвет — серый графит</p>
+            <div class="color-box">
+              <input id="r1-v10" type="radio" name="color-v10" checked>
+              <label for="r1-v10"><span></span></label>
+              <input id="r2-v10" type="radio" name="color-v10">
+              <label for="r2-v10"><span></span></label>
+              <input id="r3-v10" type="radio" name="color-v10">
+              <label for="r3-v10"><span></span></label>
+            </div>
+            <p class="card-additional__size-name">Размер — 74 <span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
+            <div class="size-box">
+              <input id="s1-v10" type="radio" name="size-v10" checked>
+              <label for="s1-v10">74</label>
+              <input id="s2-v10" type="radio" name="size-v10">
+              <label for="s2-v10">80</label>
+              <input id="s3-v10" type="radio" name="size-v10">
+              <label for="s3-v10">86</label>
+              <input id="s4-v10" type="radio" name="size-v10">
+              <label for="s4-v10">92</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__card">
+          <div class="card-wrapper">
+            <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце">
+            <div class="card-slider">
+              <div class="card-slider__images">
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/cards-categories/category-11_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/cards-categories/category-11.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="card-slider__indicators">
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+              </div>
+            </div>
+  
+            <p class="card-description">Комбинезон Хипстер</p>
+            <p class="card-price">
+              <span class="card-price__discont">1 400 ₽</span>
+              <span class="card-price__old-price">2 333 ₽</span>
+              <span class="card-price__procent">-40%</span>
+            </p>
+            <div class="card-colors"><span></span><span></span><span></span><span></span></div>
+          </div>
+  
+          <div class="card-additional">
+            <div class="card-additional__controls">
+              <div class="card-additional__controls__count">
+                <img src="assets/images/svg/minus.svg" alt="-"><span>1</span><img src="assets/images/svg/plus.svg" alt="+">
+              </div>
+              <button class="card-additional__controls__btn">В корзину</button>
+            </div>
+            <p class="card-additional__color-name">Цвет — серый графит</p>
+            <div class="color-box">
+              <input id="r1-v11" type="radio" name="color-v11" checked>
+              <label for="r1-v11"><span></span></label>
+              <input id="r2-v11" type="radio" name="color-v11">
+              <label for="r2-v11"><span></span></label>
+              <input id="r3-v11" type="radio" name="color-v11">
+              <label for="r3-v11"><span></span></label>
+            </div>
+            <p class="card-additional__size-name">Размер — 74 <span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
+            <div class="size-box">
+              <input id="s1-v11" type="radio" name="size-v11" checked>
+              <label for="s1-v11">74</label>
+              <input id="s2-v11" type="radio" name="size-v11">
+              <label for="s2-v11">80</label>
+              <input id="s3-v11" type="radio" name="size-v11">
+              <label for="s3-v11">86</label>
+              <input id="s4-v11" type="radio" name="size-v11">
+              <label for="s4-v11">92</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__card">
+          <div class="card-wrapper">
+            <div class="card-promo card-promo-discont"><span>Акция</span></div>
+            <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце">
+            <div class="card-slider">
+              <div class="card-slider__images">
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/cards-categories/category-12_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/cards-categories/category-12.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="card-slider__indicators">
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+              </div>
+            </div>
+  
+            <p class="card-description">Комбинезон Супер Стар зимний</p>
+            <p class="card-price">4 200 ₽</p>
+            <div class="card-colors"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          </div>
+  
+          <div class="card-additional">
+            <div class="card-additional__controls">
+              <div class="card-additional__controls__count">
+                <img src="assets/images/svg/minus.svg" alt="-"><span>1</span><img src="assets/images/svg/plus.svg" alt="+">
+              </div>
+              <button class="card-additional__controls__btn">В корзину</button>
+            </div>
+            <p class="card-additional__color-name">Цвет — серый графит</p>
+            <div class="color-box">
+              <input id="r1-v12" type="radio" name="color-v12" checked>
+              <label for="r1-v12"><span></span></label>
+              <input id="r2-v12" type="radio" name="color-v12">
+              <label for="r2-v12"><span></span></label>
+              <input id="r3-v12" type="radio" name="color-v12">
+              <label for="r3-v12"><span></span></label>
+              <input id="r4-v12" type="radio" name="color-v12">
+              <label for="r4-v12"><span></span></label>
+              <input id="r5-v12" type="radio" name="color-v12">
+              <label for="r5-v12"><span></span></label>
+              <input id="r6-v12" type="radio" name="color-v12">
+              <label for="r6-v12"><span></span></label>
+            </div>
+            <p class="card-additional__size-name">Размер — 74 <span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
+            <div class="size-box">
+              <input id="s1-v12" type="radio" name="size-v12" checked>
+              <label for="s1-v12">74</label>
+              <input id="s2-v12" type="radio" name="size-v12">
+              <label for="s2-v12">80</label>
+              <input id="s3-v12" type="radio" name="size-v12">
+              <label for="s3-v12">86</label>
+              <input id="s4-v12" type="radio" name="size-v12">
+              <label for="s4-v12">92</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog__card">
+          <div class="card-wrapper">
+            <div class="card-promo"><span>Новинка</span></div>
+            <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце">
+            <div class="card-slider">
+              <div class="card-slider__images">
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/cards-categories/category-13_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/cards-categories/category-13.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
+                </picture>
+                <span class="card-slider__images-zone"></span>
+                <picture>
+                  <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="card-slider__indicators">
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+                <span class="card-slider__indicators__indicator"></span>
+              </div>
+            </div>
+  
+            <p class="card-description">Комбинезон Супер Стар RK 200</p>
+            <p class="card-price">
+              <span class="card-price__discont">1 400 ₽</span>
+              <span class="card-price__old-price">2 800 ₽</span>
+              <span class="card-price__procent">-40%</span>
+            </p>
+            <div class="card-colors"><span></span><span></span><span></span><span></span></div>
+          </div>
+  
+          <div class="card-additional">
+            <div class="card-additional__controls">
+              <div class="card-additional__controls__count">
+                <img src="assets/images/svg/minus.svg" alt="-"><span>1</span><img src="assets/images/svg/plus.svg" alt="+">
+              </div>
+              <button class="card-additional__controls__btn">В корзину</button>
+            </div>
+            <p class="card-additional__color-name">Цвет — серый графит</p>
+            <div class="color-box">
+              <input id="r1-v13" type="radio" name="color-v13" checked>
+              <label for="r1-v13"><span></span></label>
+              <input id="r2-v13" type="radio" name="color-v13">
+              <label for="r2-v13"><span></span></label>
+              <input id="r3-v13" type="radio" name="color-v13">
+              <label for="r3-v13"><span></span></label>
+              <input id="r4-v13" type="radio" name="color-v13">
+              <label for="r4-v13"><span></span></label>
+            </div>
+            <p class="card-additional__size-name">Размер — 74 <span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
+            <div class="size-box">
+              <input id="s1-v13" type="radio" name="size-v13" checked>
+              <label for="s1-v13">74</label>
+              <input id="s2-v13" type="radio" name="size-v13">
+              <label for="s2-v13">80</label>
+              <input id="s3-v13" type="radio" name="size-v13">
+              <label for="s3-v13">86</label>
+              <input id="s4-v13" type="radio" name="size-v13">
+              <label for="s4-v13">92</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block block_last">
+      <h4 class="text-semibold">Вы недавно смотрели</h4>
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="catalog__card">
+              <div class="card-wrapper">
+                <div class="card-promo"><span>Новинка</span></div>
+                <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце">
+                <div class="card-slider">
+                  <div class="card-slider__images">
+                    <span class="card-slider__images-zone"></span>
+                    <picture>
+                      <source srcset="assets/images/cards-categories/category-1_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/cards-categories/category-1.png" alt="Одежда" loading="lazy">
+                    </picture>
+                    <span class="card-slider__images-zone"></span>
+                    <picture>
+                      <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
+                    </picture>
+                    <span class="card-slider__images-zone"></span>
+                    <picture>
+                      <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
+                    </picture>
+                    <span class="card-slider__images-zone"></span>
+                    <picture>
+                      <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
+                    </picture>
+                    <span class="card-slider__images-zone"></span>
+                    <picture>
+                      <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="card-slider__indicators">
+                    <span class="card-slider__indicators__indicator"></span>
+                    <span class="card-slider__indicators__indicator"></span>
+                    <span class="card-slider__indicators__indicator"></span>
+                    <span class="card-slider__indicators__indicator"></span>
+                    <span class="card-slider__indicators__indicator"></span>
+                  </div>
+                </div>
+      
+                <p class="card-description">Термо костюм кофта и брюки</p>
+                <p class="card-price">1 650 ₽</p>
+                <div class="card-colors"><span></span><span></span><span></span></div>
+              </div>
+      
+              <div class="card-additional">
+                <div class="card-additional__controls">
+                  <div class="card-additional__controls__count">
+                    <img src="assets/images/svg/minus.svg" alt="-"><span>1</span><img src="assets/images/svg/plus.svg" alt="+">
+                  </div>
+                  <button class="card-additional__controls__btn">В корзину</button>
+                </div>
+                <p class="card-additional__color-name">Цвет — серый графит</p>
+                <div class="color-box">
+                  <input id="r1" type="radio" name="color" checked>
+                  <label for="r1"><span></span></label>
+                  <input id="r2" type="radio" name="color">
+                  <label for="r2"><span></span></label>
+                  <input id="r3" type="radio" name="color">
+                  <label for="r3"><span></span></label>
+                </div>
+                <p class="card-additional__size-name">Размер — 74 <span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
+                <div class="size-box">
+                  <input id="s1" type="radio" name="size" checked>
+                  <label for="s1">74</label>
+                  <input id="s2" type="radio" name="size">
+                  <label for="s2">80</label>
+                  <input id="s3" type="radio" name="size">
+                  <label for="s3">86</label>
+                  <input id="s4" type="radio" name="size">
+                  <label for="s4">92</label>
+                  <input id="s5" type="radio" name="size">
+                  <label for="s5">98</label>
+                  <input id="s6" type="radio" name="size">
+                  <label for="s6">104</label>
+                  <input id="s7" type="radio" name="size">
+                  <label for="s7">110</label>
+                  <input id="s8" type="radio" name="size">
+                  <label for="s8">116</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="catalog__card">
+              <div class="card-wrapper">
+                <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце">
+                <div class="card-slider">
+                  <div class="card-slider__images">
+                    <span class="card-slider__images-zone"></span>
+                    <picture>
+                      <source srcset="assets/images/cards-categories/category-8_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/cards-categories/category-8.png" alt="Одежда" loading="lazy">
+                    </picture>
+                    <span class="card-slider__images-zone"></span>
+                    <picture>
+                      <source srcset="assets/images/specials/special-1_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="card-slider__images__image" src="assets/images/specials/special-1.png" alt="Одежда" loading="lazy">
+                    </picture>
+                    <span class="card-slider__images-zone"></span>
+                    <picture>
+                      <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
+                    </picture>
+                    <span class="card-slider__images-zone"></span>
+                    <picture>
+                      <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
+                    </picture>
+                    <span class="card-slider__images-zone"></span>
+                    <picture>
+                      <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="card-slider__indicators">
+                    <span class="card-slider__indicators__indicator"></span>
+                    <span class="card-slider__indicators__indicator"></span>
+                    <span class="card-slider__indicators__indicator"></span>
+                    <span class="card-slider__indicators__indicator"></span>
+                    <span class="card-slider__indicators__indicator"></span>
+                  </div>
+                </div>
+      
+                <p class="card-description">Термо комбинезон без начеса</p>
+                <p class="card-price">1 700 ₽</p>
+                <div class="card-colors"><span></span><span></span><span></span><span></span></div>
+              </div>
+      
+              <div class="card-additional">
+                <div class="card-additional__controls">
+                  <div class="card-additional__controls__count">
+                    <img src="assets/images/svg/minus.svg" alt="-"><span>1</span><img src="assets/images/svg/plus.svg" alt="+">
+                  </div>
+                  <button class="card-additional__controls__btn">В корзину</button>
+                </div>
+                <p class="card-additional__color-name">Цвет — серый графит</p>
+                <div class="color-box">
+                  <input id="r1-2" type="radio" name="color-2" checked>
+                  <label for="r1-2"><span></span></label>
+                  <input id="r2-2" type="radio" name="color-2">
+                  <label for="r2-2"><span></span></label>
+                  <input id="r3-2" type="radio" name="color-2">
+                  <label for="r3-2"><span></span></label>
+                  <input id="r4-2" type="radio" name="color-2">
+                  <label for="r4-2"><span></span></label>
+                </div>
+                <p class="card-additional__size-name">Размер — 74 <span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
+                <div class="size-box">
+                  <input id="s1-2" type="radio" name="size-2" checked>
+                  <label for="s1-2">74</label>
+                  <input id="s2-2" type="radio" name="size-2">
+                  <label for="s2-2">80</label>
+                  <input id="s3-2" type="radio" name="size-2">
+                  <label for="s3-2">86</label>
+                  <input id="s4-2" type="radio" name="size-2">
+                  <label for="s4-2">92</label>
+                  <input id="s5-2" type="radio" name="size-2">
+                  <label for="s5-2">98</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="catalog__card">
+              <div class="card-wrapper">
+                <img class="card-heart" src="assets/images/svg/heart-full.svg" alt="Сердце">
+                <div class="card-slider">
+                  <div class="card-slider__images">
+                    <span class="card-slider__images-zone"></span>
+                    <picture>
+                      <source srcset="assets/images/cards-categories/category-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/cards-categories/category-4.png" alt="Одежда" loading="lazy">
+                    </picture>
+                    <span class="card-slider__images-zone"></span>
+                    <picture>
+                      <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
+                    </picture>
+                    <span class="card-slider__images-zone"></span>
+                    <picture>
+                      <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
+                    </picture>
+                    <span class="card-slider__images-zone"></span>
+                    <picture>
+                      <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
+                    </picture>
+                    <span class="card-slider__images-zone"></span>
+                    <picture>
+                      <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
+                    </picture>
+                  </div>
+                  <div class="card-slider__indicators">
+                    <span class="card-slider__indicators__indicator"></span>
+                    <span class="card-slider__indicators__indicator"></span>
+                    <span class="card-slider__indicators__indicator"></span>
+                    <span class="card-slider__indicators__indicator"></span>
+                    <span class="card-slider__indicators__indicator"></span>
+                  </div>
+                </div>
+      
+                <p class="card-description">Шапка зимняя на завязках</p>
+                <p class="card-price">1 100 ₽</p>
+                <div class="card-colors"><span></span><span></span><span></span><span></span></div>
+              </div>
+      
+              <div class="card-additional">
+                <div class="card-additional__controls">
+                  <div class="card-additional__controls__count">
+                    <img src="assets/images/svg/minus.svg" alt="-"><span>1</span><img src="assets/images/svg/plus.svg" alt="+">
+                  </div>
+                  <button class="card-additional__controls__btn">В корзину</button>
+                </div>
+                <p class="card-additional__color-name">Цвет — серый графит</p>
+                <div class="color-box">
+                  <input id="r1-3" type="radio" name="color-3" checked>
+                  <label for="r1-3"><span></span></label>
+                  <input id="r2-3" type="radio" name="color-3">
+                  <label for="r2-3"><span></span></label>
+                  <input id="r3-3" type="radio" name="color-3">
+                  <label for="r3-3"><span></span></label>
+                  <input id="r4-3" type="radio" name="color-3">
+                  <label for="r4-3"><span></span></label>
+                </div>
+                <p class="card-additional__size-name">Размер — 74 <span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
+                <div class="size-box">
+                  <input id="s1-3" type="radio" name="size-3" checked>
+                  <label for="s1-3">74</label>
+                  <input id="s2-3" type="radio" name="size-3">
+                  <label for="s2-3">80</label>
+                  <input id="s3-3" type="radio" name="size-3">
+                  <label for="s3-3">86</label>
+                  <input id="s4-3" type="radio" name="size-3">
+                  <label for="s4-3">92</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer__top">
+        <a href="https://telegram.me/zipkidz">
+          <img src="assets/images/svg/tg.svg" alt="Telegram">
+        </a>
+        <h3>Будьте в курсе наших акций и новостей</h3>
+        <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#subscribeModal">Подписаться</button>
+      </div>
+      <div class="footer__center">
+        <div class="footer-categories">
+          <h3><a href="#">КАТАЛОГ</a></h3>
+          <h3><a href="#">АКЦИИ</a></h3>
+          <h3><a href="#">ДОКУМЕНТЫ</a></h3>
+        </div>
+        <div class="footer-info">
+          <div>
+            <h3>ПОКУПАТЕЛЯМ</h3>
+            <p><a href="#">Оплата</a></p>
+            <p><a href="#">Доставка</a></p>
+            <p><a href="#">Обмен / возврат</a></p>
+            <p><a href="#">Подарочный сертификат</a></p>
+            <p><a href="#">Карта лояльности</a></p>
+            <p><a href="#">Блог</a></p>
+          </div>
+          <div>
+            <h3>О КОМПАНИИ</h3>
+            <p><a href="#">О бренде</a></p>
+            <p><a href="#">Сертификаты соответствия</a></p>
+            <p><a href="#">Оптовым покупателям</a></p>
+            <p><a href="#">Вакансии</a></p>
+            <p><a href="#">Сотрудничество</a></p>
+            <p><a href="#">Написать нам</a></p>
+          </div>
+          <div>
+            <h3>ИНФОРМАЦИЯ</h3>
+            <p><a href="#">Реквизиты</a></p>
+            <p><a href="#">Контакты</a></p>
+            <p><a href="#">Связь с менеджером</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>2024 © Zipkidz</p>
+        <div class="bank-cards">
+          <img src="assets/images/svg/visa-card.svg" alt="VISA">
+          <img src="assets/images/svg/mir-card.svg" alt="МИР">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- модальное регистрации-->
+  <div class="modal fade" id="registrationModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title">Регистрация</h5>
+        <button type="button" class="btn btn-outline-light second-btn second-btn_active btn-choice-one">Розничные покупатели</button>
+        <button type="button" class="btn btn-outline-light second-btn btn-choice-two" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registrationOptModal">Оптовые покупатели</button>
+        <div class="mb-3">
+          <input type="text" class="form-control modal-content__input" id="firstname" placeholder="Имя" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control modal-content__input" id="lastname" placeholder="Фамилия" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control modal-content__input" id="phone" placeholder="Телефон" required>
+        </div>
+        <div class="mb-3 input-pass">
+          <input type="password" class="form-control modal-content__input" id="password" placeholder="Пароль" required>
+          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+        </div>
+        <div class="mb-3 input-pass">
+          <input type="password" class="form-control modal-content__input" id="confirm-password" placeholder="Подтверждение пароля" required>
+          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="newsletterConsent">
+          <label class="form-check-label" for="newsletterConsent">
+            Согласен на получение E-mail рассылки
+          </label>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="dataConsent">
+          <label class="form-check-label" for="dataConsent">
+            Согласен на обработку персональных данных. С <a href="#">договором публичной оферты</a> и <a href="#">политикой конфиденциальности</a> ознакомлен и принимаю.
+          </label>
+        </div>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#successModal">Зарегистрироваться</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- модальное регистрации ОПТ-->
+  <div class="modal fade" id="registrationOptModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title">Регистрация</h5>
+        <button type="button" class="btn btn-outline-light second-btn btn-choice-one" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registrationModal">Розничные покупатели</button>
+        <button type="button" class="btn btn-outline-light second-btn second-btn_active btn-choice-two">Оптовые покупатели</button>
+        <div class="mb-3">
+          <input type="text" class="form-control modal-content__input" id="firstname-opt" placeholder="Имя" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control modal-content__input" id="lastname-opt" placeholder="Фамилия" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control modal-content__input" id="city-opt" placeholder="Город" required>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control modal-content__input" id="mail-opt" placeholder="E-mail" required>
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control modal-content__input" id="phone-opt" placeholder="Телефон" required>
+        </div>
+        <div class="mb-3 input-pass">
+          <input type="password" class="form-control modal-content__input" id="password-opt" placeholder="Пароль" required>
+          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+        </div>
+        <div class="mb-3 input-pass">
+          <input type="password" class="form-control modal-content__input" id="confirm-password-opt" placeholder="Подтверждение пароля" required>
+          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="newsletterConsent-opt">
+          <label class="form-check-label" for="newsletterConsent-opt">
+            Согласен на получение E-mail рассылки
+          </label>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="dataConsent-opt">
+          <label class="form-check-label" for="dataConsent-opt">
+            Согласен на обработку персональных данных. С <a href="#">договором публичной оферты</a> и <a href="#">политикой конфиденциальности</a> ознакомлен и принимаю.
+          </label>
+        </div>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#successOptModal">Зарегистрироваться</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- модальное вход в личный кабинет по E-mail-->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title" id="loginModalLabel">Вход в личный кабинет</h5>
+        <div class="modal-choice">
+          <span class="modal-choice__item" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginPhoneModal">По телефону</span>
+          <span class="modal-choice__item modal-choice__item_active">По E-mail</span>
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control modal-content__input" id="mail-log" placeholder="E-mail" required>
+        </div>
+        <div class="mb-3 input-pass">
+          <input type="password" class="form-control modal-content__input" id="password-log" placeholder="Пароль" required>
+          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="save-log">
+          <span class="form-check-label modal-save-log">
+            Запомнить меня
+            <span class="text-underlinte" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#resetModal">Забыли пароль?</span>
+          </span>
+        </div>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Войти</button>
+        <p class="modal-info">Впервые на сайте? <span class="text-underlinte" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registrationModal">Зарегистрируйтесь</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- модальное вход в личный кабинет по телефону-->
+  <div class="modal fade" id="loginPhoneModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title" id="loginPhoneModalLabel">Вход в личный кабинет</h5>
+        <div class="modal-choice">
+          <span class="modal-choice__item modal-choice__item_active">По телефону</span>
+          <span class="modal-choice__item" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">По E-mail</span>
+        </div>
+        <div class="mb-3 input-pass">
+          <input type="password" class="form-control modal-content__input" id="password-log-phone" placeholder="Пароль" required>
+          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="save-log-phone">
+          <span class="form-check-label modal-save-log">
+            Запомнить меня
+            <span class="text-underlinte" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#resetModal">Забыли пароль?</span>
+          </span>
+        </div>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Войти</button>
+        <p class="modal-info">Впервые на сайте? <span class="text-underlinte" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registrationModal">Зарегистрируйтесь</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- модальное восстановления пароля-->
+  <div class="modal fade" id="resetModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title">Восстановление пароля</h5>
+        <p class="modal-description">Введите e-mail, указанный при регистрации, и мы вышлем инструкцию по восстановлению</p>
+        <div class="mb-3 input-pass">
+          <input type="password" class="form-control modal-content__input" id="password-reset" placeholder="Пароль" required>
+          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+        </div>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#confirmModal">Сбросить пароль</button>
+        <p class="modal-info">Уже зарегистрированы? <span class="text-underlinte" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">Войти</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- модальное подтверждение пароля-->
+  <div class="modal fade" id="confirmModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title">Подтверждение пароля</h5>
+        <p class="modal-description">Код выслан на номер: <span class="text-underlinte text-semibold">+7 (905) 163-24-60</span></p>
+
+        <div class="pass-confirm">
+          <input maxlength="1">
+          <input maxlength="1">
+          <input maxlength="1">
+          <input maxlength="1">
+          <input maxlength="1">
+          <input maxlength="1">
+        </div>
+        
+        <p class="modal-description">Повторная отправка доступна через: <span class="text-underlinte text-semibold">00:12</span></p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- модальное скидка -->
+  <div class="modal fade" id="promoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h4>Зарегестрируйтесь</h4>
+        <h5 class="modal-title">и получите скидку на первый заказ 20%</h5>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registrationModal">Зарегистрироваться</button>
+        <p class="modal-info">* Только для розничных покупателей</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- модальное успешная регистрация -->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title">Вы успешно зарегистрированы!</h5>
+        <p class="modal-info">Ваша скидка 20% на первую покупку</p>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Начать покупки</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- модальное успешная регистрация ОПТ-->
+  <div class="modal fade" id="successOptModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title">Вы успешно зарегистрированы!</h5>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Заполнить договор</button>
+        <p class="modal-or">Или</p>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Перейти в каталог</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- модальное подписка-->
+  <div class="modal fade" id="subscribeModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title">Подпишитесь на E-mail рассылку и получите скидку на первый заказ!</h5>
+        <div class="mb-3">
+          <input type="email" class="form-control modal-content__input" id="mail-subscribe" placeholder="E-mail" required>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="dataConsentSubscribe">
+          <label class="form-check-label" for="dataConsentSubscribe">
+            Согласен на обработку персональных данных. С <a href="#">договором публичной оферты</a> и <a href="#">политикой конфиденциальности</a> ознакомлен и принимаю.
+          </label>
+        </div>
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Подписаться</button>
+      </div>
+    </div>
+  </div>
+
+  <img class="btn-top" src="assets/images/svg/to-top.svg" alt="Вверх">
+
+  <script src="scripts/swiper/five-swiper.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+  <script src="scripts/btn-to-top.js"></script>
+  <script src="scripts/menu-scroll.js"></script>
+  <script src="scripts/side-menu.js"></script>
+  <script src="scripts/filters-sorts.js"></script>
+  <script src="scripts/fast-cart.js"></script>
+
+</body>
+</html>

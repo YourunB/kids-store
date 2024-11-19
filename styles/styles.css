@@ -374,6 +374,21 @@ p {
   height: 645px;
 }
 
+/*-------------------------------------catalog-many-cards------------------------------*/
+
+.catalog-wrapper-many {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.catalog-wrapper-many .sort-top {
+  grid-column: span 4;
+}
+
+.catalog .catalog-wrapper-many .card-slider__images {
+  height: 400px;
+}
+
 /*-----------------------------------filters-and-sorts---------------------------------*/
 
 .sort-top {
