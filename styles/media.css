@@ -206,6 +206,18 @@
   .modal-content .modal-content__input {
     max-width: 100%;
   }
+
+  .fast-cart {
+    top: calc(100% + 15px);
+    right: -80px;
+    padding: 15px;
+    width: 280px;
+    gap: 10px;
+  }
+
+  .fast-cart .fast-cart__image {
+    width: 80px;
+  }
 }
 
 @media (max-width: 440px) {
