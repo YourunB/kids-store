@@ -536,11 +536,15 @@ p {
   padding: 26px;
   background-color: white;
   width: 350px;
-  display: flex;
   flex-wrap: wrap;
   gap: 15px;
   border-radius: 20px;
   box-shadow: 0px 0px 13.8px 0px #0000003B;
+  display: none;
+}
+
+.fast-cart_open {
+  display: flex;
 }
 
 .fast-cart__image {
@@ -550,6 +554,25 @@ p {
   object-fit: contain;
   border-radius: 10px;
   background-color: var(--light-gray);
+}
+
+.fast-cart__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: 0.5s;
+}
+
+@media (hover:hover) {
+  .fast-cart .fast-cart__close:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+  }
+}
+
+.fast-cart .fast-cart__close:active {
+  transform: scale(0.8);
+  transition: 0.2s;
 }
 
 .fast-cart__content__title {
