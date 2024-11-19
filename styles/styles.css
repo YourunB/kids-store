@@ -267,8 +267,6 @@ p {
 
 .swiper-container .swiper-slide {
   position: relative;
-  margin-right: 5px !important;
-  width: 308px !important;
 }
 
 .swiper-container .catalog__card {
@@ -1653,7 +1651,6 @@ p {
 .block_last {
   padding-bottom: 300px;
 }
-
 
 /*---------------------------------------product-sliders-box--------------------*/
 
