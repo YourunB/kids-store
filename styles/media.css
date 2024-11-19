@@ -171,7 +171,8 @@
     gap: 10px;
   }
 
-  .catalog-wrapper {
+  .catalog-wrapper,
+  .catalog-wrapper-many {
     grid-template-columns: 1fr;
     justify-content: center;
   }
@@ -186,14 +187,7 @@
   }
 
   .subcatalog,
-  .sort-top {
-    grid-column: span 1;
-  }
-
-  .catalog-wrapper-many {
-    grid-template-columns: 1fr;
-  }
-  
+  .sort-top,
   .catalog-wrapper-many .sort-top {
     grid-column: span 1;
   }
