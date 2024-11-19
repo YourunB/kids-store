@@ -1682,6 +1682,17 @@ p {
 
 .spec-content__description {
   margin-bottom: 22px;
+  overflow: hidden;
+  height: 130px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.spec-content__description_open {
+  display: block;
+  height: fit-content;
 }
 
 .spec-content__description h4 {
