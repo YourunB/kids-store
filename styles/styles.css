@@ -1724,14 +1724,37 @@ p {
   border-bottom-left-radius: 60px;
 }
 
+.product-controls__left img {
+  transition: 0.5s;
+}
+
+@media(hover:hover) {
+  .product-controls__left img:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+  }
+}
+
+.product-controls__left img:active {
+  transition: 0.2s;
+  transform: scale(0.8);
+}
+
 .product-controls__right {
   background-color: var(--brown);
-  cursor: pointer;
   color: var(--text-light);
   border: none;
   width: 50%;
   border-top-right-radius: 60px;
   border-bottom-right-radius: 60px;
+  transition: 0.5s;
+}
+
+@media(hover:hover) {
+  .product-controls__right:hover {
+    cursor: pointer;
+    background-color: rgb(159, 101, 87);
+  }
 }
 
 /*--------------------------------vertical-swiper-------------------------------*/
