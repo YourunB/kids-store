@@ -2012,6 +2012,7 @@ p {
   height: 800px;
   border-radius: 20px;
   overflow: hidden;
+  position: relative;
 }
 
 .central-swiper .swiper-slide,
@@ -2048,6 +2049,26 @@ p {
 
 .swiper-hide {
   display: none;
+}
+
+.loop-card {
+  position: absolute;
+  z-index: 10;
+  bottom: 10px;
+  right: 10px;
+  transition: 0.5s;
+}
+
+@media(hover:hover) {
+  .loop-card:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+}
+
+.loop-card:active {
+  transition: 0.2s;
+  transform: scale(0.8);
 }
 
 /*---------------------------------------btn-to-top-----------------------------*/
