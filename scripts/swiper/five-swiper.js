@@ -1,6 +1,6 @@
 const swiperFive = new Swiper('.swiper-container', {
   spaceBetween: 10, // Расстояние между слайдами
-  freeMode: true,   // Без циклической прокрутки
+  freeMode: false,   // Без циклической прокрутки
   loop: false,      // Без бесконечной прокрутки
   grabCursor: true, // Курсор захвата для мобильных устройств
   breakpoints: {
