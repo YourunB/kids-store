@@ -12,14 +12,21 @@ const swiperVertical = new Swiper('.vertical-swiper', {
 });
 
 const swiperMini = new Swiper('.mini-swiper', {
-  direction: 'horizontal',  
+  direction: 'horizontal',
   slidesPerView: 5,
   spaceBetween: 10,
   freeMode: true,
-  loop: false,
-  //grabCursor: true,
+  loop: true,
   navigation: {
     prevEl: '.mini-button-prev',
     nextEl: '.mini-button-next',
-  }
+  },
+});
+
+
+const slidesMini = document.querySelectorAll('.mini-swiper .swiper-slide');
+slidesMini.forEach((slide, index) => {
+  slide.addEventListener('click', () => {
+    swiperMini.slideToLoop(index);
+  });
 });

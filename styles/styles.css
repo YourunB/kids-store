@@ -1947,11 +1947,13 @@ p {
   object-fit: contain;
   background-color: var(--light-gray);
   border-radius: 20px;
+  user-select: none;
 }
 
 .mini-button-prev,
 .mini-button-next {
   position: absolute;
+  user-select: none;
 }
 
 .mini-button-prev {
@@ -1965,6 +1967,11 @@ p {
   top: calc(50% - 15px);
   right: -25px;
   rotate: -90deg;
+}
+
+.mini-swiper .swiper-slide-active {
+  border: 1px solid black;
+  border-radius: 20px;
 }
 
 /*-------------------------------------custom-slider----------------------------*/
