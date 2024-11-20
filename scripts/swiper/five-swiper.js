@@ -1,7 +1,23 @@
 const swiperFive = new Swiper('.swiper-container', {
-  slidesPerView: 2, // Показываем 5 слайдов
   spaceBetween: 10, // Расстояние между слайдами
-  freeMode: true,   // Без циклической прокрутки
+  freeMode: false,   // Без циклической прокрутки
   loop: false,      // Без бесконечной прокрутки
   grabCursor: true, // Курсор захвата для мобильных устройств
+  breakpoints: {
+    1200: {
+      slidesPerView: 5,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    576: {
+      slidesPerView: 2,
+    },
+    0: {
+      slidesPerView: 1,
+    },
+  }
 });
