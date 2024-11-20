@@ -958,7 +958,8 @@ p {
   pointer-events: none;
 }
 
-.card-heart {
+.card-heart,
+.card-eye {
   position: absolute;
   z-index: 10;
   width: 30px;
@@ -969,15 +970,22 @@ p {
   transition: 0.5s;
 }
 
+.card-eye {
+  display: none;
+  top: 60px;
+}
+
 @media (hover:hover) {
-  .card-heart:hover {
+  .card-heart:hover,
+  .card-eye:hover {
     cursor: pointer;
     filter: brightness(1.5);
     transform: scale(1.2);
   }
 }
 
-.card-heart:active {
+.card-heart:active,
+.card-eye:active {
   transition: 0.2s;
   transform: scale(0.8);
 }
@@ -1010,6 +1018,10 @@ p {
 @media(hover:hover) {
   .catalog__card:hover {
     z-index: 50;
+  }
+
+  .catalog__card:hover .card-eye {
+    display: block;
   }
 }
 
@@ -1346,6 +1358,12 @@ p {
 
 .modal-image {
   width: 100%;
+}
+
+/*-------------------------------------modal-swiper-------------------------------*/
+
+.modal-product {
+  --bs-modal-width: 800px;
 }
 
 /*-------------------------------------main-swiper--------------------------------*/
