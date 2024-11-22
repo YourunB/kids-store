@@ -1946,7 +1946,8 @@ p {
 
 .vertical-swiper-wrapper .swiper-button-disabled,
 .mini-swiper-wrapper .swiper-button-disabled,
-.swiper-container .swiper-button-disabled {
+.swiper-container .swiper-button-disabled,
+.mini-modal-swiper-wrapper .swiper-button-disabled {
   display: none !important;
 }
 
@@ -1990,7 +1991,8 @@ p {
 }
 
 .vertical-swiper-wrapper,
-.mini-swiper-wrapper {
+.mini-swiper-wrapper,
+.mini-modal-swiper-wrapper {
   position: relative;
   width: fit-content;
   height: fit-content;
@@ -1998,13 +2000,15 @@ p {
 
 /*----------------------------------------mini-swiper---------------------------*/
 
-.mini-swiper {
+.mini-swiper,
+.mini-modal-swiper {
   max-width: 560px;
   width: 100%;
   overflow: hidden;
 }
 
-.mini-swiper .swiper-slide .swiper-slide__image {
+.mini-swiper .swiper-slide .swiper-slide__image,
+.mini-modal-swiper .swiper-slide .swiper-slide__image {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -2014,31 +2018,37 @@ p {
 }
 
 .mini-button-prev,
-.mini-button-next {
+.mini-button-next,
+.mini-modal-button-prev,
+.mini-modal-button-next {
   position: absolute;
   user-select: none;
 }
 
-.mini-button-prev {
+.mini-button-prev,
+.mini-modal-button-prev {
   z-index: 10;
   top: calc(50% - 15px);
   left: -25px;
   rotate: 90deg;
 }
 
-.mini-button-next {
+.mini-button-next,
+.mini-modal-button-next {
   top: calc(50% - 15px);
   right: -25px;
   rotate: -90deg;
 }
 
 .mini-swiper .swiper-slide,
+.mini-modal-swiper .swiper-slide,
 .vertical-swiper .swiper-slide {
   border-radius: 20px;
   border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .mini-swiper .swiper-slide-active,
+.mini-modal-swiper .swiper-slide-active,
 .vertical-swiper .swiper-slide-active {
   border-color: black;
 }
@@ -2046,11 +2056,13 @@ p {
 /*-------------------------------------central-swiper----------------------------*/
 
 .central-swiper-wrapper,
+.central-modal-swiper-wrapper,
 .central-vertical-swiper-wrapper {
   position: relative;
 }
 
 .central-swiper,
+.central-modal-swiper,
 .central-vertical-swiper-wrapper {
   max-width: 600px;
   width: 100%;
@@ -2061,12 +2073,14 @@ p {
 }
 
 .central-swiper .swiper-slide,
+.central-modal-swiper .swiper-slide,
 .central-vertical-swiper-wrapper .swiper-slide {
   background-color: var(--light-gray);
   border-radius: 20px;
 }
 
 .central-swiper .swiper-slide .swiper-slide__image,
+.central-modal-swiper .swiper-slide .swiper-slide__image,
 .central-vertical-swiper-wrapper .swiper-slide .swiper-slide__image {
   width: 100%;
   height: 100%;
@@ -2075,7 +2089,8 @@ p {
 }
 
 .central-button-prev,
-.central-vertical-button-prev {
+.central-vertical-button-prev,
+.central-modal-button-prev {
   position: absolute;
   z-index: 20;
   left: 10px;
@@ -2084,7 +2099,8 @@ p {
 }
 
 .central-button-next,
-.central-vertical-button-next {
+.central-vertical-button-next,
+.central-modal-button-next {
   position: absolute;
   z-index: 20;
   right: 10px;
