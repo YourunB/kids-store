@@ -2193,7 +2193,10 @@ p {
   .menu-language__window span:hover {
     background-color: var(--smok-gray);
   }
-  
+}
+
+.menu-icon_rotate {
+  rotate: 180deg;
 }
 
 /*-------------------------------------scrollbar--------------------------------*/
