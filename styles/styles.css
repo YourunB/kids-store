@@ -230,6 +230,16 @@ p {
   align-items: center;
 }
 
+.offcanvas-body .header__indicators {
+  margin-top: 20px;
+  justify-content: flex-start;
+  display: none;
+}
+
+.offcanvas-body .header__indicators .menu-icon {
+  filter: invert(1);
+}
+
 /*------------------------------------------swiper--------------------------------*/
 .swiper-button-next,
 .swiper-button-prev {
