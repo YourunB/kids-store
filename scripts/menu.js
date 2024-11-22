@@ -13,6 +13,20 @@ btnSearch.addEventListener('click', () => {
   windowSearch.classList.toggle('menu-search__window_open');
 });
 
+/*-------------------------------windows-burger----------------------------*/
+
+const btnToggleSearchBurger = document.getElementById('btn-toggle-search-burger');
+const windowSearchBurger = document.getElementById('window-search-burger');
+const btnSearchBurger = document.getElementById('btn-search-burger');
+
+btnToggleSearchBurger.addEventListener('click', () => {
+  windowSearchBurger.classList.toggle('menu-search__window_open');
+});
+
+btnSearchBurger.addEventListener('click', () => {
+  windowSearchBurger.classList.toggle('menu-search__window_open');
+});
+
 /*-------------------------------windows-language--------------------------*/
 
 const btnToggleLang = document.getElementById('btn-toggle-lang');
@@ -27,4 +41,20 @@ btnToggleLang.addEventListener('click', () => {
 windowLang.addEventListener('click', (e) => {
   if (e.target.tagName === 'SPAN') windowLang.classList.remove('menu-language__window_open');
   btnLangArrow.classList.remove('menu-icon_rotate');
+});
+
+/*----------------------windows-language-burger--------------------------*/
+
+const btnToggleLangBurger = document.getElementById('btn-toggle-lang-burger');
+const windowLangBurger = document.getElementById('window-lang-burger');
+const btnLangArrowBurger = document.getElementById('btn-toggle-lang-img-burger');
+
+btnToggleLangBurger.addEventListener('click', () => {
+  windowLangBurger.classList.toggle('menu-language__window_open');
+  btnLangArrowBurger.classList.toggle('menu-icon_rotate');
+});
+
+windowLangBurger.addEventListener('click', (e) => {
+  if (e.target.tagName === 'SPAN') windowLangBurger.classList.remove('menu-language__window_open');
+  btnLangArrowBurger.classList.remove('menu-icon_rotate');
 });

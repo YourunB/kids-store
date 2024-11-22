@@ -2258,6 +2258,10 @@ p {
   rotate: 180deg;
 }
 
+.offcanvas-body .menu-search__window {
+  width: 240px;
+}
+
 /*-------------------------------------scrollbar--------------------------------*/
 
 *::-webkit-scrollbar {
