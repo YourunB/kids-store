@@ -115,6 +115,10 @@
 }
 
 @media (max-width: 991px) {
+  .bread-crumbs {
+    display: none;
+  }
+  
   .header-wrapper {
     padding: 0 20px;
   }
