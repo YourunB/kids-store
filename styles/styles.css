@@ -2053,6 +2053,14 @@ p {
   border-color: black;
 }
 
+@media(hover:hover) {
+  .mini-modal-swiper .swiper-slide:hover,
+  .mini-swiper .swiper-slide:hover,
+  .vertical-swiper .swiper-slide:hover {
+    border-color: var(--soft-red);
+  }
+}
+
 /*-------------------------------------central-swiper----------------------------*/
 
 .central-swiper-wrapper,

@@ -76,17 +76,3 @@ swiperVertical.on('slideChange', () => {
   const activeIndex = swiperVertical.realIndex;
   swiperCentralVertical.slideTo(activeIndex);
 });
-
-const slidesVertical = document.querySelectorAll('.vertical-swiper .swiper-slide');
-slidesVertical.forEach((slide, index) => {
-  slide.addEventListener('click', () => {
-    swiperVertical.slideToLoop(index);
-  });
-});
-
-const slidesMini = document.querySelectorAll('.mini-swiper .swiper-slide');
-slidesMini.forEach((slide, index) => {
-  slide.addEventListener('click', () => {
-    swiperMini.slideToLoop(index);
-  });
-});
