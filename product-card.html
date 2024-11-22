@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <link rel="icon" href="assets/images/svg/toy.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   <title>Описание</title>
 </head>
 <body>
@@ -1019,51 +1022,64 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <div class="card-promo card-promo-discont"><span>Акция</span></div>
-                  <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  <a href="assets/images/product/product-5_x2.png" data-fancybox="gallery" data-caption="Одежда">
+                    <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  </a>
                   <picture>
                     <source srcset="assets/images/product/product-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
                     <img class="swiper-slide__image" src="assets/images/product/product-5.png" alt="Одежда" loading="lazy">
                   </picture>
                 </div>
                 <div class="swiper-slide">
-                  <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  <a href="assets/images/product/product-6_x2.png" data-fancybox="gallery" data-caption="Одежда">
+                    <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  </a>
                   <picture>
                     <source srcset="assets/images/product/product-6_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
                     <img class="swiper-slide__image" src="assets/images/product/product-6.png" alt="Одежда" loading="lazy">
                   </picture>
                 </div>
                 <div class="swiper-slide">
-                  <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  <a href="assets/images/product/product-7_x2.png" data-fancybox="gallery" data-caption="Одежда">
+                    <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  </a>
                   <picture>
                     <source srcset="assets/images/product/product-7_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
                     <img class="swiper-slide__image" src="assets/images/product/product-7.png" alt="Одежда" loading="lazy">
                   </picture>
                 </div>
                 <div class="swiper-slide">
-                  <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  <a href="assets/images/product/product-8_x2.png" data-fancybox="gallery" data-caption="Одежда">
+                    <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  </a>
                   <picture>
                     <source srcset="assets/images/product/product-8_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
                     <img class="swiper-slide__image" src="assets/images/product/product-8.png" alt="Одежда" loading="lazy">
                   </picture>
                 </div>
                 <div class="swiper-slide">
-                  <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  <a href="assets/images/product/product-9_x2.png" data-fancybox="gallery" data-caption="Одежда">
+                    <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  </a>
                   <picture>
                     <source srcset="assets/images/product/product-9_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
                     <img class="swiper-slide__image" src="assets/images/product/product-9.png" alt="Одежда" loading="lazy">
                   </picture>
                 </div>
                 <div class="swiper-slide">
-                  <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  <a href="assets/images/product/product-1_x2.png" data-fancybox="gallery" data-caption="Одежда">
+                    <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  </a>
                   <picture>
                     <source srcset="assets/images/product/product-1_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
                     <img class="swiper-slide__image" src="assets/images/product/product-1.png" alt="Одежда" loading="lazy">
                   </picture>
                 </div>
               </div>
+    
             </div>
-            <div class="central-button-prev btn-swiper"><img class="card-additional__controls__count_minus" src="assets/images/svg/carret-swiper.svg" alt="-"></div>
-            <div class="central-button-next btn-swiper"><img class="card-additional__controls__count_plus" src="assets/images/svg/carret-swiper.svg" alt="+"></div>
+            <div class="central-button-prev btn-swiper"><img src="assets/images/svg/carret-swiper.svg" alt="-"></div>
+            <div class="central-button-next btn-swiper"><img src="assets/images/svg/carret-swiper.svg" alt="+"></div>
           </div>
   
           <div class="sliders-box__content">
@@ -1121,28 +1137,28 @@
             <p class="sliders-box__content__size">Размер: <span>80</span></p>
             <p class="sliders-box__content__warn"><span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
             <div class="size-box">
-              <input id="pro-size-1m" type="radio" name="pro-size" checked>
-              <label for="pro-size-1m">74</label>
-              <input disabled id="pro-size-2m" type="radio" name="pro-size">
-              <label for="pro-size-2m">80</label>
-              <input disabled id="pro-size-3m" type="radio" name="pro-size">
-              <label for="pro-size-3m">86</label>
-              <input disabled id="pro-size-4m" type="radio" name="pro-size">
-              <label for="pro-size-4m">92</label>
+              <input id="pro-size-1" type="radio" name="pro-size" checked>
+              <label for="pro-size-1">74</label>
+              <input disabled id="pro-size-2" type="radio" name="pro-size">
+              <label for="pro-size-2">80</label>
+              <input disabled id="pro-size-3" type="radio" name="pro-size">
+              <label for="pro-size-3">86</label>
+              <input disabled id="pro-size-4" type="radio" name="pro-size">
+              <label for="pro-size-4">92</label>
               <input disabled id="pro-size-5" type="radio" name="pro-size">
-              <label for="pro-size-5m">98</label>
-              <input disabled id="pro-size-6m" type="radio" name="pro-size">
-              <label for="pro-size-6m">110</label>
-              <input disabled id="pro-size-7m" type="radio" name="pro-size">
-              <label for="pro-size-7m">116</label>
-              <input disabled id="pro-size-8m" type="radio" name="pro-size">
-              <label for="pro-size-8m">122</label>
-              <input disabled id="pro-size-9m" type="radio" name="pro-size">
-              <label for="pro-size-9m">128</label>
-              <input disabled id="pro-size-10m" type="radio" name="pro-size">
-              <label for="pro-size-10m">134</label>
-              <input disabled id="pro-size-11m" type="radio" name="pro-size">
-              <label for="pro-size-11m">140</label>
+              <label for="pro-size-5">98</label>
+              <input disabled id="pro-size-6" type="radio" name="pro-size">
+              <label for="pro-size-6">110</label>
+              <input disabled id="pro-size-7" type="radio" name="pro-size">
+              <label for="pro-size-7">116</label>
+              <input disabled id="pro-size-8" type="radio" name="pro-size">
+              <label for="pro-size-8">122</label>
+              <input disabled id="pro-size-9" type="radio" name="pro-size">
+              <label for="pro-size-9">128</label>
+              <input disabled id="pro-size-10" type="radio" name="pro-size">
+              <label for="pro-size-10">134</label>
+              <input disabled id="pro-size-11" type="radio" name="pro-size">
+              <label for="pro-size-11">140</label>
             </div>
   
             <p class="sliders-box__content__table-sizes" data-bs-toggle="modal" data-bs-target="#tableSizesModal">Таблица размеров</p>
