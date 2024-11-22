@@ -172,6 +172,10 @@
   .btn-filters {
     display: inline-block;
   }
+
+  .vertical-swiper-wrapper {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
