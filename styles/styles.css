@@ -1391,7 +1391,7 @@ p {
 }
 
 .main-swiper .swiper-button-next::after {
-  content: url('/assets/images/svg/right-white.svg');
+  content: url('../assets/images/svg/right-white.svg');
 }
 
 .main-swiper .swiper-slide {
@@ -1399,7 +1399,7 @@ p {
 }
 
 .main-swiper .swiper-button-prev::after {
-  content: url('/assets/images/svg/left-white.svg');
+  content: url('../assets/images/svg/left-white.svg')
 }
 
 .swiper-slide__text-box {
@@ -2119,6 +2119,34 @@ p {
   transition: 0.2;
   opacity: 1;
   transform: scale(0.8);
+}
+
+/*-------------------------------------menu-search------------------------------*/
+
+.menu-search {
+  position: relative;
+}
+
+.menu-search__window {
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 20px);
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 300px;
+  display: none;
+}
+
+.menu-search__window_open {
+  display: flex;
+}
+
+.menu-search__window .btn {
+  min-width: fit-content;
+  min-height: fit-content;
 }
 
 /*-------------------------------------scrollbar--------------------------------*/
