@@ -2122,27 +2122,25 @@ p {
   line-height: 0;
   right: 20px;
   bottom: 20px;
-  opacity: 0;
+  display: none;
   cursor: pointer;
   transition: 0.5s;
 }
 
 .btn-top_show {
   z-index: 1;
-  opacity: 0.6;
+  display: block;
 }
 
 @media (hover:hover) {
   .btn-top_show:hover {
     cursor: pointer;
-    opacity: 1;
     transform: scale(1.1);
   }
 }
 
 .btn-top_show:active {
   transition: 0.2;
-  opacity: 1;
   transform: scale(0.8);
 }
 
