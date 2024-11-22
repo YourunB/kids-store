@@ -79,7 +79,7 @@
         </div>
         <div class="menu-count">
           <img class="menu-icon" src="assets/images/svg/basket-white.svg" alt="Корзина" data-bs-toggle="modal" data-bs-target="#registrationModal">
-          <span class="menu-count__item">28</span>
+          <span class="menu-count__item" id="cart-count">28</span>
         </div>
         <div class="menu-language">
           <div class="btn-lang" id="btn-toggle-lang"><span>RU</span><img id="btn-toggle-lang-img" class="menu-icon" src="assets/images/svg/carret-white.svg" alt="Стрелочка"></div>
@@ -1002,7 +1002,7 @@
           <p class="sliders-box__content__table-sizes" data-bs-toggle="modal" data-bs-target="#tableSizesModal">Таблица размеров</p>
 
           <div class="product-controls">
-            <div class="product-controls__left"><img src="assets/images/svg/minus.svg" alt="-"><span>1</span><img src="assets/images/svg/plus.svg" alt="+"></div>
+            <div class="product-controls__left"><img class="card-additional__controls__count_minus" src="assets/images/svg/minus.svg" alt="-"><span>1</span><img class="card-additional__controls__count_plus" src="assets/images/svg/plus.svg" alt="+"></div>
             <button class="product-controls__right">В корзину</button>
           </div>
         </div>
@@ -1021,6 +1021,7 @@
   <script src="scripts/menu-scroll-main-page.js"></script>
   <script src="scripts/menu.js"></script>
   <script src="scripts/swiper/modal-swiper.js"></script>
+  <script src="scripts/cart.js"></script>
 
 </body>
 </html>

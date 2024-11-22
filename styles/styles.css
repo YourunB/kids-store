@@ -772,8 +772,10 @@ p {
   border-top-right-radius: 20px;
 }
 
-.catalog__card:hover .card-additional {
-  display: block;
+@media(hover:hover) {
+  .catalog__card:hover .card-additional {
+    display: block;
+  }
 }
 
 .card-additional__controls {
