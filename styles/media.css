@@ -1,14 +1,68 @@
 @media (max-width: 1700px) {
-  .categories {
+  /*.categories {
     font-size: 12px;
+  }*/
+}
+
+@media (max-width: 1500px) {
+  .central-swiper,
+  .central-vertical-swiper-wrapper {
+    height: auto;
+  }
+
+  .catalog-wrapper-many .catalog__card {
+    min-width: 33%;
+    width: 33%;
+  }
+  
+  .catalog-wrapper-many .catalog__card:nth-of-type(8),
+  .catalog-wrapper-many .catalog__card:nth-of-type(9) {
+    min-width: 33%;
+    width: 33%;
+  }
+}
+
+@media (max-width: 1440px) { 
+  .card-slider__images,
+  .catalog .catalog-wrapper-many .card-slider__images {
+    height: 290px;
+  }
+
+  .catalog .card-slider__images {
+    height: 400px;
+  }
+
+  .central-swiper,
+  .central-modal-swiper,
+  .central-vertical-swiper-wrapper {
+    max-width: 525px;
+    width: 100%;
+    height: 700px;
+  }
+
+  .mini-swiper,
+  .mini-modal-swiper {
+    max-width: 550px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .vertical-swiper {
+    width: 130px;
+    height: 700px;
   }
 }
 
 @media (max-width: 1400px) {
-  .swiper,
+  .sliders-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /*.swiper,
   .offcanvas {
     font-size: 10px;
-  }
+  }*/
 
   .block {
     padding: 20px;
@@ -20,7 +74,7 @@
   }
 
   .categories {
-    font-size: 6px;
+    font-size: 12px;
   }
 
   .categories__card {
@@ -39,29 +93,6 @@
   
   .footer__center {
     margin-bottom: 100px;
-  }
-}
-
-@media (max-width: 1500px) {
-  .sliders-box {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .central-swiper,
-  .central-vertical-swiper-wrapper {
-    height: auto;
-  }
-
-  .catalog-wrapper-many .catalog__card {
-    min-width: 33%;
-    width: 33%;
-  }
-  
-  .catalog-wrapper-many .catalog__card:nth-of-type(8),
-  .catalog-wrapper-many .catalog__card:nth-of-type(9) {
-    min-width: 33%;
-    width: 33%;
   }
 }
 
@@ -91,10 +122,10 @@
 }
 
 @media (max-width: 1200px) {
-  .section,
+  /*.section,
   .footer {
     font-size: 10px;
-  }
+  }*/
 
   .header-wrapper {
     flex-wrap: wrap;
@@ -189,7 +220,7 @@
   }
 
   .categories {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .categories__card {

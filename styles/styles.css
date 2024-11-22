@@ -40,12 +40,12 @@ body {
 
 h2 {
   font-weight: 600;
-  font-size: 2.5em;
+  font-size: 1.625em;
 }
 
 h3 {
   font-weight: 500;
-  font-size: 2.5em;
+  font-size: 1.625em;
 }
 
 h4 {
@@ -54,7 +54,7 @@ h4 {
 }
 
 p {
-  font-size: 1.75em;
+  font-size: 1.25em;
 }
 
 .main {
@@ -96,7 +96,7 @@ p {
   display: flex;
   align-items: center;
   gap: 30px;
-  font-size: 1.125em;
+  font-size: 1em;
   font-weight: 500;
   width: 410px;
 }
@@ -175,7 +175,7 @@ p {
   list-style-type: none;
   transition: 0.5s;
   font-family: "Montserrat", sans-serif;
-  font-size: 1.625em;
+  font-size: 1.25em;
   font-weight: 400;
 }
 
@@ -194,7 +194,7 @@ p {
 }
 
 .submenu-list {
-  padding: 48px 0 0 0 ;
+  padding: 46px 0 0 0 ;
   list-style: none;
   display: none;
   position: absolute;
@@ -479,13 +479,13 @@ p {
 .filters__filter,
 .sorts__sort {
   position: relative;
-  font-size: 1.125em;
+  font-size: 0.875em;
   font-weight: 400;
   cursor: pointer;
 }
 
 .filter-name {
-  font-size: 1.125em;
+  font-size: 0.875em;
   font-weight: 400;
 }
 
@@ -709,14 +709,14 @@ p {
 }
 
 .card-description {
-  font-size: 1.25em;
+  font-size: 1em;
   margin: 10px 0;
   height: 60px;
   overflow-y: auto;
 }
 
 .card-price {
-  font-size: 1.625em;
+  font-size: 1.25em;
   font-weight: 600;
   display: flex;
   gap: 10px;
@@ -1067,7 +1067,7 @@ p {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  font-size: 1.25em;
+  font-size: 1em;
   min-width: 270px;
 }
 
@@ -1085,7 +1085,7 @@ p {
 }
 
 .side-menu__item {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   cursor: pointer;
 }
 
@@ -1160,7 +1160,7 @@ p {
   display: flex;
   gap: 3px;
   flex-wrap: wrap;
-  font-size: 1.125em;
+  font-size: 0.875em;
   font-weight: 400;
   color: var(--smok-gray);
   margin-bottom: 40px;
@@ -1212,19 +1212,21 @@ p {
 .advantages__card h4 {
   font-weight: 600;
   font-size: 1.25em;
+  margin-top: 10px;
 }
 
 .advantages__card p {
   font-weight: 400;
   font-size: 1em;
+  margin-top: 10px;
 }
 
 /*------------------------------------bootstrap-buttons---------------------------*/
 
 .btn {
-  border-radius: 77px;
-  min-height: 70px;
-  max-width: 360px;
+  border-radius: 37px;
+  min-height: 54px;
+  max-width: 240px;
   width: 100%;
   font-size: 1em;
   font-family: "Montserrat", sans-serif;
@@ -1629,7 +1631,7 @@ p {
   color: var(--text-light);
 }
 
-.footer h3{
+.footer h3 {
   color: var(--text-light);
   font-size: 1.25em;
   font-weight: 700;
@@ -1654,11 +1656,11 @@ p {
 }
 
 .footer-categories h3 {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .footer-categories h3:nth-last-of-type() {
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .footer__center,
@@ -1679,7 +1681,7 @@ p {
 }
 
 .footer__center p {
-  font-size: 1.125em;
+  font-size: 1em;
 }
 
 .footer__center h3,
@@ -1688,9 +1690,7 @@ p {
 }
 
 .footer .btn {
-  border-radius: 69px;
-  min-height: 70px;
-  max-width: 277px;
+  max-width: 300px;
   width: 100%;
   font-family: "Montserrat", sans-serif;
 }
@@ -1723,7 +1723,7 @@ p {
 }
 
 .block-first {
-  padding-top: 20px;
+  padding: 20px 70px 0 70px;
 }
 
 .block_last {
@@ -1737,7 +1737,7 @@ p {
 }
 
 .spec-header__btn {
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 400;
   border-radius: 10px;
   margin-bottom: 32px;
@@ -1774,13 +1774,13 @@ p {
 }
 
 .spec-content__description h4 {
-  font-size: 1.125em;
+  font-size: 1em;
   font-weight: 500;
   margin: 40px 0 20px 0;
 }
 
 .spec-content__description p {
-  font-size: 1em;
+  font-size: 0.875em;
   font-weight: 400;
   margin: 0;
 }
@@ -1806,6 +1806,7 @@ p {
   width: fit-content;
   user-select: none;
   cursor: pointer;
+  font-size: 0.875em;
 }
 
 .spec-content__show-hide img {
@@ -1849,13 +1850,13 @@ p {
 }
 
 .sliders-box__content h3 {
-  font-size: 2.25em;
+  font-size: 1.625em;
   font-weight: 500;
   margin-bottom: 40px;
 }
 
 .sliders-box__content p {
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 400;
 }
 
@@ -1866,7 +1867,7 @@ p {
 .sliders-box__content__price {
   display: block;
   font-weight: 500;
-  font-size: 1.625em;
+  font-size: 1.25em;
   padding: 10px 30px;
   background-color: var(--light-gray);
   border-radius: 110px;
@@ -2036,7 +2037,7 @@ p {
 
 .mini-swiper,
 .mini-modal-swiper {
-  max-width: 560px;
+  max-width: 500px;
   width: 100%;
   overflow: hidden;
 }
