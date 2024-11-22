@@ -143,6 +143,10 @@
   }
 
   .side-menu {
+    display: none;
+  }
+
+  .side-menu_open {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -155,6 +159,18 @@
 
   .bread-crumbs {
     margin-bottom: 20px;
+  }
+
+  .sort-top {
+    display: none;
+  }
+
+  .sort-top_open {
+    display: flex;
+  }
+  
+  .btn-filters {
+    display: inline-block;
   }
 }
 

@@ -141,7 +141,9 @@
         <div class="bread-crumbs">
           <a href="#">Главная</a><a href="#">/ Верхняя одежда</a><a class="bread-crumbs__current" href="#">/ Комбинезоны</a>
         </div>
-        <ul class="side-menu">
+        <img class="btn-filters" src="assets/images/svg/catalog.svg" alt="Каталог" title="Каталог" id="btn-catalog">
+        <img class="btn-filters" src="assets/images/svg/filters.svg" alt="Фильтры" title="Фильтры" id="btn-filters">
+        <ul class="side-menu" id="side-menu">
           <li class="side-menu__item side-menu__item_checked"><span>Верхняя одежда <img class="carret" src="assets/images/svg/carret-up-bold.svg" alt="∧"></span>
             <ul class="side-submenu">
               <li class="side-submenu__item side-submenu__item_checked"><a href="#">Комбинезоны</a></li>
@@ -169,7 +171,7 @@
       </aside>
 
       <div class="catalog-wrapper">
-        <div class="sort-top">
+        <div class="sort-top" id="filters-block">
           <div class="filters">
             <div class="filters__filter" id="btn-size-filters">Размер <span class="filter-count">(2)x</span> <img class="carret" src="assets/images/svg/carret-up.svg" alt="∨">
               <div class="select-list select-list_default" id="size-filters">

@@ -1130,6 +1130,30 @@ p {
   display: inline-block;
 }
 
+.btn-filters {
+  display: none;
+  width: 30px;
+  transition: 0.5s;
+  border-radius: 100%;
+  padding: 3px;
+}
+
+.btn-filters_active {
+  background-color: var(--smok-gray);
+}
+
+@media(hover:hover) {
+  .btn-filters:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+.btn-filters:active {
+  transform: scale(0.8);
+  transition: 0.2s;
+}
+
 /*-----------------------------------------bread-crumbs---------------------------*/
 
 .bread-crumbs {
