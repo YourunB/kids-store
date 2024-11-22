@@ -261,6 +261,7 @@ p {
 /*------------------------------------------five-swipper--------------------------*/
 
 .swiper-container {
+  position: relative;
   width: 100%;
   padding: 10px;
 }
@@ -279,6 +280,21 @@ p {
 
 .swiper-container .catalog .card-slider__images {
   height: 400px;
+}
+
+.bottom-slider-button-prev {
+  position: absolute;
+  z-index: 10;
+  left: 20px;
+  top: calc(35%);
+  rotate: 180deg;
+}
+
+.bottom-slider-button-next {
+  position: absolute;
+  z-index: 10;
+  right: 20px;
+  top: calc(35%);
 }
 
 /*-----------------------------------------card-slider----------------------------*/
@@ -1927,7 +1943,8 @@ p {
 }
 
 .vertical-swiper-wrapper .swiper-button-disabled,
-.mini-swiper-wrapper .swiper-button-disabled {
+.mini-swiper-wrapper .swiper-button-disabled,
+.swiper-container .swiper-button-disabled {
   display: none !important;
 }
 

@@ -3,6 +3,10 @@ const swiperFive = new Swiper('.swiper-container', {
   freeMode: false,   // Без циклической прокрутки
   loop: false,      // Без бесконечной прокрутки
   grabCursor: true, // Курсор захвата для мобильных устройств
+  navigation: {
+    prevEl: '.bottom-slider-button-prev',
+    nextEl: '.bottom-slider-button-next',
+  },
   breakpoints: {
     1200: {
       slidesPerView: 5,
