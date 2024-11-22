@@ -65,7 +65,13 @@
       </nav>
       <a href="index.html"><img class="logo" src="assets/images/svg/logo.svg" alt="ZIPKIDZ"></a>
       <div class="header__indicators">
-        <a href="index.html"><img class="menu-icon" src="assets/images/svg/loop-white.svg" alt="Лупа"></a>
+        <div class="menu-search">
+          <img class="menu-icon" src="assets/images/svg/loop-white.svg" alt="Лупа" id="btn-toggle-search">
+          <div class="menu-search__window" id="window-search">
+            <input type="text" class="form-control" placeholder="Поиск" required>
+            <button type="button" class="btn btn-dark" id="btn-search">Найти</button>
+          </div>
+        </div>
         <div class="menu-count">
           <img class="menu-icon" src="assets/images/svg/heart-white.svg" alt="Сердце" data-bs-toggle="modal" data-bs-target="#promoModal">
           <span class="menu-count__item">7</span>
@@ -1189,6 +1195,7 @@
   <script src="scripts/menu-scroll.js"></script>
   <script src="scripts/fast-cart.js"></script>
   <script src="scripts/product-page.js"></script>
+  <script src="scripts/menu.js"></script>
 
 </body>
 </html>
