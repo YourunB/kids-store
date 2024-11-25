@@ -145,6 +145,18 @@
   }
 }
 
+
+@media (max-width: 1024px) {
+  .data-FIO,
+  .data-contacts {
+    flex-wrap: wrap;
+  }
+
+  .data-many {
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 991px) {
   .bread-crumbs {
     display: none;
@@ -288,6 +300,10 @@
     max-width: 400px;
     width: 100%;
     height: 600px;
+  }
+
+  .section-data {
+    flex-wrap: wrap;
   }
 }
 
