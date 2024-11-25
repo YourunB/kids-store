@@ -1624,6 +1624,45 @@ p {
   max-width: 260px;
 }
 
+/*------------------------------------account-sidebar---------------------------*/
+
+.account-sidebar {
+  max-width: 230px;
+  width: 100%;
+}
+
+.account-sidebar__user {
+  font-size: 1em;
+  background-color: var(--light-gray);
+  padding: 10px 30px;
+}
+
+.account-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.account-menu__item {
+  width: 100%;
+}
+
+.account-menu__item_active {
+  font-weight: 600;
+}
+
+.account-menu__item a {
+  display: block;
+  width: 100%;
+}
+
+.account-menu__item:nth-of-type(8) {
+  margin-bottom: 45px;
+}
+
 /*-------------------------------------footer-----------------------------------*/
 
 .footer {
