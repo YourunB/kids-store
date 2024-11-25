@@ -1416,6 +1416,11 @@ p {
   font-size: 1.2em;
 }
 
+.account-data .btn {
+  display: block;
+  margin: auto;
+}
+
 /*------------------------------------modal-table-sizes---------------------------*/
 
 .modal-table-sizes {
