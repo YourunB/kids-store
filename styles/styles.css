@@ -58,7 +58,7 @@ p {
 }
 
 .main {
-  max-width: 1920px;
+  max-width: 1440px;
   width: 100%;
   margin: auto;
   overflow-x: hidden;
@@ -82,7 +82,7 @@ p {
 
 .header-wrapper {
   padding: 0 70px;
-  max-width: 1920px;
+  max-width: 1440px;
   height: 100%;
   margin: auto;
   display: flex;
@@ -1638,7 +1638,7 @@ p {
 }
 
 .footer-wrapper {
-  max-width: 1920px;
+  max-width: 1440px;
   padding: 70px 70px 60px 70px;
   margin: auto;
 }
