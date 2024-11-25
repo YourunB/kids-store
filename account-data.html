@@ -217,7 +217,7 @@
           <a class="text-small" href="#"><img src="assets/images/svg/plus-data.svg" alt="Добавить"> Добавить ещё ребенка</a>
         </div>
 
-        <button type="button" class="btn btn-dark">Сохранить</button>
+        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#thanksModal">Сохранить</button>
       </form>
     </section>
   </main>
@@ -522,181 +522,191 @@
     </div>
   </div>
 
-    <!-- модальное карточка продукта-->
-    <div class="modal modal-product fade" id="productModal" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-          
-          <div class="central-swiper-wrapper" id="central-swiper">
-            <div class="central-swiper">
+  <!-- модальное карточка продукта-->
+  <div class="modal modal-product fade" id="productModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        
+        <div class="central-swiper-wrapper" id="central-swiper">
+          <div class="central-swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card-promo card-promo-discont"><span>Акция</span></div>
+                <a href="assets/images/product/product-5_x2.png" data-fancybox="gallery" data-caption="Одежда">
+                  <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                </a>
+                <picture>
+                  <source srcset="assets/images/product/product-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="swiper-slide__image" src="assets/images/product/product-5.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <a href="assets/images/product/product-6_x2.png" data-fancybox="gallery" data-caption="Одежда">
+                  <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                </a>
+                <picture>
+                  <source srcset="assets/images/product/product-6_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="swiper-slide__image" src="assets/images/product/product-6.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <a href="assets/images/product/product-7_x2.png" data-fancybox="gallery" data-caption="Одежда">
+                  <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                </a>
+                <picture>
+                  <source srcset="assets/images/product/product-7_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="swiper-slide__image" src="assets/images/product/product-7.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <a href="assets/images/product/product-8_x2.png" data-fancybox="gallery" data-caption="Одежда">
+                  <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                </a>
+                <picture>
+                  <source srcset="assets/images/product/product-8_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="swiper-slide__image" src="assets/images/product/product-8.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <a href="assets/images/product/product-9_x2.png" data-fancybox="gallery" data-caption="Одежда">
+                  <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                </a>
+                <picture>
+                  <source srcset="assets/images/product/product-9_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="swiper-slide__image" src="assets/images/product/product-9.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+              <div class="swiper-slide">
+                <a href="assets/images/product/product-1_x2.png" data-fancybox="gallery" data-caption="Одежда">
+                  <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                </a>
+                <picture>
+                  <source srcset="assets/images/product/product-1_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                  <img class="swiper-slide__image" src="assets/images/product/product-1.png" alt="Одежда" loading="lazy">
+                </picture>
+              </div>
+            </div>
+  
+          </div>
+          <div class="central-button-prev btn-swiper"><img src="assets/images/svg/carret-swiper.svg" alt="-"></div>
+          <div class="central-button-next btn-swiper"><img src="assets/images/svg/carret-swiper.svg" alt="+"></div>
+        </div>
+
+        <div class="sliders-box__content">
+          <h3>Комбинезон детский софтшелл NEW</h3>
+          <p>Артикул: <span>1223456</span></p>
+          <span class="sliders-box__content__price">5000 ₽</span>
+          <p>Цвет — <span>розовый</span></p>
+
+          <div class="mini-swiper-wrapper" id="mini-swiper">
+            <div class="mini-swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="card-promo card-promo-discont"><span>Акция</span></div>
-                  <a href="assets/images/product/product-5_x2.png" data-fancybox="gallery" data-caption="Одежда">
-                    <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  <a href="product-card.html">
+                    <picture>
+                      <source srcset="assets/images/product/product-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="swiper-slide__image" src="assets/images/product/product-5.png" alt="Одежда" loading="lazy">
+                    </picture>
                   </a>
-                  <picture>
-                    <source srcset="assets/images/product/product-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                    <img class="swiper-slide__image" src="assets/images/product/product-5.png" alt="Одежда" loading="lazy">
-                  </picture>
                 </div>
                 <div class="swiper-slide">
-                  <a href="assets/images/product/product-6_x2.png" data-fancybox="gallery" data-caption="Одежда">
-                    <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  <a href="product-card.html">
+                    <picture>
+                      <source srcset="assets/images/product/product-6_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="swiper-slide__image" src="assets/images/product/product-6.png" alt="Одежда" loading="lazy">
+                    </picture>
                   </a>
-                  <picture>
-                    <source srcset="assets/images/product/product-6_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                    <img class="swiper-slide__image" src="assets/images/product/product-6.png" alt="Одежда" loading="lazy">
-                  </picture>
                 </div>
                 <div class="swiper-slide">
-                  <a href="assets/images/product/product-7_x2.png" data-fancybox="gallery" data-caption="Одежда">
-                    <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  <a href="product-card.html">
+                    <picture>
+                      <source srcset="assets/images/product/product-7_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="swiper-slide__image" src="assets/images/product/product-7.png" alt="Одежда" loading="lazy">
+                    </picture>
                   </a>
-                  <picture>
-                    <source srcset="assets/images/product/product-7_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                    <img class="swiper-slide__image" src="assets/images/product/product-7.png" alt="Одежда" loading="lazy">
-                  </picture>
                 </div>
                 <div class="swiper-slide">
-                  <a href="assets/images/product/product-8_x2.png" data-fancybox="gallery" data-caption="Одежда">
-                    <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  <a href="product-card.html">
+                    <picture>
+                      <source srcset="assets/images/product/product-8_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="swiper-slide__image" src="assets/images/product/product-8.png" alt="Одежда" loading="lazy">
+                    </picture>
                   </a>
-                  <picture>
-                    <source srcset="assets/images/product/product-8_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                    <img class="swiper-slide__image" src="assets/images/product/product-8.png" alt="Одежда" loading="lazy">
-                  </picture>
                 </div>
                 <div class="swiper-slide">
-                  <a href="assets/images/product/product-9_x2.png" data-fancybox="gallery" data-caption="Одежда">
-                    <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  <a href="product-card.html">
+                    <picture>
+                      <source srcset="assets/images/product/product-9_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="swiper-slide__image" src="assets/images/product/product-9.png" alt="Одежда" loading="lazy">
+                    </picture>
                   </a>
-                  <picture>
-                    <source srcset="assets/images/product/product-9_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                    <img class="swiper-slide__image" src="assets/images/product/product-9.png" alt="Одежда" loading="lazy">
-                  </picture>
                 </div>
                 <div class="swiper-slide">
-                  <a href="assets/images/product/product-1_x2.png" data-fancybox="gallery" data-caption="Одежда">
-                    <img class="loop-card" src="assets/images/svg/loop-card.svg" alt="Лупа">
+                  <a href="product-card.html">
+                    <picture>
+                      <source srcset="assets/images/product/product-1_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
+                      <img class="swiper-slide__image" src="assets/images/product/product-1.png" alt="Одежда" loading="lazy">
+                    </picture>
                   </a>
-                  <picture>
-                    <source srcset="assets/images/product/product-1_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                    <img class="swiper-slide__image" src="assets/images/product/product-1.png" alt="Одежда" loading="lazy">
-                  </picture>
                 </div>
               </div>
     
             </div>
-            <div class="central-button-prev btn-swiper"><img src="assets/images/svg/carret-swiper.svg" alt="-"></div>
-            <div class="central-button-next btn-swiper"><img src="assets/images/svg/carret-swiper.svg" alt="+"></div>
+            <div class="mini-button-prev btn-swiper"><img src="assets/images/svg/carret-swiper.svg" alt="-"></div>
+            <div class="mini-button-next btn-swiper"><img src="assets/images/svg/carret-swiper.svg" alt="+"></div>
           </div>
-  
-          <div class="sliders-box__content">
-            <h3>Комбинезон детский софтшелл NEW</h3>
-            <p>Артикул: <span>1223456</span></p>
-            <span class="sliders-box__content__price">5000 ₽</span>
-            <p>Цвет — <span>розовый</span></p>
-  
-            <div class="mini-swiper-wrapper" id="mini-swiper">
-              <div class="mini-swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a href="product-card.html">
-                      <picture>
-                        <source srcset="assets/images/product/product-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="swiper-slide__image" src="assets/images/product/product-5.png" alt="Одежда" loading="lazy">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="product-card.html">
-                      <picture>
-                        <source srcset="assets/images/product/product-6_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="swiper-slide__image" src="assets/images/product/product-6.png" alt="Одежда" loading="lazy">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="product-card.html">
-                      <picture>
-                        <source srcset="assets/images/product/product-7_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="swiper-slide__image" src="assets/images/product/product-7.png" alt="Одежда" loading="lazy">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="product-card.html">
-                      <picture>
-                        <source srcset="assets/images/product/product-8_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="swiper-slide__image" src="assets/images/product/product-8.png" alt="Одежда" loading="lazy">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="product-card.html">
-                      <picture>
-                        <source srcset="assets/images/product/product-9_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="swiper-slide__image" src="assets/images/product/product-9.png" alt="Одежда" loading="lazy">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="product-card.html">
-                      <picture>
-                        <source srcset="assets/images/product/product-1_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="swiper-slide__image" src="assets/images/product/product-1.png" alt="Одежда" loading="lazy">
-                      </picture>
-                    </a>
-                  </div>
-                </div>
-      
-              </div>
-              <div class="mini-button-prev btn-swiper"><img src="assets/images/svg/carret-swiper.svg" alt="-"></div>
-              <div class="mini-button-next btn-swiper"><img src="assets/images/svg/carret-swiper.svg" alt="+"></div>
-            </div>
-  
-            <p class="sliders-box__content__size">Размер: <span>80</span></p>
-            <p class="sliders-box__content__warn"><span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
-            <div class="size-box">
-              <input id="pro-size-1" type="radio" name="pro-size" checked>
-              <label for="pro-size-1">74</label>
-              <input disabled id="pro-size-2" type="radio" name="pro-size">
-              <label for="pro-size-2">80</label>
-              <input disabled id="pro-size-3" type="radio" name="pro-size">
-              <label for="pro-size-3">86</label>
-              <input disabled id="pro-size-4" type="radio" name="pro-size">
-              <label for="pro-size-4">92</label>
-              <input disabled id="pro-size-5" type="radio" name="pro-size">
-              <label for="pro-size-5">98</label>
-              <input disabled id="pro-size-6" type="radio" name="pro-size">
-              <label for="pro-size-6">110</label>
-              <input disabled id="pro-size-7" type="radio" name="pro-size">
-              <label for="pro-size-7">116</label>
-              <input disabled id="pro-size-8" type="radio" name="pro-size">
-              <label for="pro-size-8">122</label>
-              <input disabled id="pro-size-9" type="radio" name="pro-size">
-              <label for="pro-size-9">128</label>
-              <input disabled id="pro-size-10" type="radio" name="pro-size">
-              <label for="pro-size-10">134</label>
-              <input disabled id="pro-size-11" type="radio" name="pro-size">
-              <label for="pro-size-11">140</label>
-            </div>
-  
-            <p class="sliders-box__content__table-sizes" data-bs-toggle="modal" data-bs-target="#tableSizesModal">Таблица размеров</p>
-  
-            <div class="product-controls">
-              <div class="product-controls__left"><img class="card-additional__controls__count_minus" src="assets/images/svg/minus.svg" alt="-"><span>1</span><img class="card-additional__controls__count_plus" src="assets/images/svg/plus.svg" alt="+"></div>
-              <button class="product-controls__right">В корзину</button>
-            </div>
+
+          <p class="sliders-box__content__size">Размер: <span>80</span></p>
+          <p class="sliders-box__content__warn"><span><img src="assets/images/svg/warn-red.svg" alt="!"> Последний размер</span></p>
+          <div class="size-box">
+            <input id="pro-size-1" type="radio" name="pro-size" checked>
+            <label for="pro-size-1">74</label>
+            <input disabled id="pro-size-2" type="radio" name="pro-size">
+            <label for="pro-size-2">80</label>
+            <input disabled id="pro-size-3" type="radio" name="pro-size">
+            <label for="pro-size-3">86</label>
+            <input disabled id="pro-size-4" type="radio" name="pro-size">
+            <label for="pro-size-4">92</label>
+            <input disabled id="pro-size-5" type="radio" name="pro-size">
+            <label for="pro-size-5">98</label>
+            <input disabled id="pro-size-6" type="radio" name="pro-size">
+            <label for="pro-size-6">110</label>
+            <input disabled id="pro-size-7" type="radio" name="pro-size">
+            <label for="pro-size-7">116</label>
+            <input disabled id="pro-size-8" type="radio" name="pro-size">
+            <label for="pro-size-8">122</label>
+            <input disabled id="pro-size-9" type="radio" name="pro-size">
+            <label for="pro-size-9">128</label>
+            <input disabled id="pro-size-10" type="radio" name="pro-size">
+            <label for="pro-size-10">134</label>
+            <input disabled id="pro-size-11" type="radio" name="pro-size">
+            <label for="pro-size-11">140</label>
           </div>
-          
+
+          <p class="sliders-box__content__table-sizes" data-bs-toggle="modal" data-bs-target="#tableSizesModal">Таблица размеров</p>
+
+          <div class="product-controls">
+            <div class="product-controls__left"><img class="card-additional__controls__count_minus" src="assets/images/svg/minus.svg" alt="-"><span>1</span><img class="card-additional__controls__count_plus" src="assets/images/svg/plus.svg" alt="+"></div>
+            <button class="product-controls__right">В корзину</button>
+          </div>
         </div>
+        
       </div>
     </div>
-  
+  </div>
 
+  <!-- модальное благодарим за заполнение!-->
+  <div class="modal fade tanks-modal" id="thanksModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title">Благодарим за заполнение!</h5>
+        <p>Ваши данные успешно обновлены</p>
+      </div>
+    </div>
+  </div>
+  
   <img class="btn-top" src="assets/images/svg/to-top.svg" alt="Вверх">
 
   <script src="scripts/swiper/five-swiper.js"></script>
