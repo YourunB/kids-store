@@ -1376,6 +1376,10 @@ p {
   font-weight: 500;
 }
 
+.text-small {
+  font-size: 0.75em;
+}
+
 .modal h4 {
   text-align: center;
 }
@@ -1635,6 +1639,7 @@ p {
   font-size: 1em;
   background-color: var(--light-gray);
   padding: 10px 30px;
+  font-weight: 500;
 }
 
 .account-menu {
@@ -1661,6 +1666,59 @@ p {
 
 .account-menu__item:nth-of-type(8) {
   margin-bottom: 45px;
+}
+
+/*----------------------------------section-data--------------------------------*/
+
+.section-data {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+
+.account-data {
+  width: 100%;
+}
+
+.account-data h4 {
+  font-size: 1.25em;
+  margin-bottom: 40px;
+}
+
+.data-box {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.data-box__title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.data-box__title span {
+  color: var(--soft-red);
+}
+
+.data-box__input {
+  width: 100%;
+  border-radius: 42px;
+  padding: 13.5px 27px;
+  font-size: 0.875em;
+  background-color: var(--light-gray);
+  border: solid 1px var(--border-gray);
+}
+
+.data-FIO,
+.data-contacts {
+  display: flex;
+  gap: 15px;
+}
+
+.data-many {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
 /*-------------------------------------footer-----------------------------------*/

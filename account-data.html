@@ -139,7 +139,8 @@
       <a href="#">Главная</a><a class="bread-crumbs__current" href="#">/ Личный кабинет</a>
     </div>
 
-    <div class="block">
+    <section class="block section-data">
+
       <aside class="account-sidebar">
         <p class="account-sidebar__user">Александра Белова</p>
         <ul class="account-menu">
@@ -155,7 +156,69 @@
           <li class="account-menu__item"><a href="index.html"><img src="assets/images/svg/exit.svg" alt="Выход"> Выйти</a></li>
         </ul>
       </aside>
-    </div>
+
+      <form class="account-data">
+        <h4>Личные данные</h4>
+
+        <div class="data-FIO">
+          <div class="data-box">
+            <label class="data-box__title">Фамилия<span>*</span></label>
+            <input class="data-box__input" type="text" placeholder="Фамилия">
+          </div>
+  
+          <div class="data-box">
+            <label class="data-box__title">Имя<span>*</span></label>
+            <input class="data-box__input" type="text" placeholder="Имя">
+          </div>
+  
+          <div class="data-box">
+            <label class="data-box__title">Отчество<span>*</span></label>
+            <input class="data-box__input" type="text" placeholder="Отчество">
+          </div>
+        </div>
+
+        <div class="data-contacts">
+          <div class="data-box">
+            <label class="data-box__title">Телефон<span>*</span></label>
+            <input class="data-box__input" type="text" placeholder="+7 (XXX) XXX XX XX">
+          </div>
+
+          <div class="data-box">
+            <label class="data-box__title">E-mail<span>*</span></label>
+            <input class="data-box__input" type="email" placeholder="Email">
+          </div>
+        </div>
+
+        <div class="data-box">
+          <label class="data-box__title">Адрес<span>*</span></label>
+          <div class="data-many">
+            <input class="data-box__input" type="text" placeholder="Страна">
+            <input class="data-box__input" type="text" placeholder="Область / Край">
+            <input class="data-box__input" type="text" placeholder="Район">
+            <input class="data-box__input" type="text" placeholder="Город">
+          </div>
+
+          <div class="data-many">
+            <input class="data-box__input" type="text" placeholder="Индекс">
+            <input class="data-box__input" type="text" placeholder="Улица">
+            <input class="data-box__input" type="text" placeholder="Дом">
+            <input class="data-box__input" type="text" placeholder="Квартира">
+          </div>
+        </div>
+
+        <div class="data-box">
+          <label class="data-box__title">Данные о детях<span>*</span></label>
+          <span class="text-small">Первый ребенок:</span>
+          <div class="data-many">
+            <input class="data-box__input" type="text" placeholder="Имя ребенка">
+            <input class="data-box__input" type="text" placeholder="Пол">
+            <input class="data-box__input" type="date" placeholder="дд.мм.гггг.">
+          </div>
+          <a class="text-small" href="#"><img src="assets/images/svg/plus-data.svg" alt="Добавить"> Добавить ещё ребенка</a>
+        </div>
+
+      </form>
+    </section>
   </main>
 
   <footer class="footer">
