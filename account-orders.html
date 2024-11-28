@@ -14,11 +14,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-  <title>Главная</title>
+  <title>Заказы</title>
 </head>
 <body>
-
-  <header class="header header-main">
+  
+  <header class="header header-def">
     <div class="header-wrapper">
       <nav class="header__navigation">
         <button class="btn btn-primary btn-burger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
@@ -68,7 +68,7 @@
                     <button type="button" class="btn btn-dark" id="btn-search-burger">Найти</button>
                   </div>
                 </div>
-                <div class="menu-count">index.html
+                <div class="menu-count">
                   <img class="menu-icon" src="assets/images/svg/heart-white.svg" alt="Сердце" data-bs-toggle="modal" data-bs-target="#promoModal">
                   <span class="menu-count__item">7</span>
                 </div>
@@ -93,7 +93,7 @@
         <a href="index.html">Блог</a>
         <a href="index.html">Опт</a>
       </nav>
-      <a href="index.html"><img class="logo" src="assets/images/svg/logo-white.svg" alt="ZIPKIDZ" id="header-logo"></a>
+      <a href="index.html"><img class="logo" src="assets/images/svg/logo.svg" alt="ZIPKIDZ"></a>
       <div class="header__indicators">
         <div class="menu-search">
           <img class="menu-icon" src="assets/images/svg/loop-white.svg" alt="Лупа" id="btn-toggle-search">
@@ -106,9 +106,21 @@
           <img class="menu-icon" src="assets/images/svg/heart-white.svg" alt="Сердце" data-bs-toggle="modal" data-bs-target="#promoModal">
           <span class="menu-count__item">7</span>
         </div>
-        <div class="menu-count">
-          <img class="menu-icon" src="assets/images/svg/basket-white.svg" alt="Корзина" data-bs-toggle="modal" data-bs-target="#registrationModal">
+        <div class="menu-count" id="btn-fast-cart">
+          <img class="menu-icon" src="assets/images/svg/basket-white.svg" alt="Корзина"> <!--data-bs-toggle="modal" data-bs-target="#registrationModal"-->
           <span class="menu-count__item" id="cart-count">28</span>
+          <div class="fast-cart" id="fast-cart">
+            <img class="fast-cart__close" id="btn-close-fast-cart" src="assets/images/svg/close.svg" alt="X">
+            <img class="fast-cart__image" src="assets/images/cards-categories/category-8.png" alt="Одежда">
+            <div class="fast-cart__content">
+              <h4 class="fast-cart__content__title">В корзине</h4>
+              <p class="fast-cart__content__description">Комбинезон Супер Стар</p>
+              <p class="fast-cart__content__description">Цвет — серый графит</p>
+              <p class="fast-cart__content__description">Размер: 74</p>
+              <p class="fast-cart__content__description">Количество: 1 шт</p>
+              <p class="fast-cart__content__price">4300 ₽</p>
+            </div>
+          </div>
         </div>
         <div class="menu-language">
           <div class="btn-lang" id="btn-toggle-lang"><span>RU</span><img id="btn-toggle-lang-img" class="menu-icon" src="assets/images/svg/carret-white.svg" alt="Стрелочка"></div>
@@ -123,482 +135,155 @@
   </header>
 
   <main class="main">
-    <div class="swiper main-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <picture>
-            <source srcset="assets/images/main-1_x2.jpg" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-            <source srcset="assets/images/main-1.jpg" media="(min-width: 1280px)" type="image/jpeg">
-            <img src="assets/images/main-1_low.jpg" alt="Осень" loading="lazy" width="1280" height="720">
-          </picture>
-        </div>
-        <div class="swiper-slide">
-          <video src="assets/videos/video.mp4" autoplay loop muted>
-            <source src="assets/videos/video-low.mp4" type="video/mp4" media="(max-width: 991px)">
-            <source src="assets/videos/video.mp4" type="video/mp4" media="(min-width: 992px)">
-          </video>
-        </div>
-        <div class="swiper-slide">
-          <picture>
-            <source srcset="assets/images/main-1_x2.jpg" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-            <source srcset="assets/images/main-1.jpg" media="(min-width: 1280px)" type="image/jpeg">
-            <img src="assets/images/main-1_low.jpg" alt="Осень" loading="lazy" width="1280" height="720">
-          </picture>
-          <div class="swiper-slide__text-box swiper-slide__text-box_top-left">
-            <h3>Заголовок</h3>
-            <p>Текст</p>
-          </div>
-          <div class="swiper-slide__text-box swiper-slide__text-box_top-center">
-            <h3>Заголовок</h3>
-            <p>Текст</p>
-          </div>
-          <div class="swiper-slide__text-box swiper-slide__text-box_top-right">
-            <h3>Заголовок</h3>
-            <p>Текст</p>
-          </div>
-          <div class="swiper-slide__text-box swiper-slide__text-box_center-left">
-            <h3>Заголовок</h3>
-            <p>Текст</p>
-          </div>
-          <div class="swiper-slide__text-box swiper-slide__text-box_center-center">
-            <h3>Заголовок</h3>
-            <p>Текст</p>
-          </div>
-          <div class="swiper-slide__text-box swiper-slide__text-box_center-right">
-            <h3>Заголовок</h3>
-            <p>Текст</p>
-          </div>
-          <div class="swiper-slide__text-box swiper-slide__text-box_bottom-left">
-            <h3>Заголовок</h3>
-            <p>Текст</p>
-          </div>
-          <div class="swiper-slide__text-box swiper-slide__text-box_bottom-center">
-            <h3>Заголовок</h3>
-            <p>Текст</p>
-          </div>
-          <div class="swiper-slide__text-box swiper-slide__text-box_bottom-right">
-            <h3>Заголовок</h3>
-            <p>Текст</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      <img class="chat" src="assets/images/svg/chat.svg" alt="Чат">
+    <div class="bread-crumbs block block-first">
+      <a href="#">Главная</a><a class="bread-crumbs__current" href="#">/ Личный кабинет</a>
     </div>
-    
-    <a href="index.html" class="categories block">
-      <div class="categories__card">
-        <h3>Верхняя одежда</h3>
-        <picture>
-          <source srcset="assets/images/categories/category-1_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-          <img src="assets/images/categories/category-1.png" alt="Одежда" loading="lazy">
-        </picture>
-      </div>
-      <div class="categories__card">
-        <h3>Одежда из флиса</h3>
-        <picture>
-          <source srcset="assets/images/categories/category-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-          <img src="assets/images/categories/category-2.png" alt="Одежда" loading="lazy">
-        </picture>
-      </div>
-      <div class="categories__card">
-        <h3>Для самых маленьких</h3>
-        <picture>
-          <source srcset="assets/images/categories/category-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-          <img src="assets/images/categories/category-3.png" alt="Одежда" loading="lazy">
-        </picture>
-      </div>
-      <div class="categories__card">
-        <h3>Комбинезоны</h3>
-        <picture>
-          <source srcset="assets/images/categories/category-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-          <img src="assets/images/categories/category-4.png" alt="Одежда" loading="lazy">
-        </picture>
-      </div>
-      <div class="categories__card">
-        <h3>Костюмы</h3>
-        <picture>
-          <source srcset="assets/images/categories/category-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-          <img src="assets/images/categories/category-5.png" alt="Одежда" loading="lazy">
-        </picture>
-      </div>
-      <div class="categories__card">
-        <h3>Футболки и лонгсливы</h3>
-        <picture>
-          <source srcset="assets/images/categories/category-6_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-          <img src="assets/images/categories/category-6.png" alt="Одежда" loading="lazy">
-        </picture>
-      </div>
-      <div class="categories__card">
-        <h3>Брюки</h3>
-        <picture>
-          <source srcset="assets/images/categories/category-7_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-          <img src="assets/images/categories/category-7.png" alt="Одежда" loading="lazy">
-        </picture>
-      </div>
-      <div class="categories__card">
-        <h3>Аксессуары</h3>
-        <picture>
-          <source srcset="assets/images/categories/category-8_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-          <img src="assets/images/categories/category-8.png" alt="Одежда" loading="lazy">
-        </picture>
-      </div>
-      <div class="categories__card">
-        <h3>SALE</h3>
-        <picture>
-          <source srcset="assets/images/categories/category-9_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-          <img src="assets/images/categories/category-9.png" alt="Одежда" loading="lazy">
-        </picture>
-      </div>
-    </a>
 
-    <section class="about-section section block">
-      <h2>О КОМПАНИИ</h2>
-      <p>Если в вашей семье есть маленькие дети, наверняка, вы о нас слышали! Целых 6 лет мы производим стильную одежду для новорожденных, детей ясельного и младшего дошкольного возраста. Коллекции, которые мы изготавливаем, обладают не только высоким качеством и удобством в носке, но и отвечают модным тенденциям, что тоже важно для детской аудитории.</p>
-      <button type="button" class="btn btn-dark">Подробнее</button>
-    </section>
+    <section class="block section-data">
 
-    <section class="special-section section block">
-      <h2>СПЕЦИАЛЬНЫЕ ПРЕДЛОЖЕНИЯ</h2>
+      <aside class="account-sidebar">
+        <p class="account-sidebar__user">Александра Белова</p>
+        <ul class="account-menu">
+          <li class="account-menu__item"><a href="account-data.html">Личные данные</a></li>
+          <li class="account-menu__item account-menu__item_active"><a href="account-orders.html">Заказы</a></li>
+          <li class="account-menu__item"><a href="#">Возвраты</a></li>
+          <li class="account-menu__item"><a href="#">Бонусы</a></li>
+          <li class="account-menu__item"><a href="#">Избранные товары</a></li>
+          <li class="account-menu__item"><a href="#">Подарочные сертификаты</a></li>
+          <li class="account-menu__item"><a href="#">Сменить пароль</a></li>
+          <li class="account-menu__item"><a href="#">Документы</a></li>
+          <li class="account-menu__item"><a href="#">Если остались вопросы</a></li>
+          <li class="account-menu__item"><a href="index.html"><img src="assets/images/svg/exit.svg" alt="Выход"> Выйти</a></li>
+        </ul>
+      </aside>
 
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="catalog__card">
-              <div class="card-wrapper">
-                <div class="card-promo"><span>Новинка</span></div>
-                <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце">
-                <img class="card-eye" src="assets/images/svg/eye-brown.svg" alt="Глаз" data-bs-toggle="modal" data-bs-target="#productModal">
-                <div class="card-slider">
-                  <div class="card-slider__images">
-                    <a href="product-card.html">
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-1_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/specials/special-1.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="card-slider__indicators">
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                  </div>
-                </div>
-      
-                <p class="card-description">Термо костюм кофта и брюки</p>
-                <p class="card-price">1 650 ₽</p>
-                <div class="card-colors"><span></span><span></span><span></span></div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="catalog__card">
-              <div class="card-wrapper">
-                <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце" data-bs-toggle="modal" data-bs-target="#promoModal">
-                <img class="card-eye" src="assets/images/svg/eye-brown.svg" alt="Глаз" data-bs-toggle="modal" data-bs-target="#productModal">
-                <div class="card-slider">
-                  <div class="card-slider__images">
-                    <a href="product-card.html">
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/specials/special-2_x2.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-1_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-1.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="card-slider__indicators">
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                  </div>
-                </div>
-      
-                <p class="card-description">Термо комбинезон без начеса</p>
-                <p class="card-price">1 700 ₽</p>
-                <div class="card-colors"><span></span><span></span><span></span><span></span></div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="catalog__card">
-              <div class="card-wrapper">
-                <img class="card-heart" src="assets/images/svg/heart-full.svg" alt="Сердце" data-bs-toggle="modal" data-bs-target="#promoModal">
-                <img class="card-eye" src="assets/images/svg/eye-brown.svg" alt="Глаз" data-bs-toggle="modal" data-bs-target="#productModal">
-                <div class="card-slider">
-                  <div class="card-slider__images">
-                    <a href="product-card.html">
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="card-slider__indicators">
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                  </div>
-                </div>
-      
-                <p class="card-description">Шапка зимняя на завязках</p>
-                <p class="card-price">1 100 ₽</p>
-                <div class="card-colors"><span></span><span></span><span></span><span></span></div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="catalog__card">
-              <div class="card-wrapper">
-                <img class="card-heart" src="assets/images/svg/heart-full.svg" alt="Сердце" data-bs-toggle="modal" data-bs-target="#promoModal">
-                <img class="card-eye" src="assets/images/svg/eye-brown.svg" alt="Глаз" data-bs-toggle="modal" data-bs-target="#productModal">
-                <div class="card-slider">
-                  <div class="card-slider__images">
-                    <a href="product-card.html">
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="card-slider__indicators">
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                  </div>
-                </div>
-      
-                <p class="card-description">Шапка тыковка</p>
-                <p class="card-price">600 ₽</p>
-                <div class="card-colors"><span></span><span></span><span></span></div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="catalog__card">
-              <div class="card-wrapper">
-                <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце" data-bs-toggle="modal" data-bs-target="#promoModal">
-                <img class="card-eye" src="assets/images/svg/eye-brown.svg" alt="Глаз" data-bs-toggle="modal" data-bs-target="#productModal">
-                <div class="card-slider">
-                  <div class="card-slider__images">
-                    <a href="product-card.html">
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="card-slider__indicators">
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                  </div>
-                </div>
-      
-                <p class="card-description">Костюм флисовый двойка с длинной молнией</p>
-                <p class="card-price">1750 ₽</p>
-                <div class="card-colors"><span></span><span></span></div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="catalog__card">
-              <div class="card-wrapper">
-                <img class="card-heart" src="assets/images/svg/heart.svg" alt="Сердце" data-bs-toggle="modal" data-bs-target="#promoModal">
-                <img class="card-eye" src="assets/images/svg/eye-brown.svg" alt="Глаз" data-bs-toggle="modal" data-bs-target="#productModal">
-                <div class="card-slider">
-                  <div class="card-slider__images">
-                    <a href="product-card.html">
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-6_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image card-slider__images__image-first" src="assets/images/specials/special-6.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-2_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-2.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-3_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-3.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-4_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-4.png" alt="Одежда" loading="lazy">
-                      </picture>
-                      <span class="card-slider__images-zone"></span>
-                      <picture>
-                        <source srcset="assets/images/specials/special-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                        <img class="card-slider__images__image" src="assets/images/specials/special-5.png" alt="Одежда" loading="lazy">
-                      </picture>
-                    </a>
-                  </div>
-                  <div class="card-slider__indicators">
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                    <span class="card-slider__indicators__indicator"></span>
-                  </div>
-                </div>
-      
-                <p class="card-description">Снуд хлопковый</p>
-                <p class="card-price">350 ₽</p>
-                <div class="card-colors"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-              </div>
-            </div>
+      <div class="account-orders">
+        <div class="account-orders__top">
+          <h4>Заказы</h4>
+          
+          <div class="search-input">
+            <img src="assets/images/svg/loop.svg" alt="Поиск">
+            <input type="text" placeholder="Поиск в таблице">
           </div>
         </div>
 
-        <div class="bottom-slider-button-prev btn-swiper"><img src="assets/images/svg/btn-slider.svg" alt="Назад"></div>
-        <div class="bottom-slider-button-next btn-swiper"><img src="assets/images/svg/btn-slider.svg" alt="Вперед"></div>
+        <div class="orders-table-container">
+          <table class="orders-table">
+            <thead>
+              <tr>
+                <th class="orders-table__sort">№ <img src="assets/images/svg/arrow-sort.svg" alt="Сортировка"></th>
+                <th class="orders-table__sort">Дата заказа <img src="assets/images/svg/arrow-sort.svg" alt="Сортировка"></th>
+                <th class="orders-table__sort">Статус заказа <img src="assets/images/svg/arrow-sort.svg" alt="Сортировка"></th>
+                <th>Адрес доставки</th>
+                <th>Способ оплаты</th>
+                <th class="orders-table__sort">Сумма <img src="assets/images/svg/arrow-sort.svg" alt="Сортировка"></th>
+                <th>Скидка</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="account-order-info.html"></a>5944</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-gray">Завершен</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>SALE_50% СДЭК — бесплатная доставка</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5945</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-gray">Завершен</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5946</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-red">Отменен</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>SALE_30% СДЭК — бесплатная доставка</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5947</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-gray">Завершен</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5948</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-green">В доставке</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5949</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-gray">Завершен</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>SALE_30% СДЭК — бесплатная доставка</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5950</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-green">В доставке</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5951</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-red">Отменен</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>СДЭК — бесплатная доставка</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5952</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-green">Оформлен</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>SALE_50%</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5953</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-orange">Ожидает оплаты</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
+  
+          <div class="pages">
+            <span class="pages__item pages__item_active">1</span>
+            <span class="pages__item">2</span>
+            <span class="pages__item">&#62;</span>
+          </div>
+        </div>
       </div>
-
-      <div class="advantages">
-        <div class="advantages__card">
-          <img src="assets/images/svg/secure.svg" alt="Безопасность">
-          <h4>Безопасная оплата</h4>
-          <p>Ваши финансовые данные всегда под защитой</p>
-        </div>
-        <div class="advantages__card">
-          <img src="assets/images/svg/money.svg" alt="Безопасность">
-          <h4>Доступные цены</h4>
-          <p>Собственное производство позволяет сокращать наценки посредников</p>
-        </div>
-        <div class="advantages__card">
-          <img src="assets/images/svg/guarantee.svg" alt="Безопасность">
-          <h4>Гарантия качества</h4>
-          <p>Все наши товары сертифицированы</p>
-        </div>
-        <div class="advantages__card">
-          <img src="assets/images/svg/fast.svg" alt="Безопасность">
-          <h4>Быстрая доставка</h4>
-          <p>Бережно доставляем товары по России и в страны СНГ</p>
-        </div>
-        <div class="advantages__card">
-          <img src="assets/images/svg/connection.svg" alt="Безопасность">
-          <h4>На связи 7 дней в неделю</h4>
-          <p>Отвечаем быстро и без выходных для вашего комфорта</p>
-        </div>
+      
+      <div class="chat">
+        <img src="assets/images/svg/chat.svg" alt="Чат">
       </div>
     </section>
   </main>
@@ -901,6 +586,7 @@
     </div>
   </div>
 
+  <!-- модальное карточка продукта-->
   <div class="modal modal-product fade" id="productModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -916,7 +602,7 @@
                 </a>
                 <picture>
                   <source srcset="assets/images/product/product-5_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                  <a href="assets/images/product/product-5_x2.png" data-fancybox="gallery" data-caption="Одежда"><img class="swiper-slide__image" src="assets/images/product/product-5.png" alt="Одежда" loading="lazy"></a>
+                  <img class="swiper-slide__image" src="assets/images/product/product-5.png" alt="Одежда" loading="lazy">
                 </picture>
               </div>
               <div class="swiper-slide">
@@ -925,7 +611,7 @@
                 </a>
                 <picture>
                   <source srcset="assets/images/product/product-6_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                  <a href="assets/images/product/product-6_x2.png" data-fancybox="gallery" data-caption="Одежда"><img class="swiper-slide__image" src="assets/images/product/product-6.png" alt="Одежда" loading="lazy"></a>
+                  <img class="swiper-slide__image" src="assets/images/product/product-6.png" alt="Одежда" loading="lazy">
                 </picture>
               </div>
               <div class="swiper-slide">
@@ -934,7 +620,7 @@
                 </a>
                 <picture>
                   <source srcset="assets/images/product/product-7_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                  <a href="assets/images/product/product-7_x2.png" data-fancybox="gallery" data-caption="Одежда"><img class="swiper-slide__image" src="assets/images/product/product-7.png" alt="Одежда" loading="lazy"></a>
+                  <img class="swiper-slide__image" src="assets/images/product/product-7.png" alt="Одежда" loading="lazy">
                 </picture>
               </div>
               <div class="swiper-slide">
@@ -943,7 +629,7 @@
                 </a>
                 <picture>
                   <source srcset="assets/images/product/product-8_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                  <a href="assets/images/product/product-8_x2.png" data-fancybox="gallery" data-caption="Одежда"><img class="swiper-slide__image" src="assets/images/product/product-8.png" alt="Одежда" loading="lazy"></a>
+                  <img class="swiper-slide__image" src="assets/images/product/product-8.png" alt="Одежда" loading="lazy">
                 </picture>
               </div>
               <div class="swiper-slide">
@@ -952,7 +638,7 @@
                 </a>
                 <picture>
                   <source srcset="assets/images/product/product-9_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                  <a href="assets/images/product/product-9_x2.png" data-fancybox="gallery" data-caption="Одежда"><img class="swiper-slide__image" src="assets/images/product/product-9.png" alt="Одежда" loading="lazy"></a>
+                  <img class="swiper-slide__image" src="assets/images/product/product-9.png" alt="Одежда" loading="lazy">
                 </picture>
               </div>
               <div class="swiper-slide">
@@ -961,7 +647,7 @@
                 </a>
                 <picture>
                   <source srcset="assets/images/product/product-1_x2.png" media="(min-width: 1920px) and (min-device-pixel-ratio: 2)" type="image/jpeg">
-                  <a href="assets/images/product/product-1_x2.png" data-fancybox="gallery" data-caption="Одежда"><img class="swiper-slide__image" src="assets/images/product/product-1.png" alt="Одежда" loading="lazy"></a>
+                  <img class="swiper-slide__image" src="assets/images/product/product-1.png" alt="Одежда" loading="lazy">
                 </picture>
               </div>
             </div>
@@ -1074,20 +760,31 @@
     </div>
   </div>
 
-
+  <!-- модальное благодарим за заполнение!-->
+  <div class="modal fade tanks-modal" id="thanksModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        <h5 class="modal-title">Благодарим за заполнение!</h5>
+        <p>Ваши данные успешно обновлены</p>
+      </div>
+    </div>
+  </div>
+  
   <img class="btn-top" src="assets/images/svg/to-top.svg" alt="Вверх">
 
-  <script src="scripts/swiper/main-swiper.js"></script>
   <script src="scripts/swiper/five-swiper.js"></script>
+  <script src="scripts/swiper/modal-swiper.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
   <script src="scripts/btn-to-top.js"></script>
-  <script src="scripts/menu-scroll-main-page.js"></script>
+  <script src="scripts/menu-scroll.js"></script>
+  <script src="scripts/side-menu.js"></script>
+  <script src="scripts/filters-sorts.js"></script>
+  <script src="scripts/fast-cart.js"></script>
   <script src="scripts/menu.js"></script>
-  <script src="scripts/swiper/modal-swiper.js"></script>
   <script src="scripts/cart.js"></script>
   <script src="scripts/fancy-box.js"></script>
-  <script src="scripts/modals-pass.js"></script>
 
 </body>
 </html>

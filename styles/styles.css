@@ -12,6 +12,9 @@
   --border-gray: rgba(217, 217, 217, 1);
   --new: rgb(110, 150, 112);
   --soft-red: rgb(200, 95, 95);
+  --table-head: rgba(236, 236, 236, 1);
+  --text-green: rgba(109, 149, 111, 1);
+  --text-orange: rgba(252, 198, 112, 1);
 }
 
 html {
@@ -58,7 +61,7 @@ p {
 }
 
 .main {
-  max-width: 1920px;
+  max-width: 1440px;
   width: 100%;
   margin: auto;
   overflow-x: hidden;
@@ -82,7 +85,7 @@ p {
 
 .header-wrapper {
   padding: 0 70px;
-  max-width: 1920px;
+  max-width: 1440px;
   height: 100%;
   margin: auto;
   display: flex;
@@ -760,7 +763,7 @@ p {
   width: 100%;
   z-index: 9;
   left: 0;
-  top: 100%;
+  top: 98%;
   background-color: white;
   box-shadow: 0px 0px 13.8px 0px rgba(0, 0, 0, 0.23);
   padding: 15px;
@@ -1258,6 +1261,16 @@ p {
   backdrop-filter: blur(10px);
 }
 
+.modal .btn {
+  margin: auto;
+}
+
+.modal .btn:disabled {
+  background-color: white;
+  border-color: var(--text-light-gray);
+  color: var(--text-light-gray);
+}
+
 .modal-content {
   position: relative;
   padding: 40px 80px;
@@ -1376,6 +1389,10 @@ p {
   font-weight: 500;
 }
 
+.text-small {
+  font-size: 0.75em;
+}
+
 .modal h4 {
   text-align: center;
 }
@@ -1412,6 +1429,11 @@ p {
   font-size: 1.2em;
 }
 
+.account-data .btn {
+  display: block;
+  margin: auto;
+}
+
 /*------------------------------------modal-table-sizes---------------------------*/
 
 .modal-table-sizes {
@@ -1420,6 +1442,13 @@ p {
 
 .modal-image {
   width: 100%;
+}
+
+/*-------------------------------------tanks-modal--------------------------------*/
+
+.tanks-modal {
+  --bs-modal-width: 600px;
+  text-align: center;
 }
 
 /*-------------------------------------modal-swiper-------------------------------*/
@@ -1531,6 +1560,10 @@ p {
 /*----------------------------------------chat----------------------------------*/
 
 .chat {
+  position: absolute;
+  z-index: 10;
+  right: 3%;
+  bottom: 3%;
   border-radius: 50%;
   transition: 0.5s;
   cursor: pointer;
@@ -1624,6 +1657,101 @@ p {
   max-width: 260px;
 }
 
+/*------------------------------------account-sidebar---------------------------*/
+
+.account-sidebar {
+  max-width: 230px;
+  width: 100%;
+}
+
+.account-sidebar__user {
+  font-size: 1em;
+  background-color: var(--light-gray);
+  padding: 10px 30px;
+  font-weight: 500;
+}
+
+.account-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.account-menu__item {
+  width: 100%;
+}
+
+.account-menu__item_active {
+  font-weight: 600;
+}
+
+.account-menu__item a {
+  display: block;
+  width: 100%;
+}
+
+.account-menu__item:nth-of-type(8) {
+  margin-bottom: 45px;
+}
+
+/*----------------------------------section-data--------------------------------*/
+
+.section-data {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+
+.account-data {
+  width: 100%;
+}
+
+.account-data h4,
+.account-orders h4 {
+  font-size: 1.25em;
+  margin-bottom: 40px;
+}
+
+.data-box {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.data-box__title {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.data-box__title span {
+  color: var(--soft-red);
+}
+
+.data-box__input {
+  width: 100%;
+  border-radius: 42px;
+  padding: 13.5px 27px;
+  font-size: 0.875em;
+  background-color: var(--light-gray);
+  border: solid 1px var(--border-gray);
+}
+
+.data-FIO,
+.data-contacts {
+  display: flex;
+  gap: 15px;
+}
+
+.data-many {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
 /*-------------------------------------footer-----------------------------------*/
 
 .footer {
@@ -1638,7 +1766,7 @@ p {
 }
 
 .footer-wrapper {
-  max-width: 1920px;
+  max-width: 1440px;
   padding: 70px 70px 60px 70px;
   margin: auto;
 }
@@ -2205,6 +2333,131 @@ p {
   transform: scale(0.8);
 }
 
+/*---------------------------------orders-table-------------------------------*/
+
+.account-orders {
+  max-width: calc(100% - 275px)
+}
+
+.orders-table-container {
+  overflow: auto;
+}
+
+.orders-table {
+  height: fit-content;
+}
+
+.orders-table__sort {
+  cursor: pointer;
+  user-select: none;
+}
+
+.orders-table th {
+  font-size: 1.125em;
+  font-weight: 500;
+  white-space: nowrap;
+  text-align: center;
+  padding: 13px 10px;
+  background-color: var(--table-head);
+}
+
+.orders-table th:first-of-type {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.orders-table th:last-of-type {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.orders-table tbody tr {
+  position: relative;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.orders-table tbody tr td a {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition: 0.5s;
+}
+
+@media(hover:hover) {
+  .orders-table tbody tr td a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.orders-table tbody tr td {
+  padding: 20px 10px;
+}
+
+.orders-table td {
+  font-size: 0.875em;
+}
+
+.order-gray {
+  color: var(--text-light-gray);
+}
+.order-green {
+  color: var(--text-green);
+}
+.order-red {
+  color: var(--soft-red);
+}
+.order-orange {
+  color: var(--text-orange);
+}
+
+.orders-table-container .pages {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.account-orders__top {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.back-link {
+  margin: 20px 0;
+  font-size: 1.125em;
+  font-weight: 500;
+}
+
+.account-orders-item h4 {
+  font-size: 1.25em;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  position: relative;
+}
+
+.search-input input {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 42px;
+  padding: 13.5px 27px;
+  padding-left: 40px;
+  font-size: 0.875em;
+  background-color: var(--light-gray);
+  border: none;
+}
+
+.search-input img {
+  position: absolute;
+  left: 16px;
+  bottom: 28px;
+}
+
 /*-------------------------------------menu-btns------------------------------*/
 
 .menu-search,
@@ -2221,7 +2474,7 @@ p {
   padding: 10px;
   flex-wrap: wrap;
   gap: 10px;
-  max-width: 300px;
+  width: 200px;
   display: none;
 }
 
