@@ -13,6 +13,15 @@ btnSearch.addEventListener('click', () => {
   windowSearch.classList.toggle('menu-search__window_open');
 });
 
+document.body.addEventListener('click', (e) => {
+  if (e.target.classList.contains('menu-search__window') || e.target.classList.contains('form-control') || e.target.classList.contains('menu-icon')) return;
+  else windowSearch.classList.remove('menu-search__window_open');
+});
+
+document.addEventListener('scroll', () => {
+  windowSearch.classList.remove('menu-search__window_open');
+});
+
 /*-------------------------------windows-burger----------------------------*/
 
 const btnToggleSearchBurger = document.getElementById('btn-toggle-search-burger');

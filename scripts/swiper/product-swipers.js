@@ -42,7 +42,6 @@ const swiperCentralVertical = new Swiper('.central-vertical-swiper', {
   }
 });
 
-
 const swiperVertical = new Swiper('.vertical-swiper', {
   direction: 'vertical',  
   slidesPerView: 4,
@@ -67,6 +66,7 @@ const swiperMini = new Swiper('.mini-swiper', {
   },
 });
 
+/*
 swiperMini.on('slideChange', () => {
   const activeIndex = swiperMini.realIndex;
   swiperCentral.slideTo(activeIndex);
@@ -76,3 +76,4 @@ swiperVertical.on('slideChange', () => {
   const activeIndex = swiperVertical.realIndex;
   swiperCentralVertical.slideTo(activeIndex);
 });
+*/

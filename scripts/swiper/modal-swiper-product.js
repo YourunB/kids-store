@@ -21,7 +21,7 @@ const swiperModalMini = new Swiper('.mini-modal-swiper', {
     nextEl: '.mini-modal-button-next',
   },
 });
-
+/*
 swiperModalMini.on('slideChange', () => {
   const activeIndex = swiperModalMini.realIndex;
   swiperModalCentral.slideTo(activeIndex);
@@ -33,3 +33,4 @@ slidesMiniModal.forEach((slide, index) => {
     swiperModalMini.slideToLoop(index);
   });
 });
+*/

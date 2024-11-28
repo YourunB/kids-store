@@ -24,7 +24,7 @@ const swiperMini = new Swiper('.mini-swiper', {
     nextEl: '.mini-button-next',
   },
 });
-
+/*
 swiperMini.on('slideChange', () => {
   const activeIndex = swiperMini.realIndex;
   swiperCentral.slideTo(activeIndex);
@@ -36,3 +36,4 @@ slidesMini.forEach((slide, index) => {
     swiperMini.slideToLoop(index);
   });
 });
+*/

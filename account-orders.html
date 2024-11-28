@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-  <title>Каталог</title>
+  <title>Заказы</title>
 </head>
 <body>
   
@@ -144,8 +144,8 @@
       <aside class="account-sidebar">
         <p class="account-sidebar__user">Александра Белова</p>
         <ul class="account-menu">
-          <li class="account-menu__item account-menu__item_active"><a href="#">Личные данные</a></li>
-          <li class="account-menu__item"><a href="#">Заказы</a></li>
+          <li class="account-menu__item"><a href="account-data.html">Личные данные</a></li>
+          <li class="account-menu__item account-menu__item_active"><a href="account-orders.html">Заказы</a></li>
           <li class="account-menu__item"><a href="#">Возвраты</a></li>
           <li class="account-menu__item"><a href="#">Бонусы</a></li>
           <li class="account-menu__item"><a href="#">Избранные товары</a></li>
@@ -157,69 +157,131 @@
         </ul>
       </aside>
 
-      <form class="account-data">
-        <h4>Личные данные</h4>
-
-        <div class="data-FIO">
-          <div class="data-box">
-            <label class="data-box__title">Фамилия<span>*</span></label>
-            <input class="data-box__input" type="text" placeholder="Фамилия">
+      <div class="account-orders">
+        <div class="account-orders__top">
+          <h4>Заказы</h4>
+          
+          <div class="search-input">
+            <img src="assets/images/svg/loop.svg" alt="Поиск">
+            <input type="text" placeholder="Поиск в таблице">
           </div>
+        </div>
+
+        <div class="orders-table-container">
+          <table class="orders-table">
+            <thead>
+              <tr>
+                <th class="orders-table__sort">№ <img src="assets/images/svg/arrow-sort.svg" alt="Сортировка"></th>
+                <th class="orders-table__sort">Дата заказа <img src="assets/images/svg/arrow-sort.svg" alt="Сортировка"></th>
+                <th class="orders-table__sort">Статус заказа <img src="assets/images/svg/arrow-sort.svg" alt="Сортировка"></th>
+                <th>Адрес доставки</th>
+                <th>Способ оплаты</th>
+                <th class="orders-table__sort">Сумма <img src="assets/images/svg/arrow-sort.svg" alt="Сортировка"></th>
+                <th>Скидка</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="account-order-info.html"></a>5944</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-gray">Завершен</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>SALE_50% СДЭК — бесплатная доставка</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5945</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-gray">Завершен</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5946</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-red">Отменен</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>SALE_30% СДЭК — бесплатная доставка</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5947</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-gray">Завершен</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5948</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-green">В доставке</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5949</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-gray">Завершен</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>SALE_30% СДЭК — бесплатная доставка</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5950</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-green">В доставке</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5951</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-red">Отменен</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>СДЭК — бесплатная доставка</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5952</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-green">Оформлен</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>SALE_50%</td>
+              </tr>
+              <tr>
+                <td><a href="account-order-info.html"></a>5953</td>
+                <td>18.10.2024 <span class="order-gray">16:37</span></td>
+                <td><span class="order-orange">Ожидает оплаты</span></td>
+                <td>Москва, ул. Кирова, 25, корпус 3, кв.25</td>
+                <td>Онлайн</td>
+                <td>5000 ₽</td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
   
-          <div class="data-box">
-            <label class="data-box__title">Имя<span>*</span></label>
-            <input class="data-box__input" type="text" placeholder="Имя">
-          </div>
-  
-          <div class="data-box">
-            <label class="data-box__title">Отчество<span>*</span></label>
-            <input class="data-box__input" type="text" placeholder="Отчество">
+          <div class="pages">
+            <span class="pages__item pages__item_active">1</span>
+            <span class="pages__item">2</span>
+            <span class="pages__item">&#62;</span>
           </div>
         </div>
-
-        <div class="data-contacts">
-          <div class="data-box">
-            <label class="data-box__title">Телефон<span>*</span></label>
-            <input class="data-box__input" type="text" placeholder="+7 (XXX) XXX XX XX">
-          </div>
-
-          <div class="data-box">
-            <label class="data-box__title">E-mail<span>*</span></label>
-            <input class="data-box__input" type="email" placeholder="Email">
-          </div>
-        </div>
-
-        <div class="data-box">
-          <label class="data-box__title">Адрес<span>*</span></label>
-          <div class="data-many">
-            <input class="data-box__input" type="text" placeholder="Страна">
-            <input class="data-box__input" type="text" placeholder="Область / Край">
-            <input class="data-box__input" type="text" placeholder="Район">
-            <input class="data-box__input" type="text" placeholder="Город">
-          </div>
-
-          <div class="data-many">
-            <input class="data-box__input" type="text" placeholder="Индекс">
-            <input class="data-box__input" type="text" placeholder="Улица">
-            <input class="data-box__input" type="text" placeholder="Дом">
-            <input class="data-box__input" type="text" placeholder="Квартира">
-          </div>
-        </div>
-
-        <div class="data-box">
-          <label class="data-box__title">Данные о детях<span>*</span></label>
-          <span class="text-small">Первый ребенок:</span>
-          <div class="data-many">
-            <input class="data-box__input" type="text" placeholder="Имя ребенка">
-            <input class="data-box__input" type="text" placeholder="Пол">
-            <input class="data-box__input" type="date" placeholder="дд.мм.гггг.">
-          </div>
-          <a class="text-small" href="#"><img src="assets/images/svg/plus-data.svg" alt="Добавить"> Добавить ещё ребенка</a>
-        </div>
-
-        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#thanksModal">Сохранить</button>
-      </form>
-
+      </div>
+      
       <div class="chat">
         <img src="assets/images/svg/chat.svg" alt="Чат">
       </div>
@@ -299,11 +361,11 @@
         </div>
         <div class="mb-3 input-pass">
           <input type="password" class="form-control modal-content__input" id="password" placeholder="Пароль" required>
-          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз" id="toggle-password">
         </div>
         <div class="mb-3 input-pass">
           <input type="password" class="form-control modal-content__input" id="confirm-password" placeholder="Подтверждение пароля" required>
-          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз" id="toggle-confirm-password">
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="newsletterConsent">
@@ -347,11 +409,11 @@
         </div>
         <div class="mb-3 input-pass">
           <input type="password" class="form-control modal-content__input" id="password-opt" placeholder="Пароль" required>
-          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз" id="toggle-password-opt">
         </div>
         <div class="mb-3 input-pass">
           <input type="password" class="form-control modal-content__input" id="confirm-password-opt" placeholder="Подтверждение пароля" required>
-          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз" id="toggle-confirm-password-opt">
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="newsletterConsent-opt">
@@ -385,7 +447,7 @@
         </div>
         <div class="mb-3 input-pass">
           <input type="password" class="form-control modal-content__input" id="password-log" placeholder="Пароль" required>
-          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз" id="toggle-password-log">
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="save-log">
@@ -411,8 +473,7 @@
           <span class="modal-choice__item" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">По E-mail</span>
         </div>
         <div class="mb-3 input-pass">
-          <input type="password" class="form-control modal-content__input" id="password-log-phone" placeholder="Пароль" required>
-          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+          <input type="text" class="form-control modal-content__input" id="phone-log-phone" placeholder="Телефон" required>
         </div>
         <div class="mb-3 form-check">
           <input type="checkbox" class="form-check-input" id="save-log-phone">
@@ -421,7 +482,7 @@
             <span class="text-underlinte" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#resetModal">Забыли пароль?</span>
           </span>
         </div>
-        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Войти</button>
+        <button type="button" disabled class="btn btn-dark" data-bs-dismiss="modal">Войти</button>
         <p class="modal-info">Впервые на сайте? <span class="text-underlinte" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registrationModal">Зарегистрируйтесь</span></p>
       </div>
     </div>
@@ -436,7 +497,7 @@
         <p class="modal-description">Введите e-mail, указанный при регистрации, и мы вышлем инструкцию по восстановлению</p>
         <div class="mb-3 input-pass">
           <input type="password" class="form-control modal-content__input" id="password-reset" placeholder="Пароль" required>
-          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз">
+          <img class="input-pass__eye" src="assets/images/svg/eye.svg" alt="Глаз" id="toggle-password-reset">
         </div>
         <button type="button" class="btn btn-dark" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#confirmModal">Сбросить пароль</button>
         <p class="modal-info">Уже зарегистрированы? <span class="text-underlinte" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">Войти</span></p>

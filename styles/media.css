@@ -25,11 +25,20 @@
 @media (max-width: 1440px) { 
   .card-slider__images,
   .catalog .catalog-wrapper-many .card-slider__images {
-    height: 290px;
+    height: 400px;
   }
 
   .catalog .card-slider__images {
     height: 400px;
+  }
+
+  .swiper-container .card-slider__images {
+    height: 290px;
+  }
+
+  .catalog .catalog__card:nth-of-type(8) .card-slider__images,
+  .catalog .catalog__card:nth-of-type(9) .card-slider__images  {
+    height: 620px;
   }
 
   .central-swiper,
@@ -96,31 +105,6 @@
   }
 }
 
-@media (max-width: 1300px) {
-  .catalog-wrapper .catalog__card {
-    min-width: 50%;
-    width: 50%;
-  }
-  
-  .catalog-wrapper .catalog__card:nth-of-type(8),
-  .catalog-wrapper .catalog__card:nth-of-type(9) {
-    min-height: auto;
-    min-width: 100%;
-    width: 100%;
-  }
-
-  .catalog-wrapper-many .catalog__card {
-    min-width: 50%;
-    width: 50%;
-  }
-  
-  .catalog-wrapper-many .catalog__card:nth-of-type(8),
-  .catalog-wrapper-many .catalog__card:nth-of-type(9) {
-    min-width: 50%;
-    width: 50%;
-  }
-}
-
 @media (max-width: 1200px) {
   /*.section,
   .footer {
@@ -142,6 +126,31 @@
 
   .offcanvas-body .header__indicators {
     display: flex;
+  }
+}
+
+@media (max-width: 1050px) {
+  .catalog-wrapper .catalog__card {
+    min-width: 50%;
+    width: 50%;
+  }
+  
+  .catalog-wrapper .catalog__card:nth-of-type(8),
+  .catalog-wrapper .catalog__card:nth-of-type(9) {
+    min-height: auto;
+    min-width: 50%;
+    width: 50%;
+  }
+
+  .catalog-wrapper-many .catalog__card {
+    min-width: 50%;
+    width: 50%;
+  }
+  
+  .catalog-wrapper-many .catalog__card:nth-of-type(8),
+  .catalog-wrapper-many .catalog__card:nth-of-type(9) {
+    min-width: 50%;
+    width: 50%;
   }
 }
 
@@ -219,6 +228,18 @@
   .vertical-swiper-wrapper {
     display: none;
   }
+
+  .catalog-wrapper .catalog__card {
+    min-width: 33%;
+    width: 33%;
+  }
+  
+  .catalog-wrapper .catalog__card:nth-of-type(8),
+  .catalog-wrapper .catalog__card:nth-of-type(9) {
+    min-height: auto;
+    min-width: 50%;
+    width: 50%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -275,6 +296,17 @@
   .catalog-wrapper-many .catalog__card:nth-of-type(9) {
     min-width: auto;
     width: 100%;
+  }
+
+  .catalog-wrapper .catalog__card:nth-of-type(8),
+  .catalog-wrapper .catalog__card:nth-of-type(9) {
+    min-height: auto;
+    width: 100%;
+  }
+
+  .catalog .catalog__card:nth-of-type(8) .card-slider__images,
+  .catalog .catalog__card:nth-of-type(9) .card-slider__images  {
+    height: 400px;
   }
 
   .sort-top,
