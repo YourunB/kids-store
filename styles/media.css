@@ -1,0 +1,391 @@
+@media (max-width: 1700px) {
+  /*.categories {
+    font-size: 12px;
+  }*/
+}
+
+@media (max-width: 1500px) {
+  .central-swiper,
+  .central-vertical-swiper-wrapper {
+    height: auto;
+  }
+
+  .catalog-wrapper-many .catalog__card {
+    min-width: 33%;
+    width: 33%;
+  }
+  
+  .catalog-wrapper-many .catalog__card:nth-of-type(8),
+  .catalog-wrapper-many .catalog__card:nth-of-type(9) {
+    min-width: 33%;
+    width: 33%;
+  }
+}
+
+@media (max-width: 1440px) { 
+  .card-slider__images,
+  .catalog .catalog-wrapper-many .card-slider__images {
+    height: 290px;
+  }
+
+  .catalog .card-slider__images {
+    height: 400px;
+  }
+
+  .central-swiper,
+  .central-modal-swiper,
+  .central-vertical-swiper-wrapper {
+    max-width: 525px;
+    width: 100%;
+    height: 700px;
+  }
+
+  .mini-swiper,
+  .mini-modal-swiper {
+    max-width: 550px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .vertical-swiper {
+    width: 130px;
+    height: 700px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .sliders-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /*.swiper,
+  .offcanvas {
+    font-size: 10px;
+  }*/
+
+  .block {
+    padding: 20px;
+  }
+
+  .chat {
+    width: 50px;
+    height: 50px;
+  }
+
+  .categories {
+    font-size: 12px;
+  }
+
+  .categories__card {
+    height: 300px;
+  }
+  
+  .categories__card:nth-of-type(3),
+  .categories__card:nth-of-type(4),
+  .categories__card:nth-of-type(5) {
+    height: 400px;
+  }
+
+  .footer-wrapper {
+    padding: 20px;
+  }
+  
+  .footer__center {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .catalog-wrapper .catalog__card {
+    min-width: 50%;
+    width: 50%;
+  }
+  
+  .catalog-wrapper .catalog__card:nth-of-type(8),
+  .catalog-wrapper .catalog__card:nth-of-type(9) {
+    min-height: auto;
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .catalog-wrapper-many .catalog__card {
+    min-width: 50%;
+    width: 50%;
+  }
+  
+  .catalog-wrapper-many .catalog__card:nth-of-type(8),
+  .catalog-wrapper-many .catalog__card:nth-of-type(9) {
+    min-width: 50%;
+    width: 50%;
+  }
+}
+
+@media (max-width: 1200px) {
+  /*.section,
+  .footer {
+    font-size: 10px;
+  }*/
+
+  .header-wrapper {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .header__navigation {
+    width: fit-content;
+  }
+
+  .header__indicators {
+    display: none;
+  }
+
+  .offcanvas-body .header__indicators {
+    display: flex;
+  }
+}
+
+@media (max-width: 991px) {
+  .bread-crumbs {
+    display: none;
+  }
+  
+  .header-wrapper {
+    padding: 0 20px;
+  }
+
+  .categories__card:nth-of-type(4),
+  .categories__card:nth-of-type(5) {
+    grid-column: span 2;
+  }
+
+  .categories__card:nth-of-type(3) {
+    grid-column: span 4;
+  }
+
+  .categories__card:nth-of-type(3),
+  .categories__card:nth-of-type(4),
+  .categories__card:nth-of-type(5) {
+    height: 300px;
+  }
+
+  .catalog.block {
+    display: block;
+  }
+
+  .side-menu {
+    display: none;
+  }
+
+  .side-menu_open {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .side-menu__item {
+    margin: 0;
+  }
+
+  .bread-crumbs {
+    margin-bottom: 20px;
+  }
+
+  .sort-top {
+    display: none;
+  }
+
+  .sort-top_open {
+    display: flex;
+  }
+  
+  .btn-filters {
+    display: inline-block;
+  }
+
+  .vertical-swiper-wrapper {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__indicators,
+  .header__navigation {
+    gap: 15px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .categories {
+    font-size: 10px;
+  }
+
+  .categories__card {
+    padding: 20px;
+  }
+
+  .categories__card,
+  .categories__card:nth-of-type(3),
+  .categories__card:nth-of-type(4),
+  .categories__card:nth-of-type(5) {
+    grid-column: span 4;
+  }
+  
+  .categories__card:nth-of-type(4) h3,
+  .categories__card:nth-of-type(5) h3 {
+    text-align: left;
+  }
+
+  .swiper {
+    font-size: 6px;
+  }
+
+  .advantages {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .catalog-wrapper,
+  .catalog-wrapper-many {
+    justify-content: center;
+  }
+
+  .catalog-wrapper .catalog__card {
+    margin: auto;
+    width: 100%;
+  }
+
+  .catalog-wrapper-many .catalog__card:nth-of-type(8),
+  .catalog-wrapper-many .catalog__card:nth-of-type(9) {
+    min-width: auto;
+    width: 100%;
+  }
+
+  .sort-top,
+  .catalog-wrapper-many .sort-top,
+  .catalog-wrapper-many .pages {
+    grid-column: span 1;
+  }
+
+  .footer__center {
+    margin-bottom: 50px;
+  }
+}
+
+@media(max-width: 600px) {
+  .mini-swiper {
+    max-width: 340px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .central-swiper,
+  .central-vertical-swiper-wrapper {
+    max-width: 400px;
+    width: 100%;
+    height: 600px;
+  }
+}
+
+@media (max-width: 576px) {
+  .offcanvas-body {
+    padding: 0;
+  }
+
+  .submenu-list {
+    padding: 0 0 0 20px;
+    position: static;
+  }
+
+  .header {
+    font-size: 12px;
+    height: 60px;
+  }
+
+  .header__indicators img,
+  .header__navigation img {
+    width: 20px;
+  }
+
+  .logo {
+    width: 80px;
+  }
+
+  .modal-content {
+    padding: 20px;
+  }
+
+  .modal-content .modal-content__input {
+    max-width: 100%;
+  }
+
+  .fast-cart {
+    top: calc(100% + 15px);
+    right: -80px;
+    padding: 15px;
+    width: 280px;
+    gap: 10px;
+  }
+
+  .fast-cart .fast-cart__image {
+    width: 80px;
+  }
+}
+
+@media (max-width: 440px) {
+  .header__navigation {
+    width: 100%;
+  }
+
+  .header__indicators {
+    width: fit-content;
+  }
+
+  .header__indicators, .header__navigation {
+    gap: 10px;
+  }
+
+  .btn,
+  .footer .btn {
+    min-width: 200px;
+  }
+
+  .footer-info {
+    max-width: 100%;
+  }
+
+  .footer__top {
+    margin-bottom: 20px;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer__center,
+  .footer-info {
+    display: block;
+    text-align: center;
+  }
+
+  .footer__center {
+    margin-bottom: 20px;
+  }
+
+  .central-swiper,
+  .central-vertical-swiper-wrapper {
+    max-width: 300px;
+    width: 100%;
+    height: 500px;
+  }
+}
+
+@media(max-width: 380px) {
+  .mini-swiper {
+    max-width: 280px;
+    width: 100%;
+    overflow: hidden;
+  }
+}
